@@ -1,0 +1,4 @@
+X01
+Nierownomiernosc (jitter) nazywamy blad wynikajacy z kumulowania sie w pracy cyklicznej timera drobnych bledow
+TAK
+NIE

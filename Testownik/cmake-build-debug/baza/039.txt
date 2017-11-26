@@ -1,0 +1,4 @@
+X01
+Potoki sa modelem komunikacji miedzyprocesorowej typu rozglaszania ( jeden do wielu)
+TAK
+NIE

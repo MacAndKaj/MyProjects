@@ -1,0 +1,4 @@
+X01
+Watki uzytkownika moga byc wykonywane na wielo procesorach / rdzeniach tak samo jak watki jadra
+TAK
+NIE

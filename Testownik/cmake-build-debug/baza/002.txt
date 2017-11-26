@@ -1,0 +1,4 @@
+X01
+Dryfem timera nazywamy blad polegajacy na spoznionym wykonaniu akcji przeterminowanego timera
+TAK
+NIE

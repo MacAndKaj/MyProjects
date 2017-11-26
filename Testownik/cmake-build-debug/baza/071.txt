@@ -1,0 +1,4 @@
+X10
+Model procesow naklada wieksze ograniczenia w tworzeniu wspolbieznych programow w prowonaniu z modelem watkow
+TAK
+NIE

@@ -1,0 +1,4 @@
+X01
+Zmienna warunkowa pozwala watkom komunikujacym sie przez pamiec wspolna na sprawdzenie warunkow logicznych
+TAK
+NIE

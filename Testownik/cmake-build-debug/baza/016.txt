@@ -1,0 +1,4 @@
+X10
+Proces utworzony przez klonowanie procesu rodzica wspoldzieli z rodzicem wszystkie otwarte wczesniej pliki
+TAK
+NIE

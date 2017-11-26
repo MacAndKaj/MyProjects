@@ -1,0 +1,4 @@
+X10
+Potoki sa modelem komunikacji miedzyprocesowej jednokierunkowej typu jeden-do-jednego
+TAK
+NIE

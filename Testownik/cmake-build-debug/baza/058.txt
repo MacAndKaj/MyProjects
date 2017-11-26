@@ -1,0 +1,4 @@
+X01
+Przekroczenie (overrun) timera moze byc spowodowane zbyt dlugim wykonywaniem sie jakiejs procedury programu
+TAK
+NIE

@@ -1,0 +1,4 @@
+X10
+Czas wirtualny procesu oznacza czas procesora zuzyty na obliczenia
+TAK
+NIE

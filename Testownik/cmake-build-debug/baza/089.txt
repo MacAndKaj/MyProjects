@@ -1,0 +1,4 @@
+X10
+Jedna z funkcji procesow w systemie unix jest umozliwienie przydzialu zasobow wykonywanym w systemie zadaniom
+TAK
+NIE

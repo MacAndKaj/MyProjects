@@ -1,0 +1,4 @@
+X01
+Proces zombie jest procesem ktory wymknal sie spod kontroli i system nie moze zakonczyc jego wykonania 
+TAK
+NIE

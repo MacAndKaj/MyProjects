@@ -1,0 +1,4 @@
+X10
+Watki uzytkownika mozna stosowac w systemach niewspierajacych watkow jadra
+TAK
+NIE

@@ -1,0 +1,4 @@
+X01
+Watki uzytkownika maja takie same mozliwosci operacyjne jak watki jadra
+TAK
+NIE

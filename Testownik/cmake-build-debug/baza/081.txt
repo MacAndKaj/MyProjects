@@ -1,0 +1,4 @@
+X10
+Timer mozna zaprogramowac aby po okreslonym czasie przysylal sygnal do procesu / watku
+TAK
+NIE

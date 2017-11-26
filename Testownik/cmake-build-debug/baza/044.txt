@@ -1,0 +1,4 @@
+X10
+Liczba nice umozliwia uzytkownikom / programistom zarzadzanie przydzialem zasobow dla procesu
+TAK
+NIE

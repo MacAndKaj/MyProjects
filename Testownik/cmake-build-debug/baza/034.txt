@@ -1,0 +1,4 @@
+X10
+System operacyjny moze synchronizowac swoj zegar systemowy dla utrzymania zgodnosci czasu z innymi systemami
+TAK
+NIE

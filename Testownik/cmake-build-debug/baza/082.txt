@@ -1,0 +1,4 @@
+X01
+Timery domyslnie dzialaja w trybie cyklicznym
+TAK
+NIE

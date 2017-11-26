@@ -1,0 +1,4 @@
+X10
+Muteks moze byc uzyty do zabezpieczenia rownolegle wykonywanych operacji przed wyscigami
+TAK
+NIE

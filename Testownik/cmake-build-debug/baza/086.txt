@@ -1,0 +1,4 @@
+X01
+Komunikacja watkow przez zmienne globalne jest z reguly szybsza niz komunikacja procesow przez pamiec wspolna
+TAK
+NIE

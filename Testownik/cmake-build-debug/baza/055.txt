@@ -1,0 +1,4 @@
+X10
+Watki uzytkownika sa z reguly szybsze niz watki jadra
+TAK
+NIE

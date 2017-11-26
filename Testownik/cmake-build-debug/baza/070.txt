@@ -1,0 +1,4 @@
+X10
+Model watkow pozwala na szybsze tworzenie wspolbieznosci programow w porownaniu z modelem procesow
+TAK
+NIE

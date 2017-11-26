@@ -1,0 +1,4 @@
+X10
+Tik - okres czasu administrowania systemu
+TAK
+NIE

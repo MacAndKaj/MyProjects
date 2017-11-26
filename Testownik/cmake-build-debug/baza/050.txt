@@ -1,0 +1,4 @@
+X01
+Przejscie do stanu oczekiwania blokuje rownoleglosc watkow jadra
+TAK
+NIE

@@ -1,0 +1,4 @@
+X10
+Proces w systemie Unix moze zadeklarowac wlasna procedure obslugi sygnalu ( dla wiekszosci typow sygnalu)
+TAK
+NIE

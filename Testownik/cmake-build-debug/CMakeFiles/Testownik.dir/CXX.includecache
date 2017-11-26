@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mkajdak/Pulpit/MyProjects/Testownik/inc/Base.hh
+vector
+-
+fstream
+-
+boost/filesystem.hpp
+-
+
+/home/mkajdak/Pulpit/MyProjects/Testownik/inc/Button.h
+SFML/Graphics.hpp
+-
+
+/home/mkajdak/Pulpit/MyProjects/Testownik/inc/Testownik.h
+
+/home/mkajdak/Pulpit/MyProjects/Testownik/main.cpp
+SFML/Graphics.hpp
+-
+iostream
+-
+inc/Button.h
+/home/mkajdak/Pulpit/MyProjects/Testownik/inc/Button.h
+
+/home/mkajdak/Pulpit/MyProjects/Testownik/src/Base.cpp
+../inc/Base.hh
+/home/mkajdak/Pulpit/MyProjects/Testownik/inc/Base.hh
+
+/home/mkajdak/Pulpit/MyProjects/Testownik/src/Button.cpp
+../inc/Button.h
+/home/mkajdak/Pulpit/MyProjects/Testownik/inc/Button.h
+
+/home/mkajdak/Pulpit/MyProjects/Testownik/src/Testownik.cpp
+../inc/Testownik.h
+/home/mkajdak/Pulpit/MyProjects/Testownik/inc/Testownik.h
+

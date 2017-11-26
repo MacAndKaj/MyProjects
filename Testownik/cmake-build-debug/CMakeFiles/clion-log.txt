@@ -1,0 +1,9 @@
+/home/mkajdak/Pulpit/clion-2017.2.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mkajdak/Pulpit/MyProjects/Testownik
+-- Boost version: 1.62.0
+-- Found the following Boost libraries:
+--   filesystem
+--   system
+-- Found SFML .. in /usr/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mkajdak/Pulpit/MyProjects/Testownik/cmake-build-debug

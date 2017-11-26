@@ -1,0 +1,4 @@
+X10
+Procesy w systemie Unix istnieja w celu zapewnienia izolacji wykonywanych w systemie zadan
+TAK
+NIE

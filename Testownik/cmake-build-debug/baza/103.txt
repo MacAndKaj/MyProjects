@@ -1,0 +1,4 @@
+X01
+Aby proces w systemie Unix umogl prawidlowo sie zakonczyc musi  zawiadomic o tym proces rodzica
+TAK
+NIE

@@ -1,0 +1,4 @@
+X01
+Zegary moga odmierzac czas zarowno do przodu jak i do tylu
+TAK
+NIE

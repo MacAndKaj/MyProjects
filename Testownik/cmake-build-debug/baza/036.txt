@@ -1,0 +1,4 @@
+X01
+srodowisko procesu w systemie Unix to jest zbior innych procesow z ktorymi dany proces sie komunikuje 
+TAK
+NIE

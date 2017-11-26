@@ -1,0 +1,4 @@
+X10
+Proces moze dowolnie ustawic wartosc swojego statusu
+TAK
+NIE

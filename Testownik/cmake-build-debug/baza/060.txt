@@ -1,0 +1,4 @@
+X10
+Funkcja sleep i nanosleep moga zakonczyc sie po czasie dluzszym niz zadany czas
+TAK
+NIE

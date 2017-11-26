@@ -1,0 +1,4 @@
+X01
+Numer ( identyfikator ) uzytkownika jest unikalnym identyfikatorem procesu w systemie Unix
+TAK
+NIE

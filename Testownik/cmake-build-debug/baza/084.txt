@@ -1,0 +1,4 @@
+X10
+Komunikacja przez pamiec wspolna wymaga oddzielnej synchronizacji inaczej niz komunikacja przez potoki
+TAK
+NIE

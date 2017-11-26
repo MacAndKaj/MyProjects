@@ -1,0 +1,4 @@
+X10
+Zasoby w systemie Unix istenieja w celu ulatwienia zarzadzania elementami systemu w odniesieniu do procesow
+TAK
+NIE

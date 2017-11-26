@@ -1,0 +1,4 @@
+X01
+System moze dowolnie ustawic wartosc statusu dowolnego procesu
+TAK
+NIE

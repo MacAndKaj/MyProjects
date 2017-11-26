@@ -1,0 +1,4 @@
+X01
+Model watkow daje wieksza wspolbieznosc dzialania programow w porownaniu z modelem procesow
+TAK
+NIE

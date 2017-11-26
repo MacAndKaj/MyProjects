@@ -1,0 +1,4 @@
+X10
+Numer (identyfikator) procesu jest unikalnym identyfikatorem procesu w systemie Unix
+TAK
+NIE

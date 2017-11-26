@@ -1,0 +1,4 @@
+X01
+Procesy sa tworzone w celu usprawnienia przydzialu pamieci (quasi) rownolegle wykonywanym zadaniom
+TAK
+NIE

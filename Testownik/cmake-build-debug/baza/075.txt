@@ -1,0 +1,4 @@
+X10
+Stan uspienia procesu oznacza oczekiwanie na jakies zasoby
+TAK
+NIE

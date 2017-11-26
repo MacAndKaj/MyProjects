@@ -1,0 +1,4 @@
+X01
+Proces moze znajdowac sie tylko w stanie uspienia i dzialania
+TAK
+NIE

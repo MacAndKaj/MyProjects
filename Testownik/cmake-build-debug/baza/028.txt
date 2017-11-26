@@ -1,0 +1,4 @@
+X10
+Procesy sa tworzone w celu podzialu obliczen na wiele (quasi) rownolegle wykonywanych zadan
+TAK
+NIE

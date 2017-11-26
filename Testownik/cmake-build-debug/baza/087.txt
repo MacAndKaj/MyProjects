@@ -1,0 +1,4 @@
+X10
+Komunikacja przez zmienne lub pamiec wspolna jest z reguly szybsza niz komunikacja przez potoki lub gniazdka
+TAK
+NIE

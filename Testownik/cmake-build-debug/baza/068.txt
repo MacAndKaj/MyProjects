@@ -1,0 +1,4 @@
+X10
+Bariere mozna wykorzystac do synchronizacji urochomienia zestawu watkow lub procesow
+TAK
+NIE
