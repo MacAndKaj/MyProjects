@@ -1,4 +1,0 @@
-X10
-Jeden proces moze zawierac tylko jeden watke lub proces moze skladac sie z kilku watkow
-TAK
-NIE

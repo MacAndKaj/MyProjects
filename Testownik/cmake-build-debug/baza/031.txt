@@ -1,4 +1,0 @@
-X10
-Proba odczytu z potoku gdy brak w nim danych moze zwrocic pusty bufor lub czekac na dane
-TAK
-NIE

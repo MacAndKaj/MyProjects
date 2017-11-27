@@ -1,4 +1,0 @@
-X01
-Przekroczenie (overrun) timera moze byc spowodowane ustawieniem zbyt dlugiego czasu na timerze
-TAK
-NIE

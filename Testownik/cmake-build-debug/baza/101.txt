@@ -1,4 +1,0 @@
-X01
-Pamiec wspolna jest automatycznie synchronizowana
-TAK
-NIE

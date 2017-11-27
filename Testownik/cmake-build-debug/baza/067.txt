@@ -1,4 +1,0 @@
-X01
-Bariere mozna wykorzystac do zablokowania watkowi lub procesowi dostepu do jakiegos zasobu
-TAK
-NIE

@@ -1,4 +1,0 @@
-X10
-Proces w systemie Unix po otrzymaniu sygnalu zostaje zawieszony lub wstrzymany (dla wiekszosci typow sygnalow) 
-TAK
-NIE

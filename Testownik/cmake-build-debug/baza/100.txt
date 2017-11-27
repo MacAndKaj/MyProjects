@@ -1,4 +1,0 @@
-X01
-Semafor mozna zastapic muteksem
-TAK
-NIE

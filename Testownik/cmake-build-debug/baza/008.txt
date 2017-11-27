@@ -1,4 +1,0 @@
-X10
-Muteks jest zmienna logiczna ktorej obsluga musi byc realizowana przez system operacyjny 
-TAK
-NIE

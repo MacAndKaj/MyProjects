@@ -1,4 +1,0 @@
-X01
-Stan uspienia procesu oznacza oczekiwanie na wykonanie na procesorze
-TAK
-NIE

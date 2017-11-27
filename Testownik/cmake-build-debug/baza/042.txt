@@ -1,4 +1,0 @@
-X10
-Potoki moga byc wykorzystane do przesylania komunikatow o roznych wielkosciach
-TAK
-NIE

@@ -1,4 +1,0 @@
-X10
-Dryfem timera nazywamy blad wynikajacy z kumulowania sie w pracy cyklicznej drobnych bledow
-TAK
-NIE

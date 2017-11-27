@@ -1,4 +1,0 @@
-X01
-Muteks moze zastapic blokade zapisu i czytania
-TAK
-NIE

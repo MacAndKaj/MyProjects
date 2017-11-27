@@ -1,4 +1,0 @@
-X10
-Drobnoziarnistrosc semafora jest wieksza od muteksu
-TAK
-NIE

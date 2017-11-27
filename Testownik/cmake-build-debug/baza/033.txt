@@ -1,4 +1,0 @@
-X01
-System moze dowolnie zmieniac status procesu
-TAK
-NIE

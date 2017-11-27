@@ -1,3 +1,0 @@
-/home/mkajdak/Pulpit/MyProjects/Testownik/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/mkajdak/Pulpit/MyProjects/Testownik/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mkajdak/Pulpit/MyProjects/Testownik/cmake-build-debug/CMakeFiles/Testownik.dir

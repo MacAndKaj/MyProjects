@@ -1,4 +1,0 @@
-X10
-Srodowisko procesu w systemie Unix to jest zbior zmiennych z wartosciami stworzonych dla procesu
-TAK
-NIE

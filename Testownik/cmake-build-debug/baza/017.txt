@@ -1,4 +1,0 @@
-X01
-Proces utworzony przez klonowanie procesu rodzica wspoldzieli z rodzicem wszystkie zasoby
-TAK
-NIE

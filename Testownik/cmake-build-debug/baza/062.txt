@@ -1,4 +1,0 @@
-X01
-Wszystkie procesy w systemie Unix tworzone sa przez polaczenie dwoch procesow funkcja fork ( z wyjatkiem procesu init)
-TAK
-NIE

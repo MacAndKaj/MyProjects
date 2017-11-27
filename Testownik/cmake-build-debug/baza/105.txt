@@ -1,4 +1,0 @@
-X01
-Numer (identyfikator) procesu nadrzednego jest unikalnym identyfikatorem procesu w systemie Unix
-TAK
-NIE

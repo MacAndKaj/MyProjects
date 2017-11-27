@@ -1,4 +1,0 @@
-X01
-Zmienna warunkowa przesyla dane
-TAK
-NIE

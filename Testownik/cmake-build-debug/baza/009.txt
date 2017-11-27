@@ -1,4 +1,0 @@
-X10
-Muteks moze byc uzyty do synchronizacji komunikacji przez zmienne/pamiec globalna
-TAK
-NIE

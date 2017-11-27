@@ -1,4 +1,0 @@
-X01
-Muteks pozwala implementowac bardziej drobnoziarnista rownoleglosc obliczen niz blokady zapisu i odczytu
-TAK
-NIE

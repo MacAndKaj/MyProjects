@@ -1,4 +1,0 @@
-X01
-Proces jest zawsze w stanie wykonywalnym albo uspionym 
-TAK
-NIE

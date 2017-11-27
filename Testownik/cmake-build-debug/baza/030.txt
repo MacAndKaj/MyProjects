@@ -1,4 +1,0 @@
-X01
-Proces moze miec status dowolny
-TAK
-NIE

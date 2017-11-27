@@ -1,4 +1,0 @@
-X01
-Predkosc zapisywania danych do potoku musi byc dostosowana do predkosci odczytywania tych danych
-TAK
-NIE

@@ -1,4 +1,0 @@
-X01
-Komunikacja przez pamiec wspolna jest automatycznie synchronizowana podobnei jak komunikacja przez potoki
-TAK
-NIE

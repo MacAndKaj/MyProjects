@@ -1,4 +1,0 @@
-X10
-Aby proces w systemie Unix mogl prawidlowo sie zakonczyc rodzic musi odczytac jego status
-TAK
-NIE

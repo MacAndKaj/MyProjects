@@ -1,4 +1,0 @@
-X01
-Stan uspienia procesu to oczekiwanie na proces
-TAK
-NIE

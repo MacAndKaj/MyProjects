@@ -1,4 +1,0 @@
-X10
-Sygnaly w systemie Unix moga byc generowane zarowno przez sprzet jak i oprogramowanie
-TAK
-NIE

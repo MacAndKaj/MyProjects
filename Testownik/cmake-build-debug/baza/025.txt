@@ -1,4 +1,0 @@
-X01
-Procesy w systemie Unix istnieja w celu umozliwienia przydzialu zasobow wykonywanym w systemie zadaniom
-TAK
-NIE

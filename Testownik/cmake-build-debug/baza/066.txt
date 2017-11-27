@@ -1,4 +1,0 @@
-X10
-Wartosc time_t sluzy do okreslenia czasu rzeczywistego (kalendarzowego) jako liczba sekund
-TAK
-NIE

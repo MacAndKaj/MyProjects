@@ -1,4 +1,0 @@
-X01
-Kazdy watek podobnie jak proces ma swoja oddzielna przestrzen adresowa
-TAK
-NIE

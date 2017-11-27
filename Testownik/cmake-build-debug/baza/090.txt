@@ -1,4 +1,0 @@
-X10
-Zmienna warunkowa sluzy do sygnalizacji spelnienia warunku oczekujacym na niej watkom lub procesom
-TAK
-NIE

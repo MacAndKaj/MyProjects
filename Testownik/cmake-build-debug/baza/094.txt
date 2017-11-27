@@ -1,4 +1,0 @@
-X01
-Sumaryczna objetosc danych przesylanych przez potok moze byc ograniczona ustawieniami systemu
-TAK
-NIE

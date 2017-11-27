@@ -1,4 +1,0 @@
-X01
-Muteks jest mechanizmem synchronizacji bardziej ogolnym niz blokady zapisu i odczytu
-TAK
-NIE

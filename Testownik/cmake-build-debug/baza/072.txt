@@ -1,4 +1,0 @@
-X01
-Opoznieniem (latency) timera nazywamy blad wynikajacy z kumolowania sie w pracy cyklicznej drobnych bledow
-TAK
-NIE
