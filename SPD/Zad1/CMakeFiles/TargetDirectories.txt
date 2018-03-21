@@ -1,0 +1,3 @@
+/home/maciej/Documents/SPD/Zad1/CMakeFiles/edit_cache.dir
+/home/maciej/Documents/SPD/Zad1/CMakeFiles/rebuild_cache.dir
+/home/maciej/Documents/SPD/Zad1/CMakeFiles/Zad1.dir
