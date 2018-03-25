@@ -8,17 +8,22 @@
 #include <iostream>
 
 using namespace std;
+
+
+
+//***************************** Funkcje ogolne ***********************************************************************/
+/// \brief Funkcja do wczytania zadan.
+/// \param nazwa Format - nazwaplikuzzadaniem.txt, czyli plik z czasami dla zadania.
+/// \param zbior Referencja do struktury zbioru zadan w ktorej zapisywane jest kazde wczytane zadanie.
+/// \return Zwraca 0 gdy wczytywanie zadania sie powiodlo,1 gdy nie udalo sie.
 int zadania(string nazwa, ZbiorZadan &zbior) {
     fstream plik;
-    string bufor;
     int licznik;
     Zadanie *nowe;
 
-    unsigned long b;
-    unsigned long a;
-    unsigned long spacja1, spacja2,tab1,tab2;
-    string *llinii, *r, *p, *q;
+    int r, p, q;
 
+    int tempLiczba;
     plik.open(nazwa, ios::in);
     if (!plik.good()) {
         return 1;
@@ -26,64 +31,43 @@ int zadania(string nazwa, ZbiorZadan &zbior) {
 
 
     if (!plik.eof()) {
-        licznik = 0;
-        getline(plik, bufor);
-//        spacja=bufor.find(' ');
 
-
-//        llinii=new string(bufor,0,spacja);
-        zbior.setLElem(atoi(bufor.c_str()));
-//        cout << zbior.getLElem() << endl;
-
+        plik >> tempLiczba;
+        zbior.setLElem(tempLiczba);
+        //smiec
+        plik >> tempLiczba;
         for (int i = 0; i < zbior.getLElem(); ++i) {
-            getline(plik, bufor);
-
-
-            a = bufor.find_first_not_of(' ');
-            spacja1 = bufor.find_first_of(' ', a);
-            tab1 = bufor.find_first_of('\t',a);
-
-            if(tab1 == string::npos) {
-
-                b = bufor.find_first_not_of(' ', spacja1);
-                spacja2 = bufor.find_first_of(' ', b);
-
-                r = new string(bufor, a, spacja1);
-                p = new string(bufor, b, spacja2);
-                q = new string(bufor, spacja2);
-            }
-            else{
-                b = bufor.find_first_not_of('\t', tab1);
-                tab2=bufor.find_first_of('\t',b);
-
-                r = new string(bufor, a, tab1);
-                p = new string(bufor, b, tab2);
-                q = new string(bufor, tab2);
-            }
-//            std::cout << "r: " << *r << " p: " << *p << " q: " << *q << std::endl;
-            nowe = new Zadanie(atoi(r->c_str()), atoi(p->c_str()), atoi(q->c_str()));
+            plik >> tempLiczba;
+            r = tempLiczba;
+            plik >> tempLiczba;
+            p = tempLiczba;
+            plik >> tempLiczba;
+            q = tempLiczba;
+            nowe = new Zadanie(r, p, q);
             zbior.Dodaj(*nowe);
 //            nowe->Pokaz();
 
         }
-
-
     }
     plik.close();
     return 0;
 }
 
-
-void DoIT(string nazwapliku,std::list<Info*> &glowa) {
+/// \brief Funkcja obliczajaca wszystkie rzeczy.
+///
+/// Funkcja odpowiada za zrobienie wszystkiego czego oczekuje prowadzacy czyli wczytanie, testowanie,mierzenie czasu.
+/// \param nazwapliku   Format - nazwapliku.txt, czyli plik z odpowiednio formatowanymi liczbami.
+/// \param glowa        Referencja do listy w ktorej beda przechowywane wyniki kolejnych zadan.
+void DoIT(string nazwapliku, std::list<Info *> &glowa) {
     ifstream plik;                      //strumien z pliku
     string bufor;                       //bufor na linie
 
-    int wynik1,wynik2;
-    unsigned int wynik3,wynik4;           //do wynikow algorytmow
+    int wynik1, wynik2;
+    unsigned int wynik3, wynik4;           //do wynikow algorytmow
 
-    unsigned int start,stop;
+    unsigned int start, stop;
 
-    unsigned int czas2,czas3,czas4;      //do pomiaru czasu
+    unsigned int czas2, czas3, czas4;      //do pomiaru czasu
 
 
     plik.open(nazwapliku, ios::in);
@@ -91,8 +75,8 @@ void DoIT(string nazwapliku,std::list<Info*> &glowa) {
 
     while (!plik.eof()) {
 
-        getline(plik,bufor);
-        if(bufor[0]=='i') {
+        getline(plik, bufor);
+        if (bufor[0] == 'i') {
             ZbiorZadan pierwszy, drugi, trzeci;
 
 //        std::cout << "Wczytuje zadania" << std::endl;
@@ -122,7 +106,7 @@ void DoIT(string nazwapliku,std::list<Info*> &glowa) {
             start = clock();
             drugi.sortR();
             stop = clock();
-            czas2 =(stop-start)*CLOCKS_PER_SEC/1000000.;
+            czas2 = (stop - start) * CLOCKS_PER_SEC / 1000000.;
 
             drugi.GenerujWektory();
             wynik2 = drugi.fCelu();
@@ -132,18 +116,17 @@ void DoIT(string nazwapliku,std::list<Info*> &glowa) {
             trzeci.alg2opt();
             stop = clock();
 
-            czas3 = (stop-start)*CLOCKS_PER_SEC/1000000.;
+            czas3 = (stop - start) * CLOCKS_PER_SEC / 1000000.;
             trzeci.GenerujWektory();
             wynik3 = trzeci.fCelu();
-
 
 
             start = clock();
             drugi.alg2opt();
             stop = clock();
 
-            czas4 = (difftime(stop,start)*CLOCKS_PER_SEC/1000000.);
-            czas4+=czas2;
+            czas4 = (difftime(stop, start) * CLOCKS_PER_SEC / 1000000.);
+            czas4 += czas2;
             drugi.GenerujWektory();
             wynik4 = drugi.fCelu();
 
@@ -155,27 +138,53 @@ void DoIT(string nazwapliku,std::list<Info*> &glowa) {
         }
     }
     plik.close();
-    
+
 }
 
-Info::Info(const string &nazwa, unsigned int WynikNieposortowanego, unsigned int WynikSortR, unsigned int CzasSortR,
-           unsigned int Wynik2Opt, unsigned int Czas2Opt, unsigned int WynikOba, unsigned int CzasOba, unsigned int ilosc) : nazwa(nazwa), WynikNieposortowanego(WynikNieposortowanego),
-                                                            WynikSortR(WynikSortR), CzasSortR(CzasSortR),
-                                                            Wynik2Opt(Wynik2Opt), Czas2Opt(Czas2Opt),
-                                                            WynikOba(WynikOba),CzasOba(CzasOba),ilosc(ilosc){}
 
-ostream& operator<<(std::ostream &Strm, const Info& klasa) {
+
+//*********************************************************************************************************************/
+
+
+
+
+///
+/// \param nazwa    Nazwa pliku z zadaniami
+/// \param WynikNieposortowanego    Wynik funkcji celu
+/// \param WynikSortR   Wynik funkcji celu po posortowaniu
+/// \param CzasSortR    Zmierzony czas sortowania w mikrosekundach
+/// \param Wynik2Opt    Wynik funkcji celu po uzyciu algorytmu 2 opt
+/// \param Czas2Opt     Zmierzony czas dzialania algorytmu
+/// \param WynikOba     Wynik funkcji celu po uzyciu algorytmu 2 opt oraz sortR
+/// \param CzasOba      Zmierzony czas dzialania obu algorytmow razem(mikrosekundy)
+/// \param ilosc        Liczba zadan w pliku
+Info::Info(const string &nazwa, unsigned int WynikNieposortowanego, unsigned int WynikSortR, unsigned int CzasSortR,
+           unsigned int Wynik2Opt, unsigned int Czas2Opt, unsigned int WynikOba, unsigned int CzasOba,
+           unsigned int ilosc) : nazwa(nazwa), WynikNieposortowanego(WynikNieposortowanego),
+                                 WynikSortR(WynikSortR), CzasSortR(CzasSortR),
+                                 Wynik2Opt(Wynik2Opt), Czas2Opt(Czas2Opt),
+                                 WynikOba(WynikOba), CzasOba(CzasOba), ilosc(ilosc) {}
+
+///
+/// \param Strm Referencja do strumienia wyjsciowego
+/// \param klasa Referencja do obiektu w ktorym zapisane sa informacje ktore czytamy
+/// \return Zwraca strumien z informacjami do wyswietlenia
+ostream &operator<<(std::ostream &Strm, const Info &klasa) {
     Strm << "*******************************************************************" << endl;
     Strm << "Plik:  " << klasa.nazwa << ", ilosc: " << klasa.ilosc << endl;
-    Strm << "Wynik algorytmu(12345): " << klasa.WynikNieposortowanego <<endl;
-    Strm << "Wynik algorytmu(sortR): " << klasa.WynikSortR << " Czas: " << klasa.CzasSortR <<endl;
-    Strm << "Wynik algorytmu(2opt): " << klasa.Wynik2Opt << " Czas: " << klasa.Czas2Opt <<endl;
+    Strm << "Wynik algorytmu(12345): " << klasa.WynikNieposortowanego << endl;
+    Strm << "Wynik algorytmu(sortR): " << klasa.WynikSortR << " Czas: " << klasa.CzasSortR << endl;
+    Strm << "Wynik algorytmu(2opt): " << klasa.Wynik2Opt << " Czas: " << klasa.Czas2Opt << endl;
     Strm << "Wynik algorytmu(SortR -> 2opt): " << klasa.WynikOba << " Czas: " << klasa.CzasOba << endl;
     Strm << "*******************************************************************" << endl;
 
     return Strm;
 }
 
+
+
+
+//              Getery
 unsigned int Info::getIlosc() const {
     return ilosc;
 }

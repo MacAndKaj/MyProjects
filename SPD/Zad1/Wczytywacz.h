@@ -13,6 +13,7 @@
 
 using namespace std;
 
+
 class Info{
     string nazwa;
     unsigned int ilosc;
@@ -40,21 +41,18 @@ public:
     );
     friend std::ostream& operator<<(std::ostream& Strm,const Info& klasa);
 
+
+    /******************     Gettery     ***********************************/
     unsigned int getIlosc() const;
-
     unsigned int getWynikNieposortowanego() const;
-
     unsigned int getWynikSortR() const;
-
     unsigned int getCzasSortR() const;
-
     unsigned int getWynik2Opt() const;
-
     unsigned int getCzas2Opt() const;
-
     unsigned int getWynikOba() const;
-
     unsigned int getCzasOba() const;
+
+    /**********************************************************************/
 };
 
 

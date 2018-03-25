@@ -5,6 +5,8 @@
 #include <iostream>
 #include "Zadanie.h"
 
+
+
 void Zadanie::Pokaz() {
     std::cout << "r = " << this->r << " p = " << this->p << " q = " << this->q << std::endl;
 
@@ -17,4 +19,4 @@ Zadanie::Zadanie(const Zadanie& arg){
     this->q=arg.getQ();
 }
 
-Zadanie::Zadanie() {}
+Zadanie::Zadanie() = default;

@@ -4,7 +4,6 @@
 #include "ZbiorZadan.h"
 #include "Wczytywacz.h"
 
-
 void DoplikuDlaWykresow(std::list<Info*> &head){
     ofstream plik;
     plik.open("PlikZWynikami.txt", ios::out);
@@ -61,15 +60,17 @@ void DoplikuDlaWykresow(std::list<Info*> &head){
 
 }
 
+
 int main() {
 //    std::list<Info*> head(0);
 //    DoIT("NazwyPlikow.txt",head);
 //    DoplikuDlaWykresow(head);
     ZbiorZadan zad;
-    zadania("in10.txt",zad);
-    std::cout << zad.Schrage() << std::endl;
-    
-    
+    zadania("in20.txt",zad);
+    zad.Schrage();
+    zad.GenerujWektory();
+    std::cout << zad.fCelu() << std::endl;
+
     return 0;
 }
 
