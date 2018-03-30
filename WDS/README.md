@@ -11,3 +11,6 @@ Arduino sends (using wireless connection by ESP-03) data from sensors to Qt Appl
 Arduino reads sensors data using I2C and by UART sends frame with information to ESP-03 connected with PC.
 
 
+Used libraries:
+    * https://github.com/jarzebski/Arduino-ADXL345.git
+    * https://github.com/pololu/lps-arduino.git
