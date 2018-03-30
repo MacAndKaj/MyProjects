@@ -12,5 +12,6 @@ Arduino reads sensors data using I2C and by UART sends frame with information to
 
 
 Used libraries:
+
     * https://github.com/jarzebski/Arduino-ADXL345.git
     * https://github.com/pololu/lps-arduino.git
