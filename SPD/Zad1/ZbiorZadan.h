@@ -20,7 +20,7 @@ private:
     void SetElementWektora(int&,Zadanie&);
     void setWektorZadan(std::vector<Zadanie> *WektorZadan);
 
-    void DoCarlier(std::vector<Zadanie>& wek,std::vector<Zadanie>*,std::vector<Zadanie>*,int &UB);
+    std::vector<Zadanie>* DoCarlier(std::vector<Zadanie>& wek,std::vector<Zadanie>*,std::vector<Zadanie>*,int &UB);
 
     /// Funkcja uogolniona dla jakiegokolwiek wektora z zadaniami
     /// \param wek wektor na ktorego kopii ma dzialac algorytm

@@ -267,7 +267,7 @@ ostream &operator<<(std::ostream &Strm, const Info &klasa) {
     else if(klasa.Wariant==Zad2){
         Strm << "*******************************************************************" << endl;
         Strm << "Plik:  " << klasa.nazwa << ", ilosc: " << klasa.ilosc << endl;
-        Strm << "Wynik algorytmu(Schrage): " << klasa.WynikSchrage << "Czas: " << klasa.CzasSchrage << endl;
+        Strm << "Wynik algorytmu(Schrage): " << klasa.WynikSchrage << " Czas: " << klasa.CzasSchrage << endl;
         Strm << "Wynik algorytmu(PrmtSchrage): " << klasa.WynikPreSchrage << " Czas: " << klasa.CzasPreSchrage << endl;
         Strm << "Wynik algorytmu(Carlier): " << klasa.WynikCarlier << " Czas: " << klasa.CzasCarlier << endl;
         Strm << "*******************************************************************" << endl;

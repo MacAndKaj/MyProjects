@@ -212,7 +212,6 @@ int ZbiorZadan::Schrage() {
 
     }
 
-//    std::cout << "Czas" << t << ". Permutacja:" << std::endl;
 
     delete this->WektorZadan;
     this->WektorZadan = new std::vector<Zadanie>();
@@ -226,21 +225,23 @@ int ZbiorZadan::Schrage() {
 
 int ZbiorZadan::Schrage(std::vector<Zadanie> &wek) {
     /**************************     Inicjalizacja potrzebnych zmiennych i struktur      ****************************/
-    int liczbaelementow = static_cast<int>(wek.size());
-    do {
-        for (unsigned long i = 0; i < liczbaelementow - 1; ++i) {
-            if (wek.operator[](i).getR() > wek.operator[](i + 1).getR()) {
-                this->zamien(i, i + 1);
-            }
-        }
-        liczbaelementow -= 1;
-    } while (liczbaelementow > 1);      //
+//    int liczbaelementow = static_cast<int>(wek.size());
+//    do {
+//        for (unsigned long i = 0; i < liczbaelementow - 1; ++i) {
+//            if (wek.operator[](i).getR() > wek.operator[](i + 1).getR()) {
+//                this->zamien(i, i + 1);
+//            }
+//        }
+//        liczbaelementow -= 1;
+//    } while (liczbaelementow > 1);      //
 
 
     //perm czesciowa zawiera indeksy kolejnych zadan, jest gotowy po skonczeniu dzialania algorutmy
     std::vector<Zadanie> PermutacjaCzesciowa;
     std::vector<Zadanie> Uporzadkowane;
     std::vector<Zadanie> Nieuporzadkowane;
+
+    std::vector<Zadanie>::iterator e;
     for (auto &i : wek) {
         Nieuporzadkowane.push_back(i);
     }
@@ -248,22 +249,38 @@ int ZbiorZadan::Schrage(std::vector<Zadanie> &wek) {
     unsigned int Cmax = 0;
 
     while (!Nieuporzadkowane.empty() || !Uporzadkowane.empty()) {
+        int MinRwN=0;
+        for(int i=0;i<Nieuporzadkowane.size();++i){
+            if (Nieuporzadkowane[i].getR()<Nieuporzadkowane[MinRwN].getR())MinRwN=i;
+        }
+        PusteG:
+        while (!Nieuporzadkowane.empty() && (Nieuporzadkowane[MinRwN].getR() <= t)) {
 
-        pusteG:
-        while (!Nieuporzadkowane.empty() && (Nieuporzadkowane.begin()->getR() <= t)) {
-
-            Uporzadkowane.push_back(*Nieuporzadkowane.begin());
-            Nieuporzadkowane.erase(Nieuporzadkowane.begin());
+            e=Nieuporzadkowane.begin()+MinRwN;
+            Uporzadkowane.push_back(*e);
+            Nieuporzadkowane.erase(e);
+            MinRwN=0;
+            for(int i=0;i<Nieuporzadkowane.size();++i){
+                if (Nieuporzadkowane[i].getR()<Nieuporzadkowane[MinRwN].getR())MinRwN=i;
+            }
         }
         if (Uporzadkowane.empty()) {
-            t = Nieuporzadkowane.begin()->getR();
-            goto pusteG;
+            int tmp=0;
+            for(int i=0;i<Nieuporzadkowane.size();++i){
+                if (Nieuporzadkowane[i].getR()<Nieuporzadkowane[tmp].getR())tmp=i;
+            }
+            t = Nieuporzadkowane[tmp].getR();
+            goto PusteG;
         }
 
-        sortmax(Uporzadkowane);                                 //Szukamy zadania z najwiekszym q
+        int tmp=0;
+        for(int i=0;i<Uporzadkowane.size();++i){
+            if(Uporzadkowane[i].getQ() > Uporzadkowane[tmp].getQ()) tmp=i;
+        }
+        e=Uporzadkowane.begin()+tmp;
 
-        PermutacjaCzesciowa.push_back(*Uporzadkowane.begin());
-        Uporzadkowane.erase(Uporzadkowane.begin());
+        PermutacjaCzesciowa.push_back(*e);
+        Uporzadkowane.erase(e);
 
         t = t + (PermutacjaCzesciowa.back().getP());
 
@@ -273,6 +290,7 @@ int ZbiorZadan::Schrage(std::vector<Zadanie> &wek) {
     wek.clear();
     for(auto &i : PermutacjaCzesciowa){
         wek.push_back(i);
+        i.Pokaz();
     }
 
     return CmaxWek(PermutacjaCzesciowa);
@@ -378,7 +396,6 @@ int ZbiorZadan::SchragePrmt(std::vector<Zadanie> &wek) {
 
 int ZbiorZadan::Carlier() {
     //----------struktury pomocnicze--------------
-    int UB = this->fCelu();
     std::vector<Zadanie> VECTORrpq;
     std::vector<Zadanie> *Permutacja = new std::vector<Zadanie>();
     std::vector<Zadanie> *PermOpt = new std::vector<Zadanie>();
@@ -387,36 +404,19 @@ int ZbiorZadan::Carlier() {
         VECTORrpq.push_back(i);
         Permutacja->push_back(i);
     }
+    int UB = CmaxWek(*Permutacja);
 
-    this->DoCarlier(VECTORrpq, Permutacja, PermOpt, UB);
-
-//    std::cout << "permutacja:" << std::endl;
-//    for(auto &i : *Permutacja){
-//        i.Pokaz();
-//    }
-//    std::cout << "Cmax: " << CmaxWek(*Permutacja)<< std::endl;
-//
-//    std::cout << "optymalna opermutacja:" << std::endl;
-//    for(auto &i : *PermOpt){
-//        i.Pokaz();
-//    }
-//
-//    std::cout << "Cmax: " << CmaxWek(*PermOpt)<< std::endl;
-
+    int CmaxRet = CmaxWek(*this->DoCarlier(VECTORrpq, Permutacja, PermOpt, UB));
 
     delete this->WektorZadan;
     this->WektorZadan=PermOpt;
     delete Permutacja;
 
-//    std::cout << "optymalna opermutacja:" << std::endl;
-//    for(auto &i : *this->WektorZadan){
-//        i.Pokaz();
-//    }
-    return CmaxWek(*PermOpt);
+    return CmaxRet;
 }
 
 
-void ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::vector<Zadanie> *Perm, std::vector<Zadanie> *PermOpt,
+std::vector<Zadanie> * ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::vector<Zadanie> *Perm, std::vector<Zadanie> *PermOpt,
                       int &UB) {
     int CmaxPI=0;
     unsigned int rPRIM=0, pPRIM=0, qPRIM=0;
@@ -425,9 +425,6 @@ void ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::vector<Zadanie> *P
     int U = this->Schrage(*Perm);
     int LB = 0;
 
-//    for(auto &i : *Perm){
-//        i.Pokaz();
-//    }
 
     if (U < UB) {
         UB = U;
@@ -437,7 +434,6 @@ void ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::vector<Zadanie> *P
             PermOpt->push_back(i);
         }
     }
-
 
     //------------------------------------Wyznaczanie bloku (a,b) oraz zadania c ----------------------------
     CmaxPI=CmaxWek(*Perm);
@@ -469,7 +465,7 @@ void ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::vector<Zadanie> *P
     for (int i = IterA; i <= IterB; ++i) {
         if (Perm->operator[](i).getQ() < Perm->operator[](IterB).getQ()) IterC=i;
     }
-    if (IterC == -1) return;
+    if (IterC == -1) return Perm;
     else c = (Perm->begin()+IterC);
     //---------------------------------------------------------------------------------------------------------
     //----------------------Wyznaczamy rPrim,pPrim,qPrim-------------------------------------------------------
@@ -486,11 +482,19 @@ void ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::vector<Zadanie> *P
         pPRIM+=Perm->operator[](l).getP();
     }
 
+    std::cout << "=====================================" << std::endl;
+    for(auto &i : *Perm){
+        i.Pokaz();
+    }
+    std::cout << "-------------------------------------" << std::endl;
 
     rDoOdtworzenia=c->getR();
     c->setR(std::max(c->getR(),rPRIM+pPRIM));
+    for(auto &i : *Perm){
+        i.Pokaz();
+    }
+    std::cout << "=====================================" << std::endl;
 
-    //----------------------------------------------------------------------------------------------------------
     LB = this->SchragePrmt(*Perm);
     if (LB < UB) {
         this->DoCarlier(wekRPQ, Perm, PermOpt, UB);
@@ -507,6 +511,7 @@ void ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::vector<Zadanie> *P
         this->DoCarlier(wekRPQ, Perm, PermOpt, UB);
     }
     c->setQ(qDoOdtworzenia);
+    return PermOpt;
 }
 
 
