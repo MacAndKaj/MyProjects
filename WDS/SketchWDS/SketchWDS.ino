@@ -55,6 +55,7 @@ void loop()
   
   Serial.println("\nPressure sensor data:");
   Serial.print("\nPressure: ");Serial.print(dataToSend.Pressure_hPa);Serial.print(" hPa");
+  Serial.print("\nHeight: ");Serial.print(PressureSensor.pressureToAltitudeMeters(dataToSend.Pressure_hPa));
   delay(1000);
 
 }
