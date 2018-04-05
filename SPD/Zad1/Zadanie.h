@@ -41,6 +41,8 @@ public:
 
     void Pokaz();
 
+    void setR(unsigned int r);
+
     void setP(unsigned int p);
 
     void setQ(unsigned int q);

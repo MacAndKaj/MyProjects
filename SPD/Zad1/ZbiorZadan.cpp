@@ -58,6 +58,8 @@ void swapElements(std::vector<Zadanie> &wek, int i, int j) {
     wek.operator[](j) = temp;
 }
 
+/// Algorytm sortowania babelkowego od najwiekszego q do najmniejszego
+/// \param wek Wektor do sortowania.
 void sortmax(std::vector<Zadanie> &wek) {
     auto liczbaelementow = static_cast<int>(wek.size());
     do {
@@ -70,7 +72,45 @@ void sortmax(std::vector<Zadanie> &wek) {
     } while (liczbaelementow > 1);
 }
 
+int CzasZakonczeniaZadania(std::vector<Zadanie> &wek,int i){
+    if(wek.empty()) return 0;
+    std::vector<int> S, C;
+    S.push_back(wek.begin()->getR());
+    C.push_back(*S.begin() + wek.begin()->getP());
 
+    for (auto i = ++wek.begin(); i != wek.end(); ++i) {
+        S.push_back((int &&) std::max(i->getR(), S.back() + (i - 1)->getP()));
+        C.push_back(S.back() + i->getP());
+    }
+
+    return C[i];
+}
+
+/// Uogolnienie wyliczania Cmax dla kazdego wektora zadan
+/// \param wek Wektor z zadaniami.
+/// \return Cmax wektora
+int CmaxWek(std::vector<Zadanie> &wek) {
+    if(wek.empty()) return 0;
+    std::vector<int> S, C;
+    S.push_back(wek.begin()->getR());
+    C.push_back(*S.begin() + wek.begin()->getP());
+
+    for (auto i = ++wek.begin(); i != wek.end(); ++i) {
+        S.push_back((int &&) std::max(i->getR(), S.back() + (i - 1)->getP()));
+        C.push_back(S.back() + i->getP());
+    }
+    int i = 0;
+    int Cmax = C[i] + wek[i].getQ();
+    int n = static_cast<int>(wek.size());
+    int temp;
+    for (i = 1; i < n; ++i) {
+        temp = C[i] + wek[i].getQ();
+        if (temp > Cmax)
+            Cmax = temp;
+    }
+
+    return Cmax;
+}
 
 //****************          Konstruktory i destruktory      **************
 
@@ -140,10 +180,68 @@ int ZbiorZadan::Schrage() {
     std::vector<Zadanie>::iterator iter;
     //perm czesciowa zawiera indeksy kolejnych zadan, jest gotowy po skonczeniu dzialania algorutmy
     std::vector<Zadanie> PermutacjaCzesciowa;
-    std::vector<Zadanie> Uporzadkowane;
+    std::vector<Zadanie> Gotowe;
 
     std::vector<Zadanie> Nieuporzadkowane;
     for (auto &i : *this->WektorZadan) {
+        Nieuporzadkowane.push_back(i);
+    }
+    unsigned int t = 0;
+    unsigned int Cmax = 0;
+
+    while (!Nieuporzadkowane.empty() || !Gotowe.empty()) {
+
+        pusteG:
+        while (!Nieuporzadkowane.empty() && (Nieuporzadkowane.begin()->getR() <= t)) {
+            Gotowe.push_back(*Nieuporzadkowane.begin());
+            Nieuporzadkowane.erase(Nieuporzadkowane.begin());
+        }
+        if (Gotowe.empty()) {
+            t = Nieuporzadkowane.begin()->getR();
+            goto pusteG;
+        }
+
+        sortmax(Gotowe);                                 //Szukamy zadania z najwiekszym q
+
+        PermutacjaCzesciowa.push_back(*Gotowe.begin());
+        Gotowe.erase(Gotowe.begin());
+
+        t = t + (PermutacjaCzesciowa.back().getP());
+
+        Cmax = std::max(Cmax, t + PermutacjaCzesciowa.back().getQ());
+
+    }
+
+//    std::cout << "Czas" << t << ". Permutacja:" << std::endl;
+
+    delete this->WektorZadan;
+    this->WektorZadan = new std::vector<Zadanie>();
+    for (auto &i : PermutacjaCzesciowa) {
+//        i.Pokaz();
+        this->WektorZadan->push_back(i);
+    }
+
+    return CmaxWek(PermutacjaCzesciowa);
+}
+
+int ZbiorZadan::Schrage(std::vector<Zadanie> &wek) {
+    /**************************     Inicjalizacja potrzebnych zmiennych i struktur      ****************************/
+    int liczbaelementow = static_cast<int>(wek.size());
+    do {
+        for (unsigned long i = 0; i < liczbaelementow - 1; ++i) {
+            if (wek.operator[](i).getR() > wek.operator[](i + 1).getR()) {
+                this->zamien(i, i + 1);
+            }
+        }
+        liczbaelementow -= 1;
+    } while (liczbaelementow > 1);      //
+
+
+    //perm czesciowa zawiera indeksy kolejnych zadan, jest gotowy po skonczeniu dzialania algorutmy
+    std::vector<Zadanie> PermutacjaCzesciowa;
+    std::vector<Zadanie> Uporzadkowane;
+    std::vector<Zadanie> Nieuporzadkowane;
+    for (auto &i : wek) {
         Nieuporzadkowane.push_back(i);
     }
     unsigned int t = 0;
@@ -153,6 +251,7 @@ int ZbiorZadan::Schrage() {
 
         pusteG:
         while (!Nieuporzadkowane.empty() && (Nieuporzadkowane.begin()->getR() <= t)) {
+
             Uporzadkowane.push_back(*Nieuporzadkowane.begin());
             Nieuporzadkowane.erase(Nieuporzadkowane.begin());
         }
@@ -162,31 +261,22 @@ int ZbiorZadan::Schrage() {
         }
 
         sortmax(Uporzadkowane);                                 //Szukamy zadania z najwiekszym q
-        std::cout << "*************************************************" << std::endl;
-        for (auto &i : Uporzadkowane) {
-            i.Pokaz();
-        }
-        std::cout << "**************************************************" << std::endl << std::endl;
 
         PermutacjaCzesciowa.push_back(*Uporzadkowane.begin());
         Uporzadkowane.erase(Uporzadkowane.begin());
 
         t = t + (PermutacjaCzesciowa.back().getP());
 
-        Cmax = std::max(Cmax, t + PermutacjaCzesciowa.begin()->getQ());
+        Cmax = std::max(Cmax, t + PermutacjaCzesciowa.back().getQ());
 
     }
-
-    std::cout << "Czas" << t << ". Permutacja:" << std::endl;
-
-    delete this->WektorZadan;
-    this->WektorZadan = new std::vector<Zadanie>();
-    for (auto &i : PermutacjaCzesciowa) {
-        i.Pokaz();
-        this->WektorZadan->push_back(i);
+    wek.clear();
+    for(auto &i : PermutacjaCzesciowa){
+        wek.push_back(i);
     }
 
-    return Cmax;
+    return CmaxWek(PermutacjaCzesciowa);
+
 }
 
 int ZbiorZadan::SchragePrmt() {
@@ -213,7 +303,7 @@ int ZbiorZadan::SchragePrmt() {
             if (Gotowe_Do_Realizacji.crbegin()->getQ() > l.getQ()) {
                 l.setP(t - Gotowe_Do_Realizacji.crbegin()->getR());
                 t = Gotowe_Do_Realizacji.crbegin()->getR();
-                if(l.getP()>0){
+                if (l.getP() > 0) {
                     Gotowe_Do_Realizacji.push_back(l);
                 }
             }
@@ -232,6 +322,193 @@ int ZbiorZadan::SchragePrmt() {
 
     return Cmax;
 }
+
+int ZbiorZadan::SchragePrmt(std::vector<Zadanie> &wek) {
+
+    int liczbaelementow = static_cast<int>(wek.size());
+    do {
+        for (unsigned long i = 0; i < liczbaelementow - 1; ++i) {
+            if (wek.operator[](i).getR() > wek.operator[](i + 1).getR()) {
+                this->zamien(i, i + 1);
+            }
+        }
+        liczbaelementow -= 1;
+    } while (liczbaelementow > 1);      //
+
+    std::vector<Zadanie> Gotowe_Do_Realizacji;
+    std::vector<Zadanie> Nieuszeregowane;
+
+    //Algorytm bedzie dzialal na kopii
+    for (auto &i : wek) {
+        Nieuszeregowane.push_back(i);
+
+    }
+    Zadanie l(0, 0, 99999);
+
+    unsigned int t = 0;
+    unsigned int Cmax = 0;
+
+    while (!Nieuszeregowane.empty() || !Gotowe_Do_Realizacji.empty()) {
+
+        pusteG:
+        while (!Nieuszeregowane.empty() && (Nieuszeregowane.begin()->getR() <= t)) {
+            Gotowe_Do_Realizacji.push_back(*Nieuszeregowane.begin());
+            if (Gotowe_Do_Realizacji.crbegin()->getQ() > l.getQ()) {
+                l.setP(t - Gotowe_Do_Realizacji.crbegin()->getR());
+                t = Gotowe_Do_Realizacji.crbegin()->getR();
+                if (l.getP() > 0) {
+                    Gotowe_Do_Realizacji.push_back(l);
+                }
+            }
+            Nieuszeregowane.erase(Nieuszeregowane.begin());
+        }
+        if (Gotowe_Do_Realizacji.empty()) {
+            t = Nieuszeregowane.begin()->getR();
+            goto pusteG;
+        }
+        sortmax(Gotowe_Do_Realizacji);  //Szukamy zadania z najwiekszym q
+        l = *Gotowe_Do_Realizacji.begin();
+        Gotowe_Do_Realizacji.erase(Gotowe_Do_Realizacji.begin());
+        t = t + l.getP();
+        Cmax = std::max(Cmax, t + l.getQ());
+    }
+
+    return Cmax;
+}
+
+int ZbiorZadan::Carlier() {
+    //----------struktury pomocnicze--------------
+    int UB = this->fCelu();
+    std::vector<Zadanie> VECTORrpq;
+    std::vector<Zadanie> *Permutacja = new std::vector<Zadanie>();
+    std::vector<Zadanie> *PermOpt = new std::vector<Zadanie>();
+    //--------------------------------------------
+    for (auto &i : *this->WektorZadan) {
+        VECTORrpq.push_back(i);
+        Permutacja->push_back(i);
+    }
+
+    this->DoCarlier(VECTORrpq, Permutacja, PermOpt, UB);
+
+//    std::cout << "permutacja:" << std::endl;
+//    for(auto &i : *Permutacja){
+//        i.Pokaz();
+//    }
+//    std::cout << "Cmax: " << CmaxWek(*Permutacja)<< std::endl;
+//
+//    std::cout << "optymalna opermutacja:" << std::endl;
+//    for(auto &i : *PermOpt){
+//        i.Pokaz();
+//    }
+//
+//    std::cout << "Cmax: " << CmaxWek(*PermOpt)<< std::endl;
+
+
+    delete this->WektorZadan;
+    this->WektorZadan=PermOpt;
+    delete Permutacja;
+
+//    std::cout << "optymalna opermutacja:" << std::endl;
+//    for(auto &i : *this->WektorZadan){
+//        i.Pokaz();
+//    }
+    return CmaxWek(*PermOpt);
+}
+
+
+void ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::vector<Zadanie> *Perm, std::vector<Zadanie> *PermOpt,
+                      int &UB) {
+    int CmaxPI=0;
+    unsigned int rPRIM=0, pPRIM=0, qPRIM=0;
+    unsigned int rDoOdtworzenia=0,qDoOdtworzenia=0;
+    std::vector<Zadanie>::iterator a,b,c;
+    int U = this->Schrage(*Perm);
+    int LB = 0;
+
+//    for(auto &i : *Perm){
+//        i.Pokaz();
+//    }
+
+    if (U < UB) {
+        UB = U;
+        if (PermOpt != nullptr)delete PermOpt;
+        PermOpt = new std::vector<Zadanie>();
+        for (auto &i : *Perm) {
+            PermOpt->push_back(i);
+        }
+    }
+
+
+    //------------------------------------Wyznaczanie bloku (a,b) oraz zadania c ----------------------------
+    CmaxPI=CmaxWek(*Perm);
+    int iter= static_cast<int>(Perm->size());
+    bool found = false;
+    while(!found && iter >= 0){
+        if(CmaxPI == (CzasZakonczeniaZadania(*Perm,iter)+(Perm->operator[](iter).getQ())))
+            found=true;
+        else --iter;
+    }
+    int IterB=iter;
+    b=(Perm->begin()+IterB);
+
+    found = false;
+    iter = 0;
+    while(!found && iter < IterB){
+        int suma=0;
+        for(int s=iter;s<=IterB;++s){
+            suma+=Perm->operator[](s).getP();
+        }
+        if((Perm->operator[](iter).getR()+suma+(Perm->operator[](IterB).getQ())) == CmaxPI)
+            found=true;
+        else ++iter;
+    }
+    int IterA=iter;
+    a=(Perm->begin()+IterA);
+
+    int IterC=-1;
+    for (int i = IterA; i <= IterB; ++i) {
+        if (Perm->operator[](i).getQ() < Perm->operator[](IterB).getQ()) IterC=i;
+    }
+    if (IterC == -1) return;
+    else c = (Perm->begin()+IterC);
+    //---------------------------------------------------------------------------------------------------------
+    //----------------------Wyznaczamy rPrim,pPrim,qPrim-------------------------------------------------------
+    rPRIM=9999;
+    for (int j = IterC+1; j <= IterB; ++j) {
+        if(Perm->operator[](j).getR() < rPRIM) rPRIM=Perm->operator[](j).getR();
+    }
+    qPRIM=9999;
+    for (int k = IterC+1; k <= IterB; ++k) {
+        if(Perm->operator[](k).getQ() < qPRIM) qPRIM=Perm->operator[](k).getQ();
+    }
+    pPRIM=0;
+    for (int l = IterC+1; l <= IterB; ++l) {
+        pPRIM+=Perm->operator[](l).getP();
+    }
+
+
+    rDoOdtworzenia=c->getR();
+    c->setR(std::max(c->getR(),rPRIM+pPRIM));
+
+    //----------------------------------------------------------------------------------------------------------
+    LB = this->SchragePrmt(*Perm);
+    if (LB < UB) {
+        this->DoCarlier(wekRPQ, Perm, PermOpt, UB);
+    }
+
+    c->setR(rDoOdtworzenia);
+
+
+    qDoOdtworzenia=c->getQ();
+    c->setQ(std::max(c->getQ(),qPRIM+pPRIM));
+
+    LB = this->SchragePrmt(*Perm);
+    if (LB < UB) {
+        this->DoCarlier(wekRPQ, Perm, PermOpt, UB);
+    }
+    c->setQ(qDoOdtworzenia);
+}
+
 
 void ZbiorZadan::S() {
     int temp;
@@ -298,6 +575,7 @@ int ZbiorZadan::fCelu() {
         if (temp > Cmax)
             Cmax = temp;
     }
+
     return Cmax;
 }
 
@@ -362,6 +640,10 @@ void ZbiorZadan::zamien(int i, int j) {
     this->WektorZadan->operator[](i) = this->WektorZadan->operator[](j);
     this->WektorZadan->operator[](j) = temp;
 }
+
+//int ZbiorZadan::test() {
+//    return this->Schrage(*this->WektorZadan);
+//}
 
 
 

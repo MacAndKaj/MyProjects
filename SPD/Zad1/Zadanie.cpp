@@ -27,5 +27,9 @@ void Zadanie::setQ(unsigned int q) {
     Zadanie::q = q;
 }
 
+void Zadanie::setR(unsigned int r) {
+    Zadanie::r = r;
+}
+
 
 Zadanie::Zadanie() = default;

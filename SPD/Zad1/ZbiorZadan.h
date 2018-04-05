@@ -17,9 +17,21 @@ private:
     std::vector<int> *wekC;
 
     Zadanie& GetElementWektora(int) const;
-
     void SetElementWektora(int&,Zadanie&);
     void setWektorZadan(std::vector<Zadanie> *WektorZadan);
+
+    void DoCarlier(std::vector<Zadanie>& wek,std::vector<Zadanie>*,std::vector<Zadanie>*,int &UB);
+
+    /// Funkcja uogolniona dla jakiegokolwiek wektora z zadaniami
+    /// \param wek wektor na ktorego kopii ma dzialac algorytm
+    /// \return Zwraca Cmax
+    int Schrage(std::vector<Zadanie>& wek);
+
+    /// Funkcja uogolniona dla jakiegokolwiek wektora z zadaniami
+    /// \param wek Wektor na ktorego kopii ma dzialac algorytm
+    /// \return Zwraca optymalne Cmax
+    int SchragePrmt(std::vector<Zadanie>& wek);
+
 
     void GenerujWektory();
     void S();
@@ -30,7 +42,6 @@ private:
 public:
     ZbiorZadan();
     virtual ~ZbiorZadan();
-
     //zadania na SPD***************
 
     /// Algorytm sortR polegajacy na sortowaniu zadan ze wzgledu na r, uzyto sortowania babelkowego.
@@ -51,7 +62,10 @@ public:
     /// \return Zwraca Cmax tak jak funkcja Schrage().
     int SchragePrmt();
 
-
+    /// Algorytm Carlier tworzacy optymalna permutacje wykonania zadan na maszynie
+    /// \param UB Gorne oszacowanie wartosci funkcji celu
+    /// \return zwraca optymalna permutacje
+    int Carlier();
     //************************
     int getLElem() const;
     void setLElem(int LElem);
@@ -66,6 +80,7 @@ public:
 
     /// Funkcja zamieniajaca miejscami 2 elementy wektora zadan.
     void zamien(int,int);
+//    int test();
 
 };
 
