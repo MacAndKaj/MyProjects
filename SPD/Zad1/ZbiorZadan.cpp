@@ -35,7 +35,6 @@ int Iterator_Zad_Max_Q(std::vector<Zadanie> &wek) {
     auto temp = wek.begin();
     int indeks = 0, loc = 0;
     for (auto it = wek.begin(); it != wek.end(); ++it) {
-        std::cout << "Porownuje: " << it->getQ() << " z " << temp->getQ() << std::endl;
         if ((*temp).getQ() < (*it).getQ()) {
 
             temp = it;
@@ -43,7 +42,6 @@ int Iterator_Zad_Max_Q(std::vector<Zadanie> &wek) {
         }
         ++loc;
     }
-    std::cout << "indeks: " << indeks << std::endl;
     return indeks;
 }
 
@@ -216,7 +214,6 @@ int ZbiorZadan::Schrage() {
     delete this->WektorZadan;
     this->WektorZadan = new std::vector<Zadanie>();
     for (auto &i : PermutacjaCzesciowa) {
-//        i.Pokaz();
         this->WektorZadan->push_back(i);
     }
 
@@ -290,7 +287,7 @@ int ZbiorZadan::Schrage(std::vector<Zadanie> &wek) {
     wek.clear();
     for(auto &i : PermutacjaCzesciowa){
         wek.push_back(i);
-        i.Pokaz();
+//        i.Pokaz();
     }
 
     return CmaxWek(PermutacjaCzesciowa);
@@ -482,18 +479,9 @@ std::vector<Zadanie> * ZbiorZadan::DoCarlier(std::vector<Zadanie> &wekRPQ, std::
         pPRIM+=Perm->operator[](l).getP();
     }
 
-    std::cout << "=====================================" << std::endl;
-    for(auto &i : *Perm){
-        i.Pokaz();
-    }
-    std::cout << "-------------------------------------" << std::endl;
 
     rDoOdtworzenia=c->getR();
     c->setR(std::max(c->getR(),rPRIM+pPRIM));
-    for(auto &i : *Perm){
-        i.Pokaz();
-    }
-    std::cout << "=====================================" << std::endl;
 
     LB = this->SchragePrmt(*Perm);
     if (LB < UB) {
