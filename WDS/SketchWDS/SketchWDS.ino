@@ -42,20 +42,14 @@ void loop()
 
   
   
-  Serial.println("\nAccelerometer data:");
-  Serial.print("X-Axis: ");Serial.print(dataToSend.Acc_Raw.XAxis);
-  Serial.print("\nY-Axis: ");Serial.print(dataToSend.Acc_Raw.YAxis);
-  Serial.print("\nZ-Axis: ");Serial.print(dataToSend.Acc_Raw.ZAxis);
-  Serial.println("\n****************************");
-  
+  Serial.println("**********************************************");
   Serial.println("Accelerometer data normalized:");
   Serial.print("X-Axis: ");Serial.print(dataToSend.Acc_Norm.XAxis);
   Serial.print("\nY-Axis: ");Serial.print(dataToSend.Acc_Norm.YAxis);
   Serial.print("\nZ-Axis: ");Serial.print(dataToSend.Acc_Norm.ZAxis);
-  
   Serial.println("\nPressure sensor data:");
-  Serial.print("\nPressure: ");Serial.print(dataToSend.Pressure_hPa);Serial.print(" hPa");
-  Serial.print("\nHeight: ");Serial.print(PressureSensor.pressureToAltitudeMeters(dataToSend.Pressure_hPa));
+  Serial.print("\nPressure: ");Serial.print(dataToSend.Pressure_hPa);Serial.print(" hPa\n");
+  Serial.println("**********************************************\n");
   delay(1000);
 
 }

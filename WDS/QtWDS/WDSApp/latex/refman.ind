@@ -1,0 +1,3173 @@
+\begin{theindex}
+
+  \item {accepted}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{319}
+  \item {add}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{152, 153}
+  \item {add\+Axes}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{71}
+  \item {add\+Axis}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{71}
+  \item {add\+Data}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{103}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{144}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{170, 171}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{182}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{192}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{323}
+  \item {add\+Data\+Range}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{164}
+  \item {add\+Element}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{262}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{271}
+  \item {add\+Graph}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {add\+Item}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{277}
+  \item {add\+Layer}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {add\+Tick}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{95}
+  \item {add\+Ticks}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{95, 96}
+  \item {add\+To\+Legend}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{34}
+  \item {adjusted}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{159}
+  \item {ae\+All}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Axes}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Fills}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Grid}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Items}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Legend}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Legend\+Items}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+None}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Other}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Plottables}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Scatters}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Sub\+Grid}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ae\+Zero\+Line}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {after\+Replot}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{347}
+  \item {alpha}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{129}
+  \item {anchor}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{21}
+  \item {anchors}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{21}
+  \item {Antialiased\+Element}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {append}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{113}
+  \item {apply\+Brush}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{312}
+  \item {apply\+Pen}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{312}
+  \item {apply\+To}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{308}
+  \item {at}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{153}
+  \item {at\+Bottom}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{50}
+  \item {at\+Left}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{50}
+  \item {at\+Right}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{50}
+  \item {at\+Top}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{50}
+  \item {axes}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{71}
+  \item {axis}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{71}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{136}
+  \item {axis\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{347}
+  \item {axis\+Count}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{72}
+  \item {axis\+Double\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{347}
+  \item {axis\+Rect}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{347}
+  \item {axis\+Rect\+At}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{348}
+  \item {axis\+Rect\+Count}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{348}
+  \item {axis\+Rects}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{348}
+  \item {Axis\+Type}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{50}
+
+  \indexspace
+
+  \item {bar\+Above}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{104}
+  \item {bar\+Below}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{104}
+  \item {bars}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{113}
+  \item {before\+Replot}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{348}
+  \item {begin}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{153}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{290}
+  \item {bottom}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{72}
+  \item {bottom\+Left}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{72}
+  \item {bottom\+Right}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{72}
+  \item {bounded}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{159}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{299}
+  \item {Bracket\+Style}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{204}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{315}
+  \item {bs\+Calligraphic}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{204}
+  \item {bs\+Curly}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{204}
+  \item {bs\+Ellipse}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{315}
+  \item {bs\+Half\+Ellipse}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{315}
+  \item {bs\+Plus}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{315}
+  \item {bs\+Round}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{204}
+  \item {bs\+Square}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{204}
+  \item {bs\+Square\+Bracket}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{315}
+  \item {bs\+User\+Style}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{315}
+
+  \indexspace
+
+  \item {cancel}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{319}
+  \item {canceled}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{319}
+  \item {cell\+To\+Coord}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{129}
+  \item {center}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{72}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{299}
+  \item {changed}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{319}
+  \item {Chart\+Style}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{181}
+  \item {children}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{241}
+  \item {ci\+H\+SV}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{116}
+  \item {ci\+R\+GB}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{116}
+  \item {clear}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{29}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{96}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{113}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{129}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{153}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{164}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{250}
+    \subitem {Q\+C\+P\+Margin\+Group}, \hyperpage{286}
+    \subitem {Q\+C\+P\+Paint\+Buffer\+Pixmap}, \hyperpage{288}
+  \item {clear\+Alpha}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{130}
+  \item {clear\+Color\+Stops}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {clear\+Graphs}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{349}
+  \item {clear\+Items}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{277}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{349}
+  \item {clear\+Plottables}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{349}
+  \item {clicked}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{333}
+  \item {Color\+Interpolation}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{116}
+  \item {color\+Maps}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{136}
+  \item {colorize}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117, 118}
+  \item {column\+Count}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{262}
+  \item {Condition}, \hyperpage{15}
+  \item {const\+Begin}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{153}
+  \item {const\+End}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{154}
+  \item {contains}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{113}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{160}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{164}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{299}
+  \item {coord\+To\+Cell}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{130}
+  \item {coord\+To\+Pixel}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{52}
+  \item {coords\+To\+Pixels}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{34}
+  \item {copy\+From}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{312}
+  \item {create\+Tick\+Vector}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{96}
+  \item {cs\+Candlestick}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{181}
+  \item {cs\+Ohlc}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{181}
+  \item {current\+Layer}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{349}
+
+  \indexspace
+
+  \item {data}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{104}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{123}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{144}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{171}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{182}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{192}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{323}
+  \item {data\+Count}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{43}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{171}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{293}
+  \item {data\+Main\+Key}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{43}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{172}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{293}
+  \item {data\+Main\+Value}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{43}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{172}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{294}
+  \item {data\+Pixel\+Position}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{43}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{104}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{172}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{294}
+  \item {data\+Point\+Count}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{164}
+  \item {data\+Range}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{154}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{164}
+  \item {data\+Range\+Changed}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{123}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{136}
+  \item {data\+Range\+Count}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{164}
+  \item {data\+Ranges}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{164}
+  \item {data\+Scale\+Type\+Changed}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{123}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{136}
+  \item {data\+Sort\+Key}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{43}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{172}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{294}
+  \item {data\+Value\+Range}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{44}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{172}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{294}
+  \item {date\+Time\+To\+Key}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Date\+Time}, \hyperpage{86}
+  \item {deselect\+All}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{349}
+  \item {distance\+Squared\+To\+Line}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{338}
+  \item {distance\+To\+Straight\+Line}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{338}
+  \item {done\+Painting}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{29}
+  \item {dot}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{339}
+  \item {double\+Clicked}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{333}
+  \item {draw}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{29}
+    \subitem {Q\+C\+P\+Paint\+Buffer\+Pixmap}, \hyperpage{288}
+  \item {draw\+Bracket}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{316}
+  \item {draw\+Decoration}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{313}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{316}
+  \item {draw\+Line}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{290}
+  \item {draw\+Polyline}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{44}
+  \item {draw\+Shape}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{308, 309}
+  \item {draw\+Statistical\+Box}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{323}
+
+  \indexspace
+
+  \item {element}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{262}
+  \item {element\+At}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{250}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{263}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{271}
+  \item {element\+Count}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{250}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{263}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{271}
+  \item {elements}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{72}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{250}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{263}
+    \subitem {Q\+C\+P\+Margin\+Group}, \hyperpage{286}
+  \item {end}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{154}
+  \item {Ending\+Style}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {enforce\+Type}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{165}
+  \item {ep\+Allow\+Cosmetic}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {ep\+No\+Cosmetic}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {Error\+Type}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{170}
+  \item {es\+Bar}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+Diamond}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+Disc}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+Flat\+Arrow}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+Half\+Bar}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+Line\+Arrow}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+None}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+Skewed\+Bar}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+Spike\+Arrow}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {es\+Square}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{283}
+  \item {et\+Key\+Error}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{170}
+  \item {et\+Value\+Error}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{170}
+  \item {expand}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{300}
+  \item {expand\+To}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{263}
+  \item {expanded}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{160}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{300}
+  \item {Export\+Pen}
+    \subitem {Q\+CP}, \hyperpage{10}
+
+  \indexspace
+
+  \item {fill}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{130}
+  \item {fill\+Alpha}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{130}
+  \item {Fill\+Order}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{261}
+  \item {find\+Begin}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{44}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{154}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{172}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{294}
+  \item {find\+End}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{44}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{154}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{173}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{295}
+  \item {fo\+Columns\+First}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{261}
+  \item {fo\+Rows\+First}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{261}
+  \item {Fraction\+Style}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{93}
+  \item {from\+Sort\+Key}
+    \subitem {Q\+C\+P\+Bars\+Data}, \hyperpage{109}
+    \subitem {Q\+C\+P\+Curve\+Data}, \hyperpage{149}
+    \subitem {Q\+C\+P\+Financial\+Data}, \hyperpage{188}
+    \subitem {Q\+C\+P\+Graph\+Data}, \hyperpage{197}
+    \subitem {Q\+C\+P\+Statistical\+Box\+Data}, \hyperpage{329}
+  \item {fs\+Ascii\+Fractions}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{93}
+  \item {fs\+Floating\+Point}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{93}
+  \item {fs\+Unicode\+Fractions}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{93}
+
+  \indexspace
+
+  \item {generate}
+    \subitem {Q\+C\+P\+Axis\+Ticker}, \hyperpage{84}
+  \item {get\+Data\+Segments}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{45}
+  \item {get\+Final\+Scatter\+Style}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{313}
+  \item {get\+Key\+Range}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{35}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{104}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{123}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{145}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{173}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{183}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{192}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{324}
+  \item {get\+Part\+At}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{52}
+  \item {get\+Sub\+Tick\+Count}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{96}
+  \item {get\+Tick\+Label}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{97}
+  \item {get\+Tick\+Step}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{97}
+  \item {get\+Value\+Range}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{35}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{105}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{123}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{145}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{173}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{183}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{193}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{324}
+  \item {get\+Visible\+Data\+Bounds}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{193}
+  \item {gp\+Candy}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Cold}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Geography}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Grayscale}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Hot}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Hues}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Ion}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Jet}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Night}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Polar}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Spectrum}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gp\+Thermal}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+  \item {gradient\+Changed}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{124}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{136}
+  \item {Gradient\+Preset}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{116}
+  \item {graph}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{350}
+  \item {graph\+Count}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{350}
+  \item {graphs}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{52}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{72}
+  \item {grid}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{52}
+
+  \indexspace
+
+  \item {has\+Anchor}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{22}
+  \item {has\+Element}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{264}
+  \item {has\+Invalidated\+Paint\+Buffers}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{350}
+  \item {has\+Item}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{277}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{350}
+  \item {has\+Item\+With\+Plottable}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{277}
+  \item {has\+Plottable}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{351}
+  \item {height}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{73}
+
+  \indexspace
+
+  \item {i\+Multi\+Select}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {i\+Range\+Drag}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {i\+Range\+Zoom}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {i\+Select\+Axes}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {i\+Select\+Items}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {i\+Select\+Legend}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {i\+Select\+Other}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {i\+Select\+Plottables}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {index}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{241}
+  \item {index\+To\+Row\+Col}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{264}
+  \item {insert}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{113}
+  \item {insert\+Column}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{264}
+  \item {insert\+Row}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{264}
+  \item {inset\+Alignment}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{271}
+  \item {inset\+Layout}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{73}
+  \item {Inset\+Placement}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{270}
+  \item {inset\+Placement}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{272}
+  \item {inset\+Rect}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{272}
+  \item {Interaction}
+    \subitem {Q\+CP}, \hyperpage{10}
+  \item {interface1D}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{35}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{45}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{174}
+  \item {intersection}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{160}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{165}
+  \item {intersects}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{160}
+  \item {inverse}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{165}
+  \item {inverted}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{118}
+  \item {ip\+Border\+Aligned}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{270}
+  \item {ip\+Free}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{270}
+  \item {is\+Active}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{319}
+  \item {is\+Empty}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{113}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{130}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{155}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{160}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{165}
+    \subitem {Q\+C\+P\+Margin\+Group}, \hyperpage{286}
+  \item {is\+None}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{309}
+  \item {is\+Null}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{339}
+  \item {is\+Pen\+Defined}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{309}
+  \item {is\+Valid}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{160}
+  \item {item}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{277}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{351}
+  \item {item\+At}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{351}
+  \item {item\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{351}
+  \item {item\+Count}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{277}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{352}
+  \item {item\+Double\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{352}
+  \item {item\+With\+Plottable}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{278}
+  \item {items}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{52}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{73}
+
+  \indexspace
+
+  \item {key\+Range}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{155}
+  \item {key\+To\+Date\+Time}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Date\+Time}, \hyperpage{86}
+
+  \indexspace
+
+  \item {Label\+Side}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{50}
+  \item {layer}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{352}
+  \item {layer\+Changed}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{244}
+  \item {layer\+Count}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{352}
+  \item {Layer\+Insert\+Mode}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {Layer\+Mode}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{241}
+  \item {layout}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+  \item {layout\+Element\+At}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{353}
+  \item {left}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{73}
+  \item {legend}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{371}
+  \item {legend\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{353}
+  \item {legend\+Double\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{353}
+  \item {length}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{161}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{339}
+  \item {length\+Squared}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{339}
+  \item {lim\+Above}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {lim\+Below}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {limit\+Iterators\+To\+Data\+Range}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{155}
+  \item {Line\+Style}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{143}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{191}
+  \item {lm\+Buffered}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{241}
+  \item {lm\+Logical}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{241}
+  \item {load\+Preset}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{118}
+  \item {ls\+Impulse}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{191}
+  \item {ls\+Inside}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+  \item {ls\+Line}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{143}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{191}
+  \item {ls\+None}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{143}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{191}
+  \item {ls\+Outside}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+  \item {ls\+Step\+Center}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{191}
+  \item {ls\+Step\+Left}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{191}
+  \item {ls\+Step\+Right}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{191}
+
+  \indexspace
+
+  \item {main\+Key}
+    \subitem {Q\+C\+P\+Bars\+Data}, \hyperpage{109}
+    \subitem {Q\+C\+P\+Curve\+Data}, \hyperpage{149}
+    \subitem {Q\+C\+P\+Financial\+Data}, \hyperpage{188}
+    \subitem {Q\+C\+P\+Graph\+Data}, \hyperpage{197}
+    \subitem {Q\+C\+P\+Statistical\+Box\+Data}, \hyperpage{329}
+  \item {main\+Value}
+    \subitem {Q\+C\+P\+Bars\+Data}, \hyperpage{109}
+    \subitem {Q\+C\+P\+Curve\+Data}, \hyperpage{149}
+    \subitem {Q\+C\+P\+Financial\+Data}, \hyperpage{188}
+    \subitem {Q\+C\+P\+Graph\+Data}, \hyperpage{197}
+    \subitem {Q\+C\+P\+Statistical\+Box\+Data}, \hyperpage{329}
+  \item {Main\+Window}, \hyperpage{15}
+    \subitem {No\+Connection}, \hyperpage{16}
+    \subitem {set\+\_\+\+L\+C\+D\+\_\+\+A\+GL}, \hyperpage{16}
+    \subitem {set\+\_\+\+L\+C\+D\+\_\+\+A\+SL}, \hyperpage{16}
+    \subitem {set\+\_\+\+L\+C\+D\+\_\+\+Pitch}, \hyperpage{16}
+    \subitem {set\+\_\+\+L\+C\+D\+\_\+\+Roll\+\_\+1}, \hyperpage{17}
+    \subitem {set\+\_\+\+L\+C\+D\+\_\+\+Roll\+\_\+2}, \hyperpage{17}
+  \item {make\+Non\+Cosmetic}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{291}
+  \item {Margin\+Side}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {margin\+Side\+To\+Axis\+Type}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{52}
+  \item {max\+Range}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{303}
+  \item {maximum\+Outer\+Size\+Hint}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{256}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{265}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{333}
+  \item {min\+Range}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{303}
+  \item {minimum\+Outer\+Size\+Hint}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{256}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{265}
+    \subitem {Q\+C\+P\+Plottable\+Legend\+Item}, \hyperpage{297}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{333}
+  \item {mouse\+Double\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{353}
+  \item {mouse\+Double\+Click\+Event}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{244}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{334}
+  \item {mouse\+Move}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{353}
+  \item {mouse\+Move\+Event}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{52}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{73}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{136}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{245}
+  \item {mouse\+Press}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{354}
+  \item {mouse\+Press\+Event}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{53}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{74}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{137}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{245}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{334}
+  \item {mouse\+Release}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{354}
+  \item {mouse\+Release\+Event}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{53}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{74}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{137}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{246}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{334}
+  \item {mouse\+Wheel}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{354}
+  \item {move\+Above}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{105}
+  \item {move\+Below}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{105}
+  \item {move\+Layer}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{354}
+  \item {move\+Range}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{53}
+  \item {ms\+All}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {ms\+Bottom}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {ms\+Left}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {ms\+None}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {ms\+Right}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {ms\+Top}
+    \subitem {Q\+CP}, \hyperpage{11}
+
+  \indexspace
+
+  \item {No\+Connection}
+    \subitem {Main\+Window}, \hyperpage{16}
+  \item {normalize}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{301}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{339}
+  \item {normalized}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{339}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{162}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{167}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{303}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{341}
+  \item {operator$\ast$}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{302}
+  \item {operator$\ast$=}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{301}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{340}
+  \item {operator+}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{166, 167}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{302, 303}
+  \item {operator+=}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{165, 166}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{301}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{340}
+  \item {operator-\/}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{167}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{303}
+  \item {operator-\/=}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{166}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{301}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{340}
+  \item {operator/}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{303}
+  \item {operator/=}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{301}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{340}
+  \item {operator=}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{130}
+  \item {operator==}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{166}
+  \item {opposite}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{54}
+  \item {orientation}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{54}
+  \item {outer\+Rect}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{256}
+
+  \indexspace
+
+  \item {Painter\+Mode}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{290}
+  \item {parent\+Anchor}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{220}
+  \item {parent\+Layerable}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{246}
+  \item {perpendicular}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{340}
+  \item {ph\+Cache\+Labels}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {ph\+Fast\+Polylines}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {ph\+Immediate\+Refresh}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {ph\+None}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {pixel\+Orientation}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{54}
+  \item {pixel\+Position}
+    \subitem {Q\+C\+P\+Item\+Anchor}, \hyperpage{202}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{220}
+  \item {pixel\+To\+Coord}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{54}
+  \item {pixels\+To\+Coords}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{36}
+  \item {plot\+Layout}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{354}
+  \item {plottable}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{355}
+  \item {plottable\+At}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{355}
+  \item {plottable\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{355}
+  \item {plottable\+Count}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{355}
+  \item {plottable\+Double\+Click}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{356}
+  \item {plottables}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{55}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{74}
+  \item {Plotting\+Hint}
+    \subitem {Q\+CP}, \hyperpage{11}
+  \item {pm\+Default}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{290}
+  \item {pm\+No\+Caching}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{290}
+  \item {pm\+Non\+Cosmetic}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{290}
+  \item {pm\+Vectorized}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{290}
+  \item {position}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{22}
+  \item {Position\+Type}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{219}
+  \item {positions}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{22}
+  \item {pt\+Absolute}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{219}
+  \item {pt\+Axis\+Rect\+Ratio}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{219}
+  \item {pt\+Plot\+Coords}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{219}
+  \item {pt\+Viewport\+Ratio}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{219}
+
+  \indexspace
+
+  \item {Q\+C\+P\+Abstract\+Item}, \hyperpage{17}
+    \subitem {anchor}, \hyperpage{21}
+    \subitem {anchors}, \hyperpage{21}
+    \subitem {has\+Anchor}, \hyperpage{22}
+    \subitem {position}, \hyperpage{22}
+    \subitem {positions}, \hyperpage{22}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{21}
+    \subitem {select\+Test}, \hyperpage{22}
+    \subitem {selection\+Changed}, \hyperpage{22}
+    \subitem {set\+Clip\+Axis\+Rect}, \hyperpage{23}
+    \subitem {set\+Clip\+To\+Axis\+Rect}, \hyperpage{23}
+    \subitem {set\+Selectable}, \hyperpage{23}
+    \subitem {set\+Selected}, \hyperpage{24}
+  \item {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{24}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{26}
+    \subitem {select\+Test}, \hyperpage{26}
+    \subitem {selection\+Changed}, \hyperpage{26}
+    \subitem {set\+Font}, \hyperpage{26}
+    \subitem {set\+Selectable}, \hyperpage{26}
+    \subitem {set\+Selected}, \hyperpage{26}
+    \subitem {set\+Selected\+Font}, \hyperpage{27}
+    \subitem {set\+Selected\+Text\+Color}, \hyperpage{27}
+    \subitem {set\+Text\+Color}, \hyperpage{27}
+  \item {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{27}
+    \subitem {clear}, \hyperpage{29}
+    \subitem {done\+Painting}, \hyperpage{29}
+    \subitem {draw}, \hyperpage{29}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{28}
+    \subitem {reallocate\+Buffer}, \hyperpage{29}
+    \subitem {set\+Device\+Pixel\+Ratio}, \hyperpage{29}
+    \subitem {set\+Invalidated}, \hyperpage{29}
+    \subitem {set\+Size}, \hyperpage{30}
+    \subitem {start\+Painting}, \hyperpage{30}
+  \item {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{30}
+    \subitem {add\+To\+Legend}, \hyperpage{34}
+    \subitem {coords\+To\+Pixels}, \hyperpage{34}
+    \subitem {get\+Key\+Range}, \hyperpage{35}
+    \subitem {get\+Value\+Range}, \hyperpage{35}
+    \subitem {interface1D}, \hyperpage{35}
+    \subitem {pixels\+To\+Coords}, \hyperpage{36}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{34}
+    \subitem {remove\+From\+Legend}, \hyperpage{36}
+    \subitem {rescale\+Axes}, \hyperpage{37}
+    \subitem {rescale\+Key\+Axis}, \hyperpage{37}
+    \subitem {rescale\+Value\+Axis}, \hyperpage{37}
+    \subitem {select\+Test}, \hyperpage{38}
+    \subitem {selectable\+Changed}, \hyperpage{37}
+    \subitem {selected}, \hyperpage{37}
+    \subitem {selection}, \hyperpage{38}
+    \subitem {selection\+Changed}, \hyperpage{38}
+    \subitem {selection\+Decorator}, \hyperpage{38}
+    \subitem {set\+Antialiased\+Fill}, \hyperpage{39}
+    \subitem {set\+Antialiased\+Scatters}, \hyperpage{39}
+    \subitem {set\+Brush}, \hyperpage{39}
+    \subitem {set\+Key\+Axis}, \hyperpage{40}
+    \subitem {set\+Name}, \hyperpage{40}
+    \subitem {set\+Pen}, \hyperpage{40}
+    \subitem {set\+Selectable}, \hyperpage{40}
+    \subitem {set\+Selection}, \hyperpage{40}
+    \subitem {set\+Selection\+Decorator}, \hyperpage{41}
+    \subitem {set\+Value\+Axis}, \hyperpage{41}
+  \item {Q\+C\+P\+Abstract\+Plottable1\+D$<$ Data\+Type $>$}, 
+		\hyperpage{41}
+  \item {Q\+C\+P\+Abstract\+Plottable1D}
+    \subitem {data\+Count}, \hyperpage{43}
+    \subitem {data\+Main\+Key}, \hyperpage{43}
+    \subitem {data\+Main\+Value}, \hyperpage{43}
+    \subitem {data\+Pixel\+Position}, \hyperpage{43}
+    \subitem {data\+Sort\+Key}, \hyperpage{43}
+    \subitem {data\+Value\+Range}, \hyperpage{44}
+    \subitem {draw\+Polyline}, \hyperpage{44}
+    \subitem {find\+Begin}, \hyperpage{44}
+    \subitem {find\+End}, \hyperpage{44}
+    \subitem {get\+Data\+Segments}, \hyperpage{45}
+    \subitem {interface1D}, \hyperpage{45}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{43}
+    \subitem {select\+Test}, \hyperpage{45}
+    \subitem {select\+Test\+Rect}, \hyperpage{45}
+    \subitem {sort\+Key\+Is\+Main\+Key}, \hyperpage{46}
+  \item {Q\+C\+P\+Axis}, \hyperpage{46}
+    \subitem {at\+Bottom}, \hyperpage{50}
+    \subitem {at\+Left}, \hyperpage{50}
+    \subitem {at\+Right}, \hyperpage{50}
+    \subitem {at\+Top}, \hyperpage{50}
+    \subitem {Axis\+Type}, \hyperpage{50}
+    \subitem {coord\+To\+Pixel}, \hyperpage{52}
+    \subitem {get\+Part\+At}, \hyperpage{52}
+    \subitem {graphs}, \hyperpage{52}
+    \subitem {grid}, \hyperpage{52}
+    \subitem {items}, \hyperpage{52}
+    \subitem {Label\+Side}, \hyperpage{50}
+    \subitem {ls\+Inside}, \hyperpage{51}
+    \subitem {ls\+Outside}, \hyperpage{51}
+    \subitem {margin\+Side\+To\+Axis\+Type}, \hyperpage{52}
+    \subitem {mouse\+Move\+Event}, \hyperpage{52}
+    \subitem {mouse\+Press\+Event}, \hyperpage{53}
+    \subitem {mouse\+Release\+Event}, \hyperpage{53}
+    \subitem {move\+Range}, \hyperpage{53}
+    \subitem {opposite}, \hyperpage{54}
+    \subitem {orientation}, \hyperpage{54}
+    \subitem {pixel\+Orientation}, \hyperpage{54}
+    \subitem {pixel\+To\+Coord}, \hyperpage{54}
+    \subitem {plottables}, \hyperpage{55}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+    \subitem {range\+Changed}, \hyperpage{55}
+    \subitem {rescale}, \hyperpage{55}
+    \subitem {scale\+Range}, \hyperpage{55}
+    \subitem {Scale\+Type}, \hyperpage{51}
+    \subitem {scale\+Type\+Changed}, \hyperpage{56}
+    \subitem {select\+Test}, \hyperpage{56}
+    \subitem {selectable\+Changed}, \hyperpage{56}
+    \subitem {Selectable\+Part}, \hyperpage{51}
+    \subitem {selection\+Changed}, \hyperpage{56}
+    \subitem {set\+Base\+Pen}, \hyperpage{56}
+    \subitem {set\+Label}, \hyperpage{57}
+    \subitem {set\+Label\+Color}, \hyperpage{57}
+    \subitem {set\+Label\+Font}, \hyperpage{57}
+    \subitem {set\+Label\+Padding}, \hyperpage{57}
+    \subitem {set\+Lower\+Ending}, \hyperpage{57}
+    \subitem {set\+Number\+Format}, \hyperpage{57}
+    \subitem {set\+Number\+Precision}, \hyperpage{58}
+    \subitem {set\+Offset}, \hyperpage{58}
+    \subitem {set\+Padding}, \hyperpage{58}
+    \subitem {set\+Range}, \hyperpage{58, 59}
+    \subitem {set\+Range\+Lower}, \hyperpage{59}
+    \subitem {set\+Range\+Reversed}, \hyperpage{59}
+    \subitem {set\+Range\+Upper}, \hyperpage{59}
+    \subitem {set\+Scale\+Ratio}, \hyperpage{60}
+    \subitem {set\+Scale\+Type}, \hyperpage{60}
+    \subitem {set\+Selectable\+Parts}, \hyperpage{60}
+    \subitem {set\+Selected\+Base\+Pen}, \hyperpage{60}
+    \subitem {set\+Selected\+Label\+Color}, \hyperpage{60}
+    \subitem {set\+Selected\+Label\+Font}, \hyperpage{61}
+    \subitem {set\+Selected\+Parts}, \hyperpage{61}
+    \subitem {set\+Selected\+Sub\+Tick\+Pen}, \hyperpage{61}
+    \subitem {set\+Selected\+Tick\+Label\+Color}, \hyperpage{61}
+    \subitem {set\+Selected\+Tick\+Label\+Font}, \hyperpage{61}
+    \subitem {set\+Selected\+Tick\+Pen}, \hyperpage{62}
+    \subitem {set\+Sub\+Tick\+Length}, \hyperpage{62}
+    \subitem {set\+Sub\+Tick\+Length\+In}, \hyperpage{62}
+    \subitem {set\+Sub\+Tick\+Length\+Out}, \hyperpage{62}
+    \subitem {set\+Sub\+Tick\+Pen}, \hyperpage{62}
+    \subitem {set\+Sub\+Ticks}, \hyperpage{63}
+    \subitem {set\+Tick\+Label\+Color}, \hyperpage{63}
+    \subitem {set\+Tick\+Label\+Font}, \hyperpage{63}
+    \subitem {set\+Tick\+Label\+Padding}, \hyperpage{63}
+    \subitem {set\+Tick\+Label\+Rotation}, \hyperpage{64}
+    \subitem {set\+Tick\+Label\+Side}, \hyperpage{64}
+    \subitem {set\+Tick\+Labels}, \hyperpage{64}
+    \subitem {set\+Tick\+Length}, \hyperpage{64}
+    \subitem {set\+Tick\+Length\+In}, \hyperpage{64}
+    \subitem {set\+Tick\+Length\+Out}, \hyperpage{64}
+    \subitem {set\+Tick\+Pen}, \hyperpage{65}
+    \subitem {set\+Ticker}, \hyperpage{63}
+    \subitem {set\+Ticks}, \hyperpage{65}
+    \subitem {set\+Upper\+Ending}, \hyperpage{65}
+    \subitem {sp\+Axis}, \hyperpage{51}
+    \subitem {sp\+Axis\+Label}, \hyperpage{51}
+    \subitem {sp\+None}, \hyperpage{51}
+    \subitem {sp\+Tick\+Labels}, \hyperpage{51}
+    \subitem {st\+Linear}, \hyperpage{51}
+    \subitem {st\+Logarithmic}, \hyperpage{51}
+    \subitem {ticker}, \hyperpage{65}
+    \subitem {wheel\+Event}, \hyperpage{65}
+  \item {Q\+C\+P\+Axis\+Painter\+Private}, \hyperpage{66}
+    \subitem {Q\+C\+P\+Axis\+Painter\+Private}, \hyperpage{68}
+  \item {Q\+C\+P\+Axis\+Painter\+Private\+::\+Cached\+Label}, 
+		\hyperpage{15}
+  \item {Q\+C\+P\+Axis\+Painter\+Private\+::\+Tick\+Label\+Data}, 
+		\hyperpage{372}
+  \item {Q\+C\+P\+Axis\+Rect}, \hyperpage{68}
+    \subitem {add\+Axes}, \hyperpage{71}
+    \subitem {add\+Axis}, \hyperpage{71}
+    \subitem {axes}, \hyperpage{71}
+    \subitem {axis}, \hyperpage{71}
+    \subitem {axis\+Count}, \hyperpage{72}
+    \subitem {bottom}, \hyperpage{72}
+    \subitem {bottom\+Left}, \hyperpage{72}
+    \subitem {bottom\+Right}, \hyperpage{72}
+    \subitem {center}, \hyperpage{72}
+    \subitem {elements}, \hyperpage{72}
+    \subitem {graphs}, \hyperpage{72}
+    \subitem {height}, \hyperpage{73}
+    \subitem {inset\+Layout}, \hyperpage{73}
+    \subitem {items}, \hyperpage{73}
+    \subitem {left}, \hyperpage{73}
+    \subitem {mouse\+Move\+Event}, \hyperpage{73}
+    \subitem {mouse\+Press\+Event}, \hyperpage{74}
+    \subitem {mouse\+Release\+Event}, \hyperpage{74}
+    \subitem {plottables}, \hyperpage{74}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{70}
+    \subitem {range\+Drag\+Axes}, \hyperpage{75}
+    \subitem {range\+Drag\+Axis}, \hyperpage{75}
+    \subitem {range\+Zoom\+Axes}, \hyperpage{75}
+    \subitem {range\+Zoom\+Axis}, \hyperpage{75}
+    \subitem {range\+Zoom\+Factor}, \hyperpage{75}
+    \subitem {remove\+Axis}, \hyperpage{76}
+    \subitem {right}, \hyperpage{76}
+    \subitem {set\+Background}, \hyperpage{76}
+    \subitem {set\+Background\+Scaled}, \hyperpage{77}
+    \subitem {set\+Background\+Scaled\+Mode}, \hyperpage{77}
+    \subitem {set\+Range\+Drag}, \hyperpage{77}
+    \subitem {set\+Range\+Drag\+Axes}, \hyperpage{77, 78}
+    \subitem {set\+Range\+Zoom}, \hyperpage{78}
+    \subitem {set\+Range\+Zoom\+Axes}, \hyperpage{78, 79}
+    \subitem {set\+Range\+Zoom\+Factor}, \hyperpage{79}
+    \subitem {setup\+Full\+Axes\+Box}, \hyperpage{79}
+    \subitem {size}, \hyperpage{80}
+    \subitem {top}, \hyperpage{80}
+    \subitem {top\+Left}, \hyperpage{80}
+    \subitem {top\+Right}, \hyperpage{80}
+    \subitem {update}, \hyperpage{80}
+    \subitem {wheel\+Event}, \hyperpage{80}
+    \subitem {width}, \hyperpage{81}
+    \subitem {zoom}, \hyperpage{81}
+  \item {Q\+C\+P\+Axis\+Ticker}, \hyperpage{82}
+    \subitem {generate}, \hyperpage{84}
+    \subitem {Q\+C\+P\+Axis\+Ticker}, \hyperpage{83}
+    \subitem {set\+Tick\+Count}, \hyperpage{84}
+    \subitem {set\+Tick\+Origin}, \hyperpage{84}
+    \subitem {set\+Tick\+Step\+Strategy}, \hyperpage{84}
+    \subitem {Tick\+Step\+Strategy}, \hyperpage{83}
+    \subitem {tss\+Meet\+Tick\+Count}, \hyperpage{83}
+    \subitem {tss\+Readability}, \hyperpage{83}
+  \item {Q\+C\+P\+Axis\+Ticker\+Date\+Time}, \hyperpage{84}
+    \subitem {date\+Time\+To\+Key}, \hyperpage{86}
+    \subitem {key\+To\+Date\+Time}, \hyperpage{86}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Date\+Time}, \hyperpage{86}
+    \subitem {set\+Date\+Time\+Format}, \hyperpage{87}
+    \subitem {set\+Date\+Time\+Spec}, \hyperpage{87}
+    \subitem {set\+Tick\+Origin}, \hyperpage{87}
+  \item {Q\+C\+P\+Axis\+Ticker\+Fixed}, \hyperpage{88}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Fixed}, \hyperpage{89}
+    \subitem {Scale\+Strategy}, \hyperpage{89}
+    \subitem {set\+Scale\+Strategy}, \hyperpage{89}
+    \subitem {set\+Tick\+Step}, \hyperpage{89}
+    \subitem {ss\+Multiples}, \hyperpage{89}
+    \subitem {ss\+None}, \hyperpage{89}
+    \subitem {ss\+Powers}, \hyperpage{89}
+  \item {Q\+C\+P\+Axis\+Ticker\+Log}, \hyperpage{90}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Log}, \hyperpage{91}
+    \subitem {set\+Log\+Base}, \hyperpage{91}
+    \subitem {set\+Sub\+Tick\+Count}, \hyperpage{91}
+  \item {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{92}
+    \subitem {Fraction\+Style}, \hyperpage{93}
+    \subitem {fs\+Ascii\+Fractions}, \hyperpage{93}
+    \subitem {fs\+Floating\+Point}, \hyperpage{93}
+    \subitem {fs\+Unicode\+Fractions}, \hyperpage{93}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{93}
+    \subitem {set\+Fraction\+Style}, \hyperpage{93}
+    \subitem {set\+Periodicity}, \hyperpage{93}
+    \subitem {set\+Pi\+Symbol}, \hyperpage{94}
+    \subitem {set\+Pi\+Value}, \hyperpage{94}
+  \item {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{94}
+    \subitem {add\+Tick}, \hyperpage{95}
+    \subitem {add\+Ticks}, \hyperpage{95, 96}
+    \subitem {clear}, \hyperpage{96}
+    \subitem {create\+Tick\+Vector}, \hyperpage{96}
+    \subitem {get\+Sub\+Tick\+Count}, \hyperpage{96}
+    \subitem {get\+Tick\+Label}, \hyperpage{97}
+    \subitem {get\+Tick\+Step}, \hyperpage{97}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{95}
+    \subitem {set\+Sub\+Tick\+Count}, \hyperpage{97}
+    \subitem {set\+Ticks}, \hyperpage{97}
+    \subitem {ticks}, \hyperpage{97}
+  \item {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{98}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{100}
+    \subitem {set\+Field\+Width}, \hyperpage{100}
+    \subitem {set\+Time\+Format}, \hyperpage{100}
+    \subitem {Time\+Unit}, \hyperpage{99}
+    \subitem {tu\+Days}, \hyperpage{99}
+    \subitem {tu\+Hours}, \hyperpage{99}
+    \subitem {tu\+Milliseconds}, \hyperpage{99}
+    \subitem {tu\+Minutes}, \hyperpage{99}
+    \subitem {tu\+Seconds}, \hyperpage{99}
+  \item {Q\+C\+P\+Bars}, \hyperpage{101}
+    \subitem {add\+Data}, \hyperpage{103}
+    \subitem {bar\+Above}, \hyperpage{104}
+    \subitem {bar\+Below}, \hyperpage{104}
+    \subitem {data}, \hyperpage{104}
+    \subitem {data\+Pixel\+Position}, \hyperpage{104}
+    \subitem {get\+Key\+Range}, \hyperpage{104}
+    \subitem {get\+Value\+Range}, \hyperpage{105}
+    \subitem {move\+Above}, \hyperpage{105}
+    \subitem {move\+Below}, \hyperpage{105}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{103}
+    \subitem {select\+Test}, \hyperpage{106}
+    \subitem {select\+Test\+Rect}, \hyperpage{106}
+    \subitem {set\+Bars\+Group}, \hyperpage{106}
+    \subitem {set\+Base\+Value}, \hyperpage{106}
+    \subitem {set\+Data}, \hyperpage{107}
+    \subitem {set\+Stacking\+Gap}, \hyperpage{107}
+    \subitem {set\+Width}, \hyperpage{108}
+    \subitem {set\+Width\+Type}, \hyperpage{108}
+    \subitem {Width\+Type}, \hyperpage{103}
+    \subitem {wt\+Absolute}, \hyperpage{103}
+    \subitem {wt\+Axis\+Rect\+Ratio}, \hyperpage{103}
+    \subitem {wt\+Plot\+Coords}, \hyperpage{103}
+  \item {Q\+C\+P\+Bars\+Data}, \hyperpage{108}
+    \subitem {from\+Sort\+Key}, \hyperpage{109}
+    \subitem {main\+Key}, \hyperpage{109}
+    \subitem {main\+Value}, \hyperpage{109}
+    \subitem {Q\+C\+P\+Bars\+Data}, \hyperpage{109}
+    \subitem {sort\+Key}, \hyperpage{110}
+    \subitem {sort\+Key\+Is\+Main\+Key}, \hyperpage{110}
+    \subitem {value\+Range}, \hyperpage{110}
+  \item {Q\+C\+P\+Bars\+Group}, \hyperpage{110}
+    \subitem {append}, \hyperpage{113}
+    \subitem {bars}, \hyperpage{113}
+    \subitem {clear}, \hyperpage{113}
+    \subitem {contains}, \hyperpage{113}
+    \subitem {insert}, \hyperpage{113}
+    \subitem {is\+Empty}, \hyperpage{113}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{112}
+    \subitem {remove}, \hyperpage{114}
+    \subitem {set\+Spacing}, \hyperpage{114}
+    \subitem {set\+Spacing\+Type}, \hyperpage{114}
+    \subitem {size}, \hyperpage{114}
+    \subitem {Spacing\+Type}, \hyperpage{112}
+    \subitem {st\+Absolute}, \hyperpage{112}
+    \subitem {st\+Axis\+Rect\+Ratio}, \hyperpage{112}
+    \subitem {st\+Plot\+Coords}, \hyperpage{112}
+  \item {Q\+C\+P\+Color\+Gradient}, \hyperpage{115}
+    \subitem {ci\+H\+SV}, \hyperpage{116}
+    \subitem {ci\+R\+GB}, \hyperpage{116}
+    \subitem {clear\+Color\+Stops}, \hyperpage{117}
+    \subitem {Color\+Interpolation}, \hyperpage{116}
+    \subitem {colorize}, \hyperpage{117, 118}
+    \subitem {gp\+Candy}, \hyperpage{117}
+    \subitem {gp\+Cold}, \hyperpage{117}
+    \subitem {gp\+Geography}, \hyperpage{117}
+    \subitem {gp\+Grayscale}, \hyperpage{117}
+    \subitem {gp\+Hot}, \hyperpage{117}
+    \subitem {gp\+Hues}, \hyperpage{117}
+    \subitem {gp\+Ion}, \hyperpage{117}
+    \subitem {gp\+Jet}, \hyperpage{117}
+    \subitem {gp\+Night}, \hyperpage{117}
+    \subitem {gp\+Polar}, \hyperpage{117}
+    \subitem {gp\+Spectrum}, \hyperpage{117}
+    \subitem {gp\+Thermal}, \hyperpage{117}
+    \subitem {Gradient\+Preset}, \hyperpage{116}
+    \subitem {inverted}, \hyperpage{118}
+    \subitem {load\+Preset}, \hyperpage{118}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{117}
+    \subitem {set\+Color\+Interpolation}, \hyperpage{118}
+    \subitem {set\+Color\+Stop\+At}, \hyperpage{119}
+    \subitem {set\+Color\+Stops}, \hyperpage{119}
+    \subitem {set\+Level\+Count}, \hyperpage{119}
+    \subitem {set\+Periodic}, \hyperpage{119}
+  \item {Q\+C\+P\+Color\+Map}, \hyperpage{120}
+    \subitem {data}, \hyperpage{123}
+    \subitem {data\+Range\+Changed}, \hyperpage{123}
+    \subitem {data\+Scale\+Type\+Changed}, \hyperpage{123}
+    \subitem {get\+Key\+Range}, \hyperpage{123}
+    \subitem {get\+Value\+Range}, \hyperpage{123}
+    \subitem {gradient\+Changed}, \hyperpage{124}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{122}
+    \subitem {rescale\+Data\+Range}, \hyperpage{124}
+    \subitem {select\+Test}, \hyperpage{124}
+    \subitem {set\+Color\+Scale}, \hyperpage{125}
+    \subitem {set\+Data}, \hyperpage{125}
+    \subitem {set\+Data\+Range}, \hyperpage{125}
+    \subitem {set\+Data\+Scale\+Type}, \hyperpage{126}
+    \subitem {set\+Gradient}, \hyperpage{126}
+    \subitem {set\+Interpolate}, \hyperpage{126}
+    \subitem {set\+Tight\+Boundary}, \hyperpage{126}
+    \subitem {update\+Legend\+Icon}, \hyperpage{126}
+  \item {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{127}
+    \subitem {alpha}, \hyperpage{129}
+    \subitem {cell\+To\+Coord}, \hyperpage{129}
+    \subitem {clear}, \hyperpage{129}
+    \subitem {clear\+Alpha}, \hyperpage{130}
+    \subitem {coord\+To\+Cell}, \hyperpage{130}
+    \subitem {fill}, \hyperpage{130}
+    \subitem {fill\+Alpha}, \hyperpage{130}
+    \subitem {is\+Empty}, \hyperpage{130}
+    \subitem {operator=}, \hyperpage{130}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{129}
+    \subitem {recalculate\+Data\+Bounds}, \hyperpage{131}
+    \subitem {set\+Alpha}, \hyperpage{131}
+    \subitem {set\+Cell}, \hyperpage{131}
+    \subitem {set\+Data}, \hyperpage{131}
+    \subitem {set\+Key\+Range}, \hyperpage{132}
+    \subitem {set\+Key\+Size}, \hyperpage{132}
+    \subitem {set\+Range}, \hyperpage{132}
+    \subitem {set\+Size}, \hyperpage{132}
+    \subitem {set\+Value\+Range}, \hyperpage{133}
+    \subitem {set\+Value\+Size}, \hyperpage{133}
+  \item {Q\+C\+P\+Color\+Scale}, \hyperpage{133}
+    \subitem {axis}, \hyperpage{136}
+    \subitem {color\+Maps}, \hyperpage{136}
+    \subitem {data\+Range\+Changed}, \hyperpage{136}
+    \subitem {data\+Scale\+Type\+Changed}, \hyperpage{136}
+    \subitem {gradient\+Changed}, \hyperpage{136}
+    \subitem {mouse\+Move\+Event}, \hyperpage{136}
+    \subitem {mouse\+Press\+Event}, \hyperpage{137}
+    \subitem {mouse\+Release\+Event}, \hyperpage{137}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{135}
+    \subitem {rescale\+Data\+Range}, \hyperpage{137}
+    \subitem {set\+Bar\+Width}, \hyperpage{138}
+    \subitem {set\+Data\+Range}, \hyperpage{138}
+    \subitem {set\+Data\+Scale\+Type}, \hyperpage{138}
+    \subitem {set\+Gradient}, \hyperpage{138}
+    \subitem {set\+Label}, \hyperpage{138}
+    \subitem {set\+Range\+Drag}, \hyperpage{139}
+    \subitem {set\+Range\+Zoom}, \hyperpage{139}
+    \subitem {set\+Type}, \hyperpage{139}
+    \subitem {update}, \hyperpage{139}
+    \subitem {wheel\+Event}, \hyperpage{139}
+  \item {Q\+C\+P\+Color\+Scale\+Axis\+Rect\+Private}, \hyperpage{140}
+    \subitem {Q\+C\+P\+Color\+Scale\+Axis\+Rect\+Private}, 
+		\hyperpage{141}
+  \item {Q\+C\+P\+Curve}, \hyperpage{141}
+    \subitem {add\+Data}, \hyperpage{144}
+    \subitem {data}, \hyperpage{144}
+    \subitem {get\+Key\+Range}, \hyperpage{145}
+    \subitem {get\+Value\+Range}, \hyperpage{145}
+    \subitem {Line\+Style}, \hyperpage{143}
+    \subitem {ls\+Line}, \hyperpage{143}
+    \subitem {ls\+None}, \hyperpage{143}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{143}
+    \subitem {select\+Test}, \hyperpage{145}
+    \subitem {set\+Data}, \hyperpage{146}
+    \subitem {set\+Line\+Style}, \hyperpage{147}
+    \subitem {set\+Scatter\+Skip}, \hyperpage{147}
+    \subitem {set\+Scatter\+Style}, \hyperpage{147}
+  \item {Q\+C\+P\+Curve\+Data}, \hyperpage{148}
+    \subitem {from\+Sort\+Key}, \hyperpage{149}
+    \subitem {main\+Key}, \hyperpage{149}
+    \subitem {main\+Value}, \hyperpage{149}
+    \subitem {Q\+C\+P\+Curve\+Data}, \hyperpage{148}
+    \subitem {sort\+Key}, \hyperpage{149}
+    \subitem {sort\+Key\+Is\+Main\+Key}, \hyperpage{149}
+    \subitem {value\+Range}, \hyperpage{149}
+  \item {Q\+C\+P\+Data\+Container}
+    \subitem {add}, \hyperpage{152, 153}
+    \subitem {at}, \hyperpage{153}
+    \subitem {begin}, \hyperpage{153}
+    \subitem {clear}, \hyperpage{153}
+    \subitem {const\+Begin}, \hyperpage{153}
+    \subitem {const\+End}, \hyperpage{154}
+    \subitem {data\+Range}, \hyperpage{154}
+    \subitem {end}, \hyperpage{154}
+    \subitem {find\+Begin}, \hyperpage{154}
+    \subitem {find\+End}, \hyperpage{154}
+    \subitem {is\+Empty}, \hyperpage{155}
+    \subitem {key\+Range}, \hyperpage{155}
+    \subitem {limit\+Iterators\+To\+Data\+Range}, \hyperpage{155}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{152}
+    \subitem {qcp\+Less\+Than\+Sort\+Key}, \hyperpage{158}
+    \subitem {remove}, \hyperpage{155, 156}
+    \subitem {remove\+After}, \hyperpage{156}
+    \subitem {remove\+Before}, \hyperpage{156}
+    \subitem {set}, \hyperpage{156}
+    \subitem {set\+Auto\+Squeeze}, \hyperpage{157}
+    \subitem {size}, \hyperpage{157}
+    \subitem {sort}, \hyperpage{157}
+    \subitem {squeeze}, \hyperpage{157}
+    \subitem {value\+Range}, \hyperpage{157}
+  \item {Q\+C\+P\+Data\+Container$<$ Data\+Type $>$}, \hyperpage{150}
+  \item {Q\+C\+P\+Data\+Range}, \hyperpage{158}
+    \subitem {adjusted}, \hyperpage{159}
+    \subitem {bounded}, \hyperpage{159}
+    \subitem {contains}, \hyperpage{160}
+    \subitem {expanded}, \hyperpage{160}
+    \subitem {intersection}, \hyperpage{160}
+    \subitem {intersects}, \hyperpage{160}
+    \subitem {is\+Empty}, \hyperpage{160}
+    \subitem {is\+Valid}, \hyperpage{160}
+    \subitem {length}, \hyperpage{161}
+    \subitem {operator$<$$<$}, \hyperpage{162}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{159}
+    \subitem {set\+Begin}, \hyperpage{161}
+    \subitem {set\+End}, \hyperpage{161}
+    \subitem {size}, \hyperpage{161}
+  \item {Q\+C\+P\+Data\+Selection}, \hyperpage{162}
+    \subitem {add\+Data\+Range}, \hyperpage{164}
+    \subitem {clear}, \hyperpage{164}
+    \subitem {contains}, \hyperpage{164}
+    \subitem {data\+Point\+Count}, \hyperpage{164}
+    \subitem {data\+Range}, \hyperpage{164}
+    \subitem {data\+Range\+Count}, \hyperpage{164}
+    \subitem {data\+Ranges}, \hyperpage{164}
+    \subitem {enforce\+Type}, \hyperpage{165}
+    \subitem {intersection}, \hyperpage{165}
+    \subitem {inverse}, \hyperpage{165}
+    \subitem {is\+Empty}, \hyperpage{165}
+    \subitem {operator$<$$<$}, \hyperpage{167}
+    \subitem {operator+}, \hyperpage{166, 167}
+    \subitem {operator+=}, \hyperpage{165, 166}
+    \subitem {operator-\/}, \hyperpage{167}
+    \subitem {operator-\/=}, \hyperpage{166}
+    \subitem {operator==}, \hyperpage{166}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{163}
+    \subitem {simplify}, \hyperpage{166}
+    \subitem {span}, \hyperpage{166}
+  \item {Q\+C\+P\+Error\+Bars}, \hyperpage{168}
+    \subitem {add\+Data}, \hyperpage{170, 171}
+    \subitem {data}, \hyperpage{171}
+    \subitem {data\+Count}, \hyperpage{171}
+    \subitem {data\+Main\+Key}, \hyperpage{172}
+    \subitem {data\+Main\+Value}, \hyperpage{172}
+    \subitem {data\+Pixel\+Position}, \hyperpage{172}
+    \subitem {data\+Sort\+Key}, \hyperpage{172}
+    \subitem {data\+Value\+Range}, \hyperpage{172}
+    \subitem {Error\+Type}, \hyperpage{170}
+    \subitem {et\+Key\+Error}, \hyperpage{170}
+    \subitem {et\+Value\+Error}, \hyperpage{170}
+    \subitem {find\+Begin}, \hyperpage{172}
+    \subitem {find\+End}, \hyperpage{173}
+    \subitem {get\+Key\+Range}, \hyperpage{173}
+    \subitem {get\+Value\+Range}, \hyperpage{173}
+    \subitem {interface1D}, \hyperpage{174}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{170}
+    \subitem {select\+Test}, \hyperpage{174}
+    \subitem {select\+Test\+Rect}, \hyperpage{175}
+    \subitem {set\+Data}, \hyperpage{175, 176}
+    \subitem {set\+Data\+Plottable}, \hyperpage{176}
+    \subitem {set\+Error\+Type}, \hyperpage{176}
+    \subitem {set\+Symbol\+Gap}, \hyperpage{176}
+    \subitem {set\+Whisker\+Width}, \hyperpage{176}
+    \subitem {sort\+Key\+Is\+Main\+Key}, \hyperpage{177}
+  \item {Q\+C\+P\+Error\+Bars\+Data}, \hyperpage{177}
+    \subitem {Q\+C\+P\+Error\+Bars\+Data}, \hyperpage{178}
+  \item {Q\+C\+P\+Financial}, \hyperpage{178}
+    \subitem {add\+Data}, \hyperpage{182}
+    \subitem {Chart\+Style}, \hyperpage{181}
+    \subitem {cs\+Candlestick}, \hyperpage{181}
+    \subitem {cs\+Ohlc}, \hyperpage{181}
+    \subitem {data}, \hyperpage{182}
+    \subitem {get\+Key\+Range}, \hyperpage{183}
+    \subitem {get\+Value\+Range}, \hyperpage{183}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{182}
+    \subitem {select\+Test}, \hyperpage{183}
+    \subitem {select\+Test\+Rect}, \hyperpage{184}
+    \subitem {set\+Brush\+Negative}, \hyperpage{184}
+    \subitem {set\+Brush\+Positive}, \hyperpage{184}
+    \subitem {set\+Chart\+Style}, \hyperpage{184}
+    \subitem {set\+Data}, \hyperpage{185}
+    \subitem {set\+Pen\+Negative}, \hyperpage{185}
+    \subitem {set\+Pen\+Positive}, \hyperpage{185}
+    \subitem {set\+Two\+Colored}, \hyperpage{186}
+    \subitem {set\+Width}, \hyperpage{186}
+    \subitem {set\+Width\+Type}, \hyperpage{186}
+    \subitem {time\+Series\+To\+Ohlc}, \hyperpage{186}
+    \subitem {Width\+Type}, \hyperpage{181}
+    \subitem {wt\+Absolute}, \hyperpage{181}
+    \subitem {wt\+Axis\+Rect\+Ratio}, \hyperpage{181}
+    \subitem {wt\+Plot\+Coords}, \hyperpage{181}
+  \item {Q\+C\+P\+Financial\+Data}, \hyperpage{187}
+    \subitem {from\+Sort\+Key}, \hyperpage{188}
+    \subitem {main\+Key}, \hyperpage{188}
+    \subitem {main\+Value}, \hyperpage{188}
+    \subitem {Q\+C\+P\+Financial\+Data}, \hyperpage{188}
+    \subitem {sort\+Key}, \hyperpage{188}
+    \subitem {sort\+Key\+Is\+Main\+Key}, \hyperpage{188}
+    \subitem {value\+Range}, \hyperpage{188}
+  \item {Q\+C\+P\+Graph}, \hyperpage{189}
+    \subitem {add\+Data}, \hyperpage{192}
+    \subitem {data}, \hyperpage{192}
+    \subitem {get\+Key\+Range}, \hyperpage{192}
+    \subitem {get\+Value\+Range}, \hyperpage{193}
+    \subitem {get\+Visible\+Data\+Bounds}, \hyperpage{193}
+    \subitem {Line\+Style}, \hyperpage{191}
+    \subitem {ls\+Impulse}, \hyperpage{191}
+    \subitem {ls\+Line}, \hyperpage{191}
+    \subitem {ls\+None}, \hyperpage{191}
+    \subitem {ls\+Step\+Center}, \hyperpage{191}
+    \subitem {ls\+Step\+Left}, \hyperpage{191}
+    \subitem {ls\+Step\+Right}, \hyperpage{191}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{192}
+    \subitem {select\+Test}, \hyperpage{193}
+    \subitem {set\+Adaptive\+Sampling}, \hyperpage{194}
+    \subitem {set\+Channel\+Fill\+Graph}, \hyperpage{194}
+    \subitem {set\+Data}, \hyperpage{194, 195}
+    \subitem {set\+Line\+Style}, \hyperpage{195}
+    \subitem {set\+Scatter\+Skip}, \hyperpage{195}
+    \subitem {set\+Scatter\+Style}, \hyperpage{196}
+  \item {Q\+C\+P\+Graph\+Data}, \hyperpage{196}
+    \subitem {from\+Sort\+Key}, \hyperpage{197}
+    \subitem {main\+Key}, \hyperpage{197}
+    \subitem {main\+Value}, \hyperpage{197}
+    \subitem {Q\+C\+P\+Graph\+Data}, \hyperpage{197}
+    \subitem {sort\+Key}, \hyperpage{198}
+    \subitem {sort\+Key\+Is\+Main\+Key}, \hyperpage{198}
+    \subitem {value\+Range}, \hyperpage{198}
+  \item {Q\+C\+P\+Grid}, \hyperpage{198}
+    \subitem {Q\+C\+P\+Grid}, \hyperpage{200}
+    \subitem {set\+Antialiased\+Sub\+Grid}, \hyperpage{200}
+    \subitem {set\+Antialiased\+Zero\+Line}, \hyperpage{200}
+    \subitem {set\+Pen}, \hyperpage{200}
+    \subitem {set\+Sub\+Grid\+Pen}, \hyperpage{200}
+    \subitem {set\+Sub\+Grid\+Visible}, \hyperpage{200}
+    \subitem {set\+Zero\+Line\+Pen}, \hyperpage{200}
+  \item {Q\+C\+P\+Item\+Anchor}, \hyperpage{201}
+    \subitem {pixel\+Position}, \hyperpage{202}
+    \subitem {Q\+C\+P\+Item\+Anchor}, \hyperpage{202}
+    \subitem {to\+Q\+C\+P\+Item\+Position}, \hyperpage{202}
+  \item {Q\+C\+P\+Item\+Bracket}, \hyperpage{202}
+    \subitem {Bracket\+Style}, \hyperpage{204}
+    \subitem {bs\+Calligraphic}, \hyperpage{204}
+    \subitem {bs\+Curly}, \hyperpage{204}
+    \subitem {bs\+Round}, \hyperpage{204}
+    \subitem {bs\+Square}, \hyperpage{204}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{204}
+    \subitem {select\+Test}, \hyperpage{204}
+    \subitem {set\+Length}, \hyperpage{204}
+    \subitem {set\+Pen}, \hyperpage{205}
+    \subitem {set\+Selected\+Pen}, \hyperpage{205}
+    \subitem {set\+Style}, \hyperpage{205}
+  \item {Q\+C\+P\+Item\+Curve}, \hyperpage{205}
+    \subitem {Q\+C\+P\+Item\+Curve}, \hyperpage{207}
+    \subitem {select\+Test}, \hyperpage{207}
+    \subitem {set\+Head}, \hyperpage{207}
+    \subitem {set\+Pen}, \hyperpage{208}
+    \subitem {set\+Selected\+Pen}, \hyperpage{208}
+    \subitem {set\+Tail}, \hyperpage{208}
+  \item {Q\+C\+P\+Item\+Ellipse}, \hyperpage{209}
+    \subitem {Q\+C\+P\+Item\+Ellipse}, \hyperpage{210}
+    \subitem {select\+Test}, \hyperpage{210}
+    \subitem {set\+Brush}, \hyperpage{210}
+    \subitem {set\+Pen}, \hyperpage{211}
+    \subitem {set\+Selected\+Brush}, \hyperpage{211}
+    \subitem {set\+Selected\+Pen}, \hyperpage{211}
+  \item {Q\+C\+P\+Item\+Line}, \hyperpage{211}
+    \subitem {Q\+C\+P\+Item\+Line}, \hyperpage{212}
+    \subitem {select\+Test}, \hyperpage{213}
+    \subitem {set\+Head}, \hyperpage{213}
+    \subitem {set\+Pen}, \hyperpage{213}
+    \subitem {set\+Selected\+Pen}, \hyperpage{214}
+    \subitem {set\+Tail}, \hyperpage{214}
+  \item {Q\+C\+P\+Item\+Pixmap}, \hyperpage{214}
+    \subitem {Q\+C\+P\+Item\+Pixmap}, \hyperpage{216}
+    \subitem {select\+Test}, \hyperpage{216}
+    \subitem {set\+Pen}, \hyperpage{216}
+    \subitem {set\+Pixmap}, \hyperpage{217}
+    \subitem {set\+Scaled}, \hyperpage{217}
+    \subitem {set\+Selected\+Pen}, \hyperpage{217}
+  \item {Q\+C\+P\+Item\+Position}, \hyperpage{217}
+    \subitem {parent\+Anchor}, \hyperpage{220}
+    \subitem {pixel\+Position}, \hyperpage{220}
+    \subitem {Position\+Type}, \hyperpage{219}
+    \subitem {pt\+Absolute}, \hyperpage{219}
+    \subitem {pt\+Axis\+Rect\+Ratio}, \hyperpage{219}
+    \subitem {pt\+Plot\+Coords}, \hyperpage{219}
+    \subitem {pt\+Viewport\+Ratio}, \hyperpage{219}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{220}
+    \subitem {set\+Axes}, \hyperpage{220}
+    \subitem {set\+Axis\+Rect}, \hyperpage{220}
+    \subitem {set\+Coords}, \hyperpage{220, 221}
+    \subitem {set\+Parent\+Anchor}, \hyperpage{221}
+    \subitem {set\+Parent\+AnchorX}, \hyperpage{221}
+    \subitem {set\+Parent\+AnchorY}, \hyperpage{221}
+    \subitem {set\+Pixel\+Position}, \hyperpage{222}
+    \subitem {set\+Type}, \hyperpage{222}
+    \subitem {set\+TypeX}, \hyperpage{222}
+    \subitem {set\+TypeY}, \hyperpage{223}
+    \subitem {to\+Q\+C\+P\+Item\+Position}, \hyperpage{223}
+    \subitem {type}, \hyperpage{223}
+  \item {Q\+C\+P\+Item\+Rect}, \hyperpage{224}
+    \subitem {Q\+C\+P\+Item\+Rect}, \hyperpage{225}
+    \subitem {select\+Test}, \hyperpage{225}
+    \subitem {set\+Brush}, \hyperpage{225}
+    \subitem {set\+Pen}, \hyperpage{226}
+    \subitem {set\+Selected\+Brush}, \hyperpage{226}
+    \subitem {set\+Selected\+Pen}, \hyperpage{226}
+  \item {Q\+C\+P\+Item\+Straight\+Line}, \hyperpage{226}
+    \subitem {Q\+C\+P\+Item\+Straight\+Line}, \hyperpage{227}
+    \subitem {select\+Test}, \hyperpage{228}
+    \subitem {set\+Pen}, \hyperpage{228}
+    \subitem {set\+Selected\+Pen}, \hyperpage{228}
+  \item {Q\+C\+P\+Item\+Text}, \hyperpage{229}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{231}
+    \subitem {select\+Test}, \hyperpage{231}
+    \subitem {set\+Brush}, \hyperpage{231}
+    \subitem {set\+Color}, \hyperpage{231}
+    \subitem {set\+Font}, \hyperpage{232}
+    \subitem {set\+Padding}, \hyperpage{232}
+    \subitem {set\+Pen}, \hyperpage{232}
+    \subitem {set\+Position\+Alignment}, \hyperpage{232}
+    \subitem {set\+Rotation}, \hyperpage{232}
+    \subitem {set\+Selected\+Brush}, \hyperpage{232}
+    \subitem {set\+Selected\+Color}, \hyperpage{233}
+    \subitem {set\+Selected\+Font}, \hyperpage{233}
+    \subitem {set\+Selected\+Pen}, \hyperpage{233}
+    \subitem {set\+Text}, \hyperpage{233}
+    \subitem {set\+Text\+Alignment}, \hyperpage{233}
+  \item {Q\+C\+P\+Item\+Tracer}, \hyperpage{234}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{236}
+    \subitem {select\+Test}, \hyperpage{236}
+    \subitem {set\+Brush}, \hyperpage{236}
+    \subitem {set\+Graph}, \hyperpage{236}
+    \subitem {set\+Graph\+Key}, \hyperpage{237}
+    \subitem {set\+Interpolating}, \hyperpage{237}
+    \subitem {set\+Pen}, \hyperpage{237}
+    \subitem {set\+Selected\+Brush}, \hyperpage{237}
+    \subitem {set\+Selected\+Pen}, \hyperpage{238}
+    \subitem {set\+Size}, \hyperpage{238}
+    \subitem {set\+Style}, \hyperpage{238}
+    \subitem {Tracer\+Style}, \hyperpage{235}
+    \subitem {ts\+Circle}, \hyperpage{235}
+    \subitem {ts\+Crosshair}, \hyperpage{235}
+    \subitem {ts\+None}, \hyperpage{235}
+    \subitem {ts\+Plus}, \hyperpage{235}
+    \subitem {ts\+Square}, \hyperpage{235}
+    \subitem {update\+Position}, \hyperpage{238}
+  \item {Q\+C\+P\+Layer}, \hyperpage{239}
+    \subitem {children}, \hyperpage{241}
+    \subitem {index}, \hyperpage{241}
+    \subitem {Layer\+Mode}, \hyperpage{241}
+    \subitem {lm\+Buffered}, \hyperpage{241}
+    \subitem {lm\+Logical}, \hyperpage{241}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{241}
+    \subitem {replot}, \hyperpage{241}
+    \subitem {set\+Mode}, \hyperpage{242}
+    \subitem {set\+Visible}, \hyperpage{242}
+  \item {Q\+C\+P\+Layerable}, \hyperpage{243}
+    \subitem {layer\+Changed}, \hyperpage{244}
+    \subitem {mouse\+Double\+Click\+Event}, \hyperpage{244}
+    \subitem {mouse\+Move\+Event}, \hyperpage{245}
+    \subitem {mouse\+Press\+Event}, \hyperpage{245}
+    \subitem {mouse\+Release\+Event}, \hyperpage{246}
+    \subitem {parent\+Layerable}, \hyperpage{246}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{244}
+    \subitem {real\+Visibility}, \hyperpage{246}
+    \subitem {select\+Test}, \hyperpage{247}
+    \subitem {set\+Antialiased}, \hyperpage{247}
+    \subitem {set\+Layer}, \hyperpage{247, 248}
+    \subitem {set\+Visible}, \hyperpage{248}
+    \subitem {wheel\+Event}, \hyperpage{248}
+  \item {Q\+C\+P\+Layout}, \hyperpage{248}
+    \subitem {clear}, \hyperpage{250}
+    \subitem {element\+At}, \hyperpage{250}
+    \subitem {element\+Count}, \hyperpage{250}
+    \subitem {elements}, \hyperpage{250}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{250}
+    \subitem {remove}, \hyperpage{251}
+    \subitem {remove\+At}, \hyperpage{251}
+    \subitem {simplify}, \hyperpage{251}
+    \subitem {size\+Constraints\+Changed}, \hyperpage{251}
+    \subitem {take}, \hyperpage{252}
+    \subitem {take\+At}, \hyperpage{252}
+    \subitem {update}, \hyperpage{252}
+  \item {Q\+C\+P\+Layout\+Element}, \hyperpage{253}
+    \subitem {elements}, \hyperpage{255}
+    \subitem {layout}, \hyperpage{255}
+    \subitem {maximum\+Outer\+Size\+Hint}, \hyperpage{256}
+    \subitem {minimum\+Outer\+Size\+Hint}, \hyperpage{256}
+    \subitem {outer\+Rect}, \hyperpage{256}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+    \subitem {rect}, \hyperpage{256}
+    \subitem {scr\+Inner\+Rect}, \hyperpage{255}
+    \subitem {scr\+Outer\+Rect}, \hyperpage{255}
+    \subitem {select\+Test}, \hyperpage{257}
+    \subitem {set\+Auto\+Margins}, \hyperpage{257}
+    \subitem {set\+Margin\+Group}, \hyperpage{257}
+    \subitem {set\+Margins}, \hyperpage{257}
+    \subitem {set\+Maximum\+Size}, \hyperpage{258}
+    \subitem {set\+Minimum\+Margins}, \hyperpage{258}
+    \subitem {set\+Minimum\+Size}, \hyperpage{258}
+    \subitem {set\+Outer\+Rect}, \hyperpage{259}
+    \subitem {set\+Size\+Constraint\+Rect}, \hyperpage{259}
+    \subitem {Size\+Constraint\+Rect}, \hyperpage{255}
+    \subitem {up\+Layout}, \hyperpage{255}
+    \subitem {up\+Margins}, \hyperpage{255}
+    \subitem {up\+Preparation}, \hyperpage{255}
+    \subitem {update}, \hyperpage{259}
+    \subitem {Update\+Phase}, \hyperpage{255}
+  \item {Q\+C\+P\+Layout\+Grid}, \hyperpage{260}
+    \subitem {add\+Element}, \hyperpage{262}
+    \subitem {column\+Count}, \hyperpage{262}
+    \subitem {element}, \hyperpage{262}
+    \subitem {element\+At}, \hyperpage{263}
+    \subitem {element\+Count}, \hyperpage{263}
+    \subitem {elements}, \hyperpage{263}
+    \subitem {expand\+To}, \hyperpage{263}
+    \subitem {Fill\+Order}, \hyperpage{261}
+    \subitem {fo\+Columns\+First}, \hyperpage{261}
+    \subitem {fo\+Rows\+First}, \hyperpage{261}
+    \subitem {has\+Element}, \hyperpage{264}
+    \subitem {index\+To\+Row\+Col}, \hyperpage{264}
+    \subitem {insert\+Column}, \hyperpage{264}
+    \subitem {insert\+Row}, \hyperpage{264}
+    \subitem {maximum\+Outer\+Size\+Hint}, \hyperpage{265}
+    \subitem {minimum\+Outer\+Size\+Hint}, \hyperpage{265}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{262}
+    \subitem {row\+Col\+To\+Index}, \hyperpage{265}
+    \subitem {row\+Count}, \hyperpage{265}
+    \subitem {set\+Column\+Spacing}, \hyperpage{266}
+    \subitem {set\+Column\+Stretch\+Factor}, \hyperpage{266}
+    \subitem {set\+Column\+Stretch\+Factors}, \hyperpage{266}
+    \subitem {set\+Fill\+Order}, \hyperpage{266}
+    \subitem {set\+Row\+Spacing}, \hyperpage{267}
+    \subitem {set\+Row\+Stretch\+Factor}, \hyperpage{267}
+    \subitem {set\+Row\+Stretch\+Factors}, \hyperpage{267}
+    \subitem {set\+Wrap}, \hyperpage{268}
+    \subitem {simplify}, \hyperpage{268}
+    \subitem {take}, \hyperpage{268}
+    \subitem {take\+At}, \hyperpage{268}
+  \item {Q\+C\+P\+Layout\+Inset}, \hyperpage{269}
+    \subitem {add\+Element}, \hyperpage{271}
+    \subitem {element\+At}, \hyperpage{271}
+    \subitem {element\+Count}, \hyperpage{271}
+    \subitem {inset\+Alignment}, \hyperpage{271}
+    \subitem {Inset\+Placement}, \hyperpage{270}
+    \subitem {inset\+Placement}, \hyperpage{272}
+    \subitem {inset\+Rect}, \hyperpage{272}
+    \subitem {ip\+Border\+Aligned}, \hyperpage{270}
+    \subitem {ip\+Free}, \hyperpage{270}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{270}
+    \subitem {select\+Test}, \hyperpage{272}
+    \subitem {set\+Inset\+Alignment}, \hyperpage{272}
+    \subitem {set\+Inset\+Placement}, \hyperpage{272}
+    \subitem {set\+Inset\+Rect}, \hyperpage{272}
+    \subitem {simplify}, \hyperpage{273}
+    \subitem {take}, \hyperpage{273}
+    \subitem {take\+At}, \hyperpage{273}
+  \item {Q\+C\+P\+Legend}, \hyperpage{274}
+    \subitem {add\+Item}, \hyperpage{277}
+    \subitem {clear\+Items}, \hyperpage{277}
+    \subitem {has\+Item}, \hyperpage{277}
+    \subitem {has\+Item\+With\+Plottable}, \hyperpage{277}
+    \subitem {item}, \hyperpage{277}
+    \subitem {item\+Count}, \hyperpage{277}
+    \subitem {item\+With\+Plottable}, \hyperpage{278}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{276}
+    \subitem {remove\+Item}, \hyperpage{278}
+    \subitem {select\+Test}, \hyperpage{279}
+    \subitem {Selectable\+Part}, \hyperpage{276}
+    \subitem {selected\+Items}, \hyperpage{278}
+    \subitem {selection\+Changed}, \hyperpage{279}
+    \subitem {set\+Border\+Pen}, \hyperpage{279}
+    \subitem {set\+Brush}, \hyperpage{279}
+    \subitem {set\+Font}, \hyperpage{279}
+    \subitem {set\+Icon\+Border\+Pen}, \hyperpage{279}
+    \subitem {set\+Icon\+Size}, \hyperpage{280}
+    \subitem {set\+Icon\+Text\+Padding}, \hyperpage{280}
+    \subitem {set\+Selectable\+Parts}, \hyperpage{280}
+    \subitem {set\+Selected\+Border\+Pen}, \hyperpage{280}
+    \subitem {set\+Selected\+Brush}, \hyperpage{280}
+    \subitem {set\+Selected\+Font}, \hyperpage{281}
+    \subitem {set\+Selected\+Icon\+Border\+Pen}, \hyperpage{281}
+    \subitem {set\+Selected\+Parts}, \hyperpage{281}
+    \subitem {set\+Selected\+Text\+Color}, \hyperpage{281}
+    \subitem {set\+Text\+Color}, \hyperpage{282}
+    \subitem {sp\+Items}, \hyperpage{276}
+    \subitem {sp\+Legend\+Box}, \hyperpage{276}
+    \subitem {sp\+None}, \hyperpage{276}
+  \item {Q\+C\+P\+Line\+Ending}, \hyperpage{282}
+    \subitem {Ending\+Style}, \hyperpage{283}
+    \subitem {es\+Bar}, \hyperpage{283}
+    \subitem {es\+Diamond}, \hyperpage{283}
+    \subitem {es\+Disc}, \hyperpage{283}
+    \subitem {es\+Flat\+Arrow}, \hyperpage{283}
+    \subitem {es\+Half\+Bar}, \hyperpage{283}
+    \subitem {es\+Line\+Arrow}, \hyperpage{283}
+    \subitem {es\+None}, \hyperpage{283}
+    \subitem {es\+Skewed\+Bar}, \hyperpage{283}
+    \subitem {es\+Spike\+Arrow}, \hyperpage{283}
+    \subitem {es\+Square}, \hyperpage{283}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{284}
+    \subitem {real\+Length}, \hyperpage{284}
+    \subitem {set\+Inverted}, \hyperpage{284}
+    \subitem {set\+Length}, \hyperpage{284}
+    \subitem {set\+Style}, \hyperpage{284}
+    \subitem {set\+Width}, \hyperpage{284}
+  \item {Q\+C\+P\+Margin\+Group}, \hyperpage{285}
+    \subitem {clear}, \hyperpage{286}
+    \subitem {elements}, \hyperpage{286}
+    \subitem {is\+Empty}, \hyperpage{286}
+    \subitem {Q\+C\+P\+Margin\+Group}, \hyperpage{286}
+  \item {Q\+C\+P\+Paint\+Buffer\+Pixmap}, \hyperpage{287}
+    \subitem {clear}, \hyperpage{288}
+    \subitem {draw}, \hyperpage{288}
+    \subitem {Q\+C\+P\+Paint\+Buffer\+Pixmap}, \hyperpage{287}
+    \subitem {reallocate\+Buffer}, \hyperpage{288}
+    \subitem {start\+Painting}, \hyperpage{288}
+  \item {Q\+C\+P\+Painter}, \hyperpage{289}
+    \subitem {begin}, \hyperpage{290}
+    \subitem {draw\+Line}, \hyperpage{290}
+    \subitem {make\+Non\+Cosmetic}, \hyperpage{291}
+    \subitem {Painter\+Mode}, \hyperpage{290}
+    \subitem {pm\+Default}, \hyperpage{290}
+    \subitem {pm\+No\+Caching}, \hyperpage{290}
+    \subitem {pm\+Non\+Cosmetic}, \hyperpage{290}
+    \subitem {pm\+Vectorized}, \hyperpage{290}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{290}
+    \subitem {restore}, \hyperpage{291}
+    \subitem {save}, \hyperpage{291}
+    \subitem {set\+Antialiasing}, \hyperpage{291}
+    \subitem {set\+Mode}, \hyperpage{291}
+    \subitem {set\+Modes}, \hyperpage{292}
+    \subitem {set\+Pen}, \hyperpage{292}
+  \item {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{293}
+    \subitem {data\+Count}, \hyperpage{293}
+    \subitem {data\+Main\+Key}, \hyperpage{293}
+    \subitem {data\+Main\+Value}, \hyperpage{294}
+    \subitem {data\+Pixel\+Position}, \hyperpage{294}
+    \subitem {data\+Sort\+Key}, \hyperpage{294}
+    \subitem {data\+Value\+Range}, \hyperpage{294}
+    \subitem {find\+Begin}, \hyperpage{294}
+    \subitem {find\+End}, \hyperpage{295}
+    \subitem {select\+Test\+Rect}, \hyperpage{295}
+    \subitem {sort\+Key\+Is\+Main\+Key}, \hyperpage{295}
+  \item {Q\+C\+P\+Plottable\+Legend\+Item}, \hyperpage{296}
+    \subitem {minimum\+Outer\+Size\+Hint}, \hyperpage{297}
+    \subitem {Q\+C\+P\+Plottable\+Legend\+Item}, \hyperpage{297}
+  \item {Q\+C\+P\+Range}, \hyperpage{298}
+    \subitem {bounded}, \hyperpage{299}
+    \subitem {center}, \hyperpage{299}
+    \subitem {contains}, \hyperpage{299}
+    \subitem {expand}, \hyperpage{300}
+    \subitem {expanded}, \hyperpage{300}
+    \subitem {max\+Range}, \hyperpage{303}
+    \subitem {min\+Range}, \hyperpage{303}
+    \subitem {normalize}, \hyperpage{301}
+    \subitem {operator$<$$<$}, \hyperpage{303}
+    \subitem {operator$\ast$}, \hyperpage{302}
+    \subitem {operator$\ast$=}, \hyperpage{301}
+    \subitem {operator+}, \hyperpage{302, 303}
+    \subitem {operator+=}, \hyperpage{301}
+    \subitem {operator-\/}, \hyperpage{303}
+    \subitem {operator-\/=}, \hyperpage{301}
+    \subitem {operator/}, \hyperpage{303}
+    \subitem {operator/=}, \hyperpage{301}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{299}
+    \subitem {sanitized\+For\+Lin\+Scale}, \hyperpage{301}
+    \subitem {sanitized\+For\+Log\+Scale}, \hyperpage{301}
+    \subitem {size}, \hyperpage{302}
+    \subitem {valid\+Range}, \hyperpage{302}
+  \item {Q\+C\+P\+Scatter\+Style}, \hyperpage{304}
+    \subitem {apply\+To}, \hyperpage{308}
+    \subitem {draw\+Shape}, \hyperpage{308, 309}
+    \subitem {is\+None}, \hyperpage{309}
+    \subitem {is\+Pen\+Defined}, \hyperpage{309}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307, 308}
+    \subitem {Scatter\+Property}, \hyperpage{306}
+    \subitem {Scatter\+Shape}, \hyperpage{306}
+    \subitem {set\+Brush}, \hyperpage{309}
+    \subitem {set\+Custom\+Path}, \hyperpage{309}
+    \subitem {set\+From\+Other}, \hyperpage{310}
+    \subitem {set\+Pen}, \hyperpage{310}
+    \subitem {set\+Pixmap}, \hyperpage{310}
+    \subitem {set\+Shape}, \hyperpage{310}
+    \subitem {set\+Size}, \hyperpage{310}
+    \subitem {sp\+All}, \hyperpage{306}
+    \subitem {sp\+Brush}, \hyperpage{306}
+    \subitem {sp\+None}, \hyperpage{306}
+    \subitem {sp\+Pen}, \hyperpage{306}
+    \subitem {sp\+Shape}, \hyperpage{306}
+    \subitem {sp\+Size}, \hyperpage{306}
+    \subitem {ss\+Circle}, \hyperpage{307}
+    \subitem {ss\+Cross}, \hyperpage{307}
+    \subitem {ss\+Cross\+Circle}, \hyperpage{307}
+    \subitem {ss\+Cross\+Square}, \hyperpage{307}
+    \subitem {ss\+Custom}, \hyperpage{307}
+    \subitem {ss\+Diamond}, \hyperpage{307}
+    \subitem {ss\+Disc}, \hyperpage{307}
+    \subitem {ss\+Dot}, \hyperpage{307}
+    \subitem {ss\+None}, \hyperpage{307}
+    \subitem {ss\+Peace}, \hyperpage{307}
+    \subitem {ss\+Pixmap}, \hyperpage{307}
+    \subitem {ss\+Plus}, \hyperpage{307}
+    \subitem {ss\+Plus\+Circle}, \hyperpage{307}
+    \subitem {ss\+Plus\+Square}, \hyperpage{307}
+    \subitem {ss\+Square}, \hyperpage{307}
+    \subitem {ss\+Star}, \hyperpage{307}
+    \subitem {ss\+Triangle}, \hyperpage{307}
+    \subitem {ss\+Triangle\+Inverted}, \hyperpage{307}
+    \subitem {undefine\+Pen}, \hyperpage{310}
+  \item {Q\+C\+P\+Selection\+Decorator}, \hyperpage{311}
+    \subitem {apply\+Brush}, \hyperpage{312}
+    \subitem {apply\+Pen}, \hyperpage{312}
+    \subitem {copy\+From}, \hyperpage{312}
+    \subitem {draw\+Decoration}, \hyperpage{313}
+    \subitem {get\+Final\+Scatter\+Style}, \hyperpage{313}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{312}
+    \subitem {set\+Brush}, \hyperpage{313}
+    \subitem {set\+Pen}, \hyperpage{313}
+    \subitem {set\+Scatter\+Style}, \hyperpage{313}
+    \subitem {set\+Used\+Scatter\+Properties}, \hyperpage{313}
+  \item {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{314}
+    \subitem {Bracket\+Style}, \hyperpage{315}
+    \subitem {bs\+Ellipse}, \hyperpage{315}
+    \subitem {bs\+Half\+Ellipse}, \hyperpage{315}
+    \subitem {bs\+Plus}, \hyperpage{315}
+    \subitem {bs\+Square\+Bracket}, \hyperpage{315}
+    \subitem {bs\+User\+Style}, \hyperpage{315}
+    \subitem {draw\+Bracket}, \hyperpage{316}
+    \subitem {draw\+Decoration}, \hyperpage{316}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{315}
+    \subitem {set\+Bracket\+Brush}, \hyperpage{316}
+    \subitem {set\+Bracket\+Height}, \hyperpage{316}
+    \subitem {set\+Bracket\+Pen}, \hyperpage{316}
+    \subitem {set\+Bracket\+Style}, \hyperpage{316}
+    \subitem {set\+Bracket\+Width}, \hyperpage{316}
+    \subitem {set\+Tangent\+Average}, \hyperpage{317}
+    \subitem {set\+Tangent\+To\+Data}, \hyperpage{317}
+  \item {Q\+C\+P\+Selection\+Rect}, \hyperpage{317}
+    \subitem {accepted}, \hyperpage{319}
+    \subitem {cancel}, \hyperpage{319}
+    \subitem {canceled}, \hyperpage{319}
+    \subitem {changed}, \hyperpage{319}
+    \subitem {is\+Active}, \hyperpage{319}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{318}
+    \subitem {range}, \hyperpage{319}
+    \subitem {set\+Brush}, \hyperpage{319}
+    \subitem {set\+Pen}, \hyperpage{320}
+    \subitem {started}, \hyperpage{320}
+  \item {Q\+C\+P\+Statistical\+Box}, \hyperpage{320}
+    \subitem {add\+Data}, \hyperpage{323}
+    \subitem {data}, \hyperpage{323}
+    \subitem {draw\+Statistical\+Box}, \hyperpage{323}
+    \subitem {get\+Key\+Range}, \hyperpage{324}
+    \subitem {get\+Value\+Range}, \hyperpage{324}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{323}
+    \subitem {select\+Test}, \hyperpage{324}
+    \subitem {select\+Test\+Rect}, \hyperpage{325}
+    \subitem {set\+Data}, \hyperpage{325}
+    \subitem {set\+Median\+Pen}, \hyperpage{326}
+    \subitem {set\+Outlier\+Style}, \hyperpage{326}
+    \subitem {set\+Whisker\+Antialiased}, \hyperpage{326}
+    \subitem {set\+Whisker\+Bar\+Pen}, \hyperpage{326}
+    \subitem {set\+Whisker\+Pen}, \hyperpage{326}
+    \subitem {set\+Whisker\+Width}, \hyperpage{327}
+    \subitem {set\+Width}, \hyperpage{327}
+  \item {Q\+C\+P\+Statistical\+Box\+Data}, \hyperpage{327}
+    \subitem {from\+Sort\+Key}, \hyperpage{329}
+    \subitem {main\+Key}, \hyperpage{329}
+    \subitem {main\+Value}, \hyperpage{329}
+    \subitem {Q\+C\+P\+Statistical\+Box\+Data}, \hyperpage{329}
+    \subitem {sort\+Key}, \hyperpage{329}
+    \subitem {sort\+Key\+Is\+Main\+Key}, \hyperpage{329}
+    \subitem {value\+Range}, \hyperpage{330}
+  \item {Q\+C\+P\+Text\+Element}, \hyperpage{330}
+    \subitem {clicked}, \hyperpage{333}
+    \subitem {double\+Clicked}, \hyperpage{333}
+    \subitem {maximum\+Outer\+Size\+Hint}, \hyperpage{333}
+    \subitem {minimum\+Outer\+Size\+Hint}, \hyperpage{333}
+    \subitem {mouse\+Double\+Click\+Event}, \hyperpage{334}
+    \subitem {mouse\+Press\+Event}, \hyperpage{334}
+    \subitem {mouse\+Release\+Event}, \hyperpage{334}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{332}
+    \subitem {select\+Test}, \hyperpage{334}
+    \subitem {selection\+Changed}, \hyperpage{334}
+    \subitem {set\+Font}, \hyperpage{334}
+    \subitem {set\+Selectable}, \hyperpage{335}
+    \subitem {set\+Selected}, \hyperpage{335}
+    \subitem {set\+Selected\+Font}, \hyperpage{335}
+    \subitem {set\+Selected\+Text\+Color}, \hyperpage{335}
+    \subitem {set\+Text}, \hyperpage{335}
+    \subitem {set\+Text\+Color}, \hyperpage{335}
+    \subitem {set\+Text\+Flags}, \hyperpage{336}
+  \item {Q\+C\+P\+Vector2D}, \hyperpage{336}
+    \subitem {distance\+Squared\+To\+Line}, \hyperpage{338}
+    \subitem {distance\+To\+Straight\+Line}, \hyperpage{338}
+    \subitem {dot}, \hyperpage{339}
+    \subitem {is\+Null}, \hyperpage{339}
+    \subitem {length}, \hyperpage{339}
+    \subitem {length\+Squared}, \hyperpage{339}
+    \subitem {normalize}, \hyperpage{339}
+    \subitem {normalized}, \hyperpage{339}
+    \subitem {operator$<$$<$}, \hyperpage{341}
+    \subitem {operator$\ast$=}, \hyperpage{340}
+    \subitem {operator+=}, \hyperpage{340}
+    \subitem {operator-\/=}, \hyperpage{340}
+    \subitem {operator/=}, \hyperpage{340}
+    \subitem {perpendicular}, \hyperpage{340}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{338}
+    \subitem {setX}, \hyperpage{340}
+    \subitem {setY}, \hyperpage{340}
+    \subitem {to\+Point}, \hyperpage{340}
+    \subitem {to\+PointF}, \hyperpage{341}
+  \item {Q\+CP}, \hyperpage{9}
+    \subitem {ae\+All}, \hyperpage{10}
+    \subitem {ae\+Axes}, \hyperpage{10}
+    \subitem {ae\+Fills}, \hyperpage{10}
+    \subitem {ae\+Grid}, \hyperpage{10}
+    \subitem {ae\+Items}, \hyperpage{10}
+    \subitem {ae\+Legend}, \hyperpage{10}
+    \subitem {ae\+Legend\+Items}, \hyperpage{10}
+    \subitem {ae\+None}, \hyperpage{10}
+    \subitem {ae\+Other}, \hyperpage{10}
+    \subitem {ae\+Plottables}, \hyperpage{10}
+    \subitem {ae\+Scatters}, \hyperpage{10}
+    \subitem {ae\+Sub\+Grid}, \hyperpage{10}
+    \subitem {ae\+Zero\+Line}, \hyperpage{10}
+    \subitem {Antialiased\+Element}, \hyperpage{10}
+    \subitem {ep\+Allow\+Cosmetic}, \hyperpage{10}
+    \subitem {ep\+No\+Cosmetic}, \hyperpage{10}
+    \subitem {Export\+Pen}, \hyperpage{10}
+    \subitem {i\+Multi\+Select}, \hyperpage{11}
+    \subitem {i\+Range\+Drag}, \hyperpage{11}
+    \subitem {i\+Range\+Zoom}, \hyperpage{11}
+    \subitem {i\+Select\+Axes}, \hyperpage{11}
+    \subitem {i\+Select\+Items}, \hyperpage{11}
+    \subitem {i\+Select\+Legend}, \hyperpage{11}
+    \subitem {i\+Select\+Other}, \hyperpage{11}
+    \subitem {i\+Select\+Plottables}, \hyperpage{11}
+    \subitem {Interaction}, \hyperpage{10}
+    \subitem {Margin\+Side}, \hyperpage{11}
+    \subitem {ms\+All}, \hyperpage{11}
+    \subitem {ms\+Bottom}, \hyperpage{11}
+    \subitem {ms\+Left}, \hyperpage{11}
+    \subitem {ms\+None}, \hyperpage{11}
+    \subitem {ms\+Right}, \hyperpage{11}
+    \subitem {ms\+Top}, \hyperpage{11}
+    \subitem {ph\+Cache\+Labels}, \hyperpage{12}
+    \subitem {ph\+Fast\+Polylines}, \hyperpage{12}
+    \subitem {ph\+Immediate\+Refresh}, \hyperpage{12}
+    \subitem {ph\+None}, \hyperpage{12}
+    \subitem {Plotting\+Hint}, \hyperpage{11}
+    \subitem {Resolution\+Unit}, \hyperpage{12}
+    \subitem {ru\+Dots\+Per\+Centimeter}, \hyperpage{12}
+    \subitem {ru\+Dots\+Per\+Inch}, \hyperpage{12}
+    \subitem {ru\+Dots\+Per\+Meter}, \hyperpage{12}
+    \subitem {sd\+Both}, \hyperpage{13}
+    \subitem {sd\+Negative}, \hyperpage{13}
+    \subitem {sd\+Positive}, \hyperpage{13}
+    \subitem {Selection\+Rect\+Mode}, \hyperpage{12}
+    \subitem {Selection\+Type}, \hyperpage{12}
+    \subitem {Sign\+Domain}, \hyperpage{13}
+    \subitem {srm\+Custom}, \hyperpage{12}
+    \subitem {srm\+None}, \hyperpage{12}
+    \subitem {srm\+Select}, \hyperpage{12}
+    \subitem {srm\+Zoom}, \hyperpage{12}
+    \subitem {st\+Data\+Range}, \hyperpage{13}
+    \subitem {st\+Multiple\+Data\+Ranges}, \hyperpage{13}
+    \subitem {st\+None}, \hyperpage{13}
+    \subitem {st\+Single\+Data}, \hyperpage{13}
+    \subitem {st\+Whole}, \hyperpage{13}
+  \item {Q\+Custom\+Plot}, \hyperpage{341}
+    \subitem {add\+Graph}, \hyperpage{346}
+    \subitem {add\+Layer}, \hyperpage{346}
+    \subitem {after\+Replot}, \hyperpage{347}
+    \subitem {axis\+Click}, \hyperpage{347}
+    \subitem {axis\+Double\+Click}, \hyperpage{347}
+    \subitem {axis\+Rect}, \hyperpage{347}
+    \subitem {axis\+Rect\+At}, \hyperpage{348}
+    \subitem {axis\+Rect\+Count}, \hyperpage{348}
+    \subitem {axis\+Rects}, \hyperpage{348}
+    \subitem {before\+Replot}, \hyperpage{348}
+    \subitem {clear\+Graphs}, \hyperpage{349}
+    \subitem {clear\+Items}, \hyperpage{349}
+    \subitem {clear\+Plottables}, \hyperpage{349}
+    \subitem {current\+Layer}, \hyperpage{349}
+    \subitem {deselect\+All}, \hyperpage{349}
+    \subitem {graph}, \hyperpage{350}
+    \subitem {graph\+Count}, \hyperpage{350}
+    \subitem {has\+Invalidated\+Paint\+Buffers}, \hyperpage{350}
+    \subitem {has\+Item}, \hyperpage{350}
+    \subitem {has\+Plottable}, \hyperpage{351}
+    \subitem {item}, \hyperpage{351}
+    \subitem {item\+At}, \hyperpage{351}
+    \subitem {item\+Click}, \hyperpage{351}
+    \subitem {item\+Count}, \hyperpage{352}
+    \subitem {item\+Double\+Click}, \hyperpage{352}
+    \subitem {layer}, \hyperpage{352}
+    \subitem {layer\+Count}, \hyperpage{352}
+    \subitem {Layer\+Insert\+Mode}, \hyperpage{346}
+    \subitem {layout\+Element\+At}, \hyperpage{353}
+    \subitem {legend}, \hyperpage{371}
+    \subitem {legend\+Click}, \hyperpage{353}
+    \subitem {legend\+Double\+Click}, \hyperpage{353}
+    \subitem {lim\+Above}, \hyperpage{346}
+    \subitem {lim\+Below}, \hyperpage{346}
+    \subitem {mouse\+Double\+Click}, \hyperpage{353}
+    \subitem {mouse\+Move}, \hyperpage{353}
+    \subitem {mouse\+Press}, \hyperpage{354}
+    \subitem {mouse\+Release}, \hyperpage{354}
+    \subitem {mouse\+Wheel}, \hyperpage{354}
+    \subitem {move\+Layer}, \hyperpage{354}
+    \subitem {plot\+Layout}, \hyperpage{354}
+    \subitem {plottable}, \hyperpage{355}
+    \subitem {plottable\+At}, \hyperpage{355}
+    \subitem {plottable\+Click}, \hyperpage{355}
+    \subitem {plottable\+Count}, \hyperpage{355}
+    \subitem {plottable\+Double\+Click}, \hyperpage{356}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+    \subitem {Refresh\+Priority}, \hyperpage{346}
+    \subitem {remove\+Graph}, \hyperpage{356}
+    \subitem {remove\+Item}, \hyperpage{356}
+    \subitem {remove\+Layer}, \hyperpage{357}
+    \subitem {remove\+Plottable}, \hyperpage{357}
+    \subitem {replot}, \hyperpage{357}
+    \subitem {rescale\+Axes}, \hyperpage{358}
+    \subitem {rp\+Immediate\+Refresh}, \hyperpage{346}
+    \subitem {rp\+Queued\+Refresh}, \hyperpage{346}
+    \subitem {rp\+Queued\+Replot}, \hyperpage{346}
+    \subitem {rp\+Refresh\+Hint}, \hyperpage{346}
+    \subitem {save\+Bmp}, \hyperpage{358}
+    \subitem {save\+Jpg}, \hyperpage{359}
+    \subitem {save\+Pdf}, \hyperpage{359}
+    \subitem {save\+Png}, \hyperpage{360}
+    \subitem {save\+Rastered}, \hyperpage{361}
+    \subitem {selected\+Axes}, \hyperpage{361}
+    \subitem {selected\+Graphs}, \hyperpage{362}
+    \subitem {selected\+Items}, \hyperpage{362}
+    \subitem {selected\+Legends}, \hyperpage{362}
+    \subitem {selected\+Plottables}, \hyperpage{362}
+    \subitem {selection\+Changed\+By\+User}, \hyperpage{362}
+    \subitem {selection\+Rect}, \hyperpage{363}
+    \subitem {set\+Antialiased\+Element}, \hyperpage{363}
+    \subitem {set\+Antialiased\+Elements}, \hyperpage{363}
+    \subitem {set\+Auto\+Add\+Plottable\+To\+Legend}, \hyperpage{363}
+    \subitem {set\+Background}, \hyperpage{364}
+    \subitem {set\+Background\+Scaled}, \hyperpage{364}
+    \subitem {set\+Background\+Scaled\+Mode}, \hyperpage{365}
+    \subitem {set\+Buffer\+Device\+Pixel\+Ratio}, \hyperpage{365}
+    \subitem {set\+Current\+Layer}, \hyperpage{365}
+    \subitem {set\+Interaction}, \hyperpage{366}
+    \subitem {set\+Interactions}, \hyperpage{366}
+    \subitem {set\+Multi\+Select\+Modifier}, \hyperpage{367}
+    \subitem {set\+No\+Antialiasing\+On\+Drag}, \hyperpage{367}
+    \subitem {set\+Not\+Antialiased\+Element}, \hyperpage{367}
+    \subitem {set\+Not\+Antialiased\+Elements}, \hyperpage{367}
+    \subitem {set\+Open\+Gl}, \hyperpage{368}
+    \subitem {set\+Plotting\+Hint}, \hyperpage{368}
+    \subitem {set\+Plotting\+Hints}, \hyperpage{369}
+    \subitem {set\+Selection\+Rect}, \hyperpage{369}
+    \subitem {set\+Selection\+Rect\+Mode}, \hyperpage{369}
+    \subitem {set\+Selection\+Tolerance}, \hyperpage{369}
+    \subitem {set\+Viewport}, \hyperpage{370}
+    \subitem {to\+Painter}, \hyperpage{370}
+    \subitem {to\+Pixmap}, \hyperpage{370}
+    \subitem {x\+Axis}, \hyperpage{371}
+    \subitem {x\+Axis2}, \hyperpage{371}
+    \subitem {y\+Axis}, \hyperpage{371}
+    \subitem {y\+Axis2}, \hyperpage{372}
+  \item {qcp\+Less\+Than\+Sort\+Key}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{158}
+
+  \indexspace
+
+  \item {range}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{319}
+  \item {range\+Changed}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{55}
+  \item {range\+Drag\+Axes}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{75}
+  \item {range\+Drag\+Axis}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{75}
+  \item {range\+Zoom\+Axes}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{75}
+  \item {range\+Zoom\+Axis}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{75}
+  \item {range\+Zoom\+Factor}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{75}
+  \item {real\+Length}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{284}
+  \item {real\+Visibility}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{246}
+  \item {reallocate\+Buffer}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{29}
+    \subitem {Q\+C\+P\+Paint\+Buffer\+Pixmap}, \hyperpage{288}
+  \item {recalculate\+Data\+Bounds}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{131}
+  \item {rect}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{256}
+  \item {Refresh\+Priority}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {remove}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{114}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{155, 156}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{251}
+  \item {remove\+After}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{156}
+  \item {remove\+At}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{251}
+  \item {remove\+Axis}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{76}
+  \item {remove\+Before}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{156}
+  \item {remove\+From\+Legend}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{36}
+  \item {remove\+Graph}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{356}
+  \item {remove\+Item}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{278}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{356}
+  \item {remove\+Layer}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{357}
+  \item {remove\+Plottable}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{357}
+  \item {replot}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{241}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{357}
+  \item {rescale}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{55}
+  \item {rescale\+Axes}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{37}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{358}
+  \item {rescale\+Data\+Range}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{124}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{137}
+  \item {rescale\+Key\+Axis}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{37}
+  \item {rescale\+Value\+Axis}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{37}
+  \item {Resolution\+Unit}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {restore}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{291}
+  \item {right}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{76}
+  \item {row\+Col\+To\+Index}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{265}
+  \item {row\+Count}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{265}
+  \item {rp\+Immediate\+Refresh}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {rp\+Queued\+Refresh}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {rp\+Queued\+Replot}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {rp\+Refresh\+Hint}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{346}
+  \item {ru\+Dots\+Per\+Centimeter}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {ru\+Dots\+Per\+Inch}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {ru\+Dots\+Per\+Meter}
+    \subitem {Q\+CP}, \hyperpage{12}
+
+  \indexspace
+
+  \item {sanitized\+For\+Lin\+Scale}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{301}
+  \item {sanitized\+For\+Log\+Scale}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{301}
+  \item {save}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{291}
+  \item {save\+Bmp}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{358}
+  \item {save\+Jpg}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{359}
+  \item {save\+Pdf}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{359}
+  \item {save\+Png}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{360}
+  \item {save\+Rastered}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{361}
+  \item {scale\+Range}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{55}
+  \item {Scale\+Strategy}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Fixed}, \hyperpage{89}
+  \item {Scale\+Type}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+  \item {scale\+Type\+Changed}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{56}
+  \item {Scatter\+Property}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{306}
+  \item {Scatter\+Shape}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{306}
+  \item {scr\+Inner\+Rect}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+  \item {scr\+Outer\+Rect}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+  \item {sd\+Both}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {sd\+Negative}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {sd\+Positive}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {select\+Test}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{22}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{26}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{38}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{45}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{56}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{106}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{124}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{145}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{174}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{183}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{193}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{204}
+    \subitem {Q\+C\+P\+Item\+Curve}, \hyperpage{207}
+    \subitem {Q\+C\+P\+Item\+Ellipse}, \hyperpage{210}
+    \subitem {Q\+C\+P\+Item\+Line}, \hyperpage{213}
+    \subitem {Q\+C\+P\+Item\+Pixmap}, \hyperpage{216}
+    \subitem {Q\+C\+P\+Item\+Rect}, \hyperpage{225}
+    \subitem {Q\+C\+P\+Item\+Straight\+Line}, \hyperpage{228}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{231}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{236}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{247}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{257}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{272}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{279}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{324}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{334}
+  \item {select\+Test\+Rect}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{45}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{106}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{175}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{184}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{295}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{325}
+  \item {selectable\+Changed}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{37}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{56}
+  \item {Selectable\+Part}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{276}
+  \item {selected}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{37}
+  \item {selected\+Axes}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{361}
+  \item {selected\+Graphs}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{362}
+  \item {selected\+Items}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{278}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{362}
+  \item {selected\+Legends}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{362}
+  \item {selected\+Plottables}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{362}
+  \item {selection}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{38}
+  \item {selection\+Changed}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{22}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{26}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{38}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{56}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{279}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{334}
+  \item {selection\+Changed\+By\+User}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{362}
+  \item {selection\+Decorator}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{38}
+  \item {selection\+Rect}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{363}
+  \item {Selection\+Rect\+Mode}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {Selection\+Type}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {set}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{156}
+  \item {set\+\_\+\+L\+C\+D\+\_\+\+A\+GL}
+    \subitem {Main\+Window}, \hyperpage{16}
+  \item {set\+\_\+\+L\+C\+D\+\_\+\+A\+SL}
+    \subitem {Main\+Window}, \hyperpage{16}
+  \item {set\+\_\+\+L\+C\+D\+\_\+\+Pitch}
+    \subitem {Main\+Window}, \hyperpage{16}
+  \item {set\+\_\+\+L\+C\+D\+\_\+\+Roll\+\_\+1}
+    \subitem {Main\+Window}, \hyperpage{17}
+  \item {set\+\_\+\+L\+C\+D\+\_\+\+Roll\+\_\+2}
+    \subitem {Main\+Window}, \hyperpage{17}
+  \item {set\+Adaptive\+Sampling}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{194}
+  \item {set\+Alpha}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{131}
+  \item {set\+Antialiased}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{247}
+  \item {set\+Antialiased\+Element}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{363}
+  \item {set\+Antialiased\+Elements}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{363}
+  \item {set\+Antialiased\+Fill}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{39}
+  \item {set\+Antialiased\+Scatters}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{39}
+  \item {set\+Antialiased\+Sub\+Grid}
+    \subitem {Q\+C\+P\+Grid}, \hyperpage{200}
+  \item {set\+Antialiased\+Zero\+Line}
+    \subitem {Q\+C\+P\+Grid}, \hyperpage{200}
+  \item {set\+Antialiasing}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{291}
+  \item {set\+Auto\+Add\+Plottable\+To\+Legend}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{363}
+  \item {set\+Auto\+Margins}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{257}
+  \item {set\+Auto\+Squeeze}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{157}
+  \item {set\+Axes}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{220}
+  \item {set\+Axis\+Rect}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{220}
+  \item {set\+Background}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{76}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{364}
+  \item {set\+Background\+Scaled}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{77}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{364}
+  \item {set\+Background\+Scaled\+Mode}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{77}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{365}
+  \item {set\+Bar\+Width}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{138}
+  \item {set\+Bars\+Group}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{106}
+  \item {set\+Base\+Pen}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{56}
+  \item {set\+Base\+Value}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{106}
+  \item {set\+Begin}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{161}
+  \item {set\+Border\+Pen}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{279}
+  \item {set\+Bracket\+Brush}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{316}
+  \item {set\+Bracket\+Height}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{316}
+  \item {set\+Bracket\+Pen}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{316}
+  \item {set\+Bracket\+Style}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{316}
+  \item {set\+Bracket\+Width}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{316}
+  \item {set\+Brush}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{39}
+    \subitem {Q\+C\+P\+Item\+Ellipse}, \hyperpage{210}
+    \subitem {Q\+C\+P\+Item\+Rect}, \hyperpage{225}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{231}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{236}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{279}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{309}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{313}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{319}
+  \item {set\+Brush\+Negative}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{184}
+  \item {set\+Brush\+Positive}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{184}
+  \item {set\+Buffer\+Device\+Pixel\+Ratio}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{365}
+  \item {set\+Cell}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{131}
+  \item {set\+Channel\+Fill\+Graph}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{194}
+  \item {set\+Chart\+Style}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{184}
+  \item {set\+Clip\+Axis\+Rect}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{23}
+  \item {set\+Clip\+To\+Axis\+Rect}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{23}
+  \item {set\+Color}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{231}
+  \item {set\+Color\+Interpolation}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{118}
+  \item {set\+Color\+Scale}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{125}
+  \item {set\+Color\+Stop\+At}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{119}
+  \item {set\+Color\+Stops}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{119}
+  \item {set\+Column\+Spacing}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{266}
+  \item {set\+Column\+Stretch\+Factor}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{266}
+  \item {set\+Column\+Stretch\+Factors}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{266}
+  \item {set\+Coords}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{220, 221}
+  \item {set\+Current\+Layer}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{365}
+  \item {set\+Custom\+Path}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{309}
+  \item {set\+Data}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{107}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{125}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{131}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{146}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{175, 176}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{185}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{194, 195}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{325}
+  \item {set\+Data\+Plottable}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{176}
+  \item {set\+Data\+Range}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{125}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{138}
+  \item {set\+Data\+Scale\+Type}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{126}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{138}
+  \item {set\+Date\+Time\+Format}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Date\+Time}, \hyperpage{87}
+  \item {set\+Date\+Time\+Spec}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Date\+Time}, \hyperpage{87}
+  \item {set\+Device\+Pixel\+Ratio}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{29}
+  \item {set\+End}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{161}
+  \item {set\+Error\+Type}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{176}
+  \item {set\+Field\+Width}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{100}
+  \item {set\+Fill\+Order}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{266}
+  \item {set\+Font}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{26}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{232}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{279}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{334}
+  \item {set\+Fraction\+Style}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{93}
+  \item {set\+From\+Other}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{310}
+  \item {set\+Gradient}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{126}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{138}
+  \item {set\+Graph}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{236}
+  \item {set\+Graph\+Key}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{237}
+  \item {set\+Head}
+    \subitem {Q\+C\+P\+Item\+Curve}, \hyperpage{207}
+    \subitem {Q\+C\+P\+Item\+Line}, \hyperpage{213}
+  \item {set\+Icon\+Border\+Pen}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{279}
+  \item {set\+Icon\+Size}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{280}
+  \item {set\+Icon\+Text\+Padding}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{280}
+  \item {set\+Inset\+Alignment}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{272}
+  \item {set\+Inset\+Placement}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{272}
+  \item {set\+Inset\+Rect}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{272}
+  \item {set\+Interaction}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{366}
+  \item {set\+Interactions}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{366}
+  \item {set\+Interpolate}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{126}
+  \item {set\+Interpolating}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{237}
+  \item {set\+Invalidated}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{29}
+  \item {set\+Inverted}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{284}
+  \item {set\+Key\+Axis}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{40}
+  \item {set\+Key\+Range}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{132}
+  \item {set\+Key\+Size}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{132}
+  \item {set\+Label}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{57}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{138}
+  \item {set\+Label\+Color}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{57}
+  \item {set\+Label\+Font}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{57}
+  \item {set\+Label\+Padding}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{57}
+  \item {set\+Layer}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{247, 248}
+  \item {set\+Length}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{204}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{284}
+  \item {set\+Level\+Count}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{119}
+  \item {set\+Line\+Style}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{147}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{195}
+  \item {set\+Log\+Base}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Log}, \hyperpage{91}
+  \item {set\+Lower\+Ending}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{57}
+  \item {set\+Margin\+Group}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{257}
+  \item {set\+Margins}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{257}
+  \item {set\+Maximum\+Size}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{258}
+  \item {set\+Median\+Pen}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{326}
+  \item {set\+Minimum\+Margins}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{258}
+  \item {set\+Minimum\+Size}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{258}
+  \item {set\+Mode}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{242}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{291}
+  \item {set\+Modes}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{292}
+  \item {set\+Multi\+Select\+Modifier}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{367}
+  \item {set\+Name}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{40}
+  \item {set\+No\+Antialiasing\+On\+Drag}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{367}
+  \item {set\+Not\+Antialiased\+Element}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{367}
+  \item {set\+Not\+Antialiased\+Elements}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{367}
+  \item {set\+Number\+Format}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{57}
+  \item {set\+Number\+Precision}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{58}
+  \item {set\+Offset}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{58}
+  \item {set\+Open\+Gl}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{368}
+  \item {set\+Outer\+Rect}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{259}
+  \item {set\+Outlier\+Style}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{326}
+  \item {set\+Padding}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{58}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{232}
+  \item {set\+Parent\+Anchor}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{221}
+  \item {set\+Parent\+AnchorX}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{221}
+  \item {set\+Parent\+AnchorY}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{221}
+  \item {set\+Pen}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{40}
+    \subitem {Q\+C\+P\+Grid}, \hyperpage{200}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{205}
+    \subitem {Q\+C\+P\+Item\+Curve}, \hyperpage{208}
+    \subitem {Q\+C\+P\+Item\+Ellipse}, \hyperpage{211}
+    \subitem {Q\+C\+P\+Item\+Line}, \hyperpage{213}
+    \subitem {Q\+C\+P\+Item\+Pixmap}, \hyperpage{216}
+    \subitem {Q\+C\+P\+Item\+Rect}, \hyperpage{226}
+    \subitem {Q\+C\+P\+Item\+Straight\+Line}, \hyperpage{228}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{232}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{237}
+    \subitem {Q\+C\+P\+Painter}, \hyperpage{292}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{310}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{313}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{320}
+  \item {set\+Pen\+Negative}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{185}
+  \item {set\+Pen\+Positive}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{185}
+  \item {set\+Periodic}
+    \subitem {Q\+C\+P\+Color\+Gradient}, \hyperpage{119}
+  \item {set\+Periodicity}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{93}
+  \item {set\+Pi\+Symbol}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{94}
+  \item {set\+Pi\+Value}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Pi}, \hyperpage{94}
+  \item {set\+Pixel\+Position}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{222}
+  \item {set\+Pixmap}
+    \subitem {Q\+C\+P\+Item\+Pixmap}, \hyperpage{217}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{310}
+  \item {set\+Plotting\+Hint}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{368}
+  \item {set\+Plotting\+Hints}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{369}
+  \item {set\+Position\+Alignment}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{232}
+  \item {set\+Range}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{58, 59}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{132}
+  \item {set\+Range\+Drag}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{77}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{139}
+  \item {set\+Range\+Drag\+Axes}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{77, 78}
+  \item {set\+Range\+Lower}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{59}
+  \item {set\+Range\+Reversed}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{59}
+  \item {set\+Range\+Upper}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{59}
+  \item {set\+Range\+Zoom}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{78}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{139}
+  \item {set\+Range\+Zoom\+Axes}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{78, 79}
+  \item {set\+Range\+Zoom\+Factor}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{79}
+  \item {set\+Rotation}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{232}
+  \item {set\+Row\+Spacing}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{267}
+  \item {set\+Row\+Stretch\+Factor}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{267}
+  \item {set\+Row\+Stretch\+Factors}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{267}
+  \item {set\+Scale\+Ratio}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{60}
+  \item {set\+Scale\+Strategy}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Fixed}, \hyperpage{89}
+  \item {set\+Scale\+Type}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{60}
+  \item {set\+Scaled}
+    \subitem {Q\+C\+P\+Item\+Pixmap}, \hyperpage{217}
+  \item {set\+Scatter\+Skip}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{147}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{195}
+  \item {set\+Scatter\+Style}
+    \subitem {Q\+C\+P\+Curve}, \hyperpage{147}
+    \subitem {Q\+C\+P\+Graph}, \hyperpage{196}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{313}
+  \item {set\+Selectable}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{23}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{26}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{40}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{335}
+  \item {set\+Selectable\+Parts}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{60}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{280}
+  \item {set\+Selected}
+    \subitem {Q\+C\+P\+Abstract\+Item}, \hyperpage{24}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{26}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{335}
+  \item {set\+Selected\+Base\+Pen}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{60}
+  \item {set\+Selected\+Border\+Pen}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{280}
+  \item {set\+Selected\+Brush}
+    \subitem {Q\+C\+P\+Item\+Ellipse}, \hyperpage{211}
+    \subitem {Q\+C\+P\+Item\+Rect}, \hyperpage{226}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{232}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{237}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{280}
+  \item {set\+Selected\+Color}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{233}
+  \item {set\+Selected\+Font}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{27}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{233}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{281}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{335}
+  \item {set\+Selected\+Icon\+Border\+Pen}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{281}
+  \item {set\+Selected\+Label\+Color}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{60}
+  \item {set\+Selected\+Label\+Font}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{61}
+  \item {set\+Selected\+Parts}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{61}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{281}
+  \item {set\+Selected\+Pen}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{205}
+    \subitem {Q\+C\+P\+Item\+Curve}, \hyperpage{208}
+    \subitem {Q\+C\+P\+Item\+Ellipse}, \hyperpage{211}
+    \subitem {Q\+C\+P\+Item\+Line}, \hyperpage{214}
+    \subitem {Q\+C\+P\+Item\+Pixmap}, \hyperpage{217}
+    \subitem {Q\+C\+P\+Item\+Rect}, \hyperpage{226}
+    \subitem {Q\+C\+P\+Item\+Straight\+Line}, \hyperpage{228}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{233}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{238}
+  \item {set\+Selected\+Sub\+Tick\+Pen}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{61}
+  \item {set\+Selected\+Text\+Color}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{27}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{281}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{335}
+  \item {set\+Selected\+Tick\+Label\+Color}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{61}
+  \item {set\+Selected\+Tick\+Label\+Font}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{61}
+  \item {set\+Selected\+Tick\+Pen}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{62}
+  \item {set\+Selection}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{40}
+  \item {set\+Selection\+Decorator}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{41}
+  \item {set\+Selection\+Rect}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{369}
+  \item {set\+Selection\+Rect\+Mode}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{369}
+  \item {set\+Selection\+Tolerance}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{369}
+  \item {set\+Shape}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{310}
+  \item {set\+Size}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{30}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{132}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{238}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{310}
+  \item {set\+Size\+Constraint\+Rect}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{259}
+  \item {set\+Spacing}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{114}
+  \item {set\+Spacing\+Type}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{114}
+  \item {set\+Stacking\+Gap}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{107}
+  \item {set\+Style}
+    \subitem {Q\+C\+P\+Item\+Bracket}, \hyperpage{205}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{238}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{284}
+  \item {set\+Sub\+Grid\+Pen}
+    \subitem {Q\+C\+P\+Grid}, \hyperpage{200}
+  \item {set\+Sub\+Grid\+Visible}
+    \subitem {Q\+C\+P\+Grid}, \hyperpage{200}
+  \item {set\+Sub\+Tick\+Count}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Log}, \hyperpage{91}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{97}
+  \item {set\+Sub\+Tick\+Length}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{62}
+  \item {set\+Sub\+Tick\+Length\+In}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{62}
+  \item {set\+Sub\+Tick\+Length\+Out}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{62}
+  \item {set\+Sub\+Tick\+Pen}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{62}
+  \item {set\+Sub\+Ticks}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{63}
+  \item {set\+Symbol\+Gap}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{176}
+  \item {set\+Tail}
+    \subitem {Q\+C\+P\+Item\+Curve}, \hyperpage{208}
+    \subitem {Q\+C\+P\+Item\+Line}, \hyperpage{214}
+  \item {set\+Tangent\+Average}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{317}
+  \item {set\+Tangent\+To\+Data}
+    \subitem {Q\+C\+P\+Selection\+Decorator\+Bracket}, \hyperpage{317}
+  \item {set\+Text}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{233}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{335}
+  \item {set\+Text\+Alignment}
+    \subitem {Q\+C\+P\+Item\+Text}, \hyperpage{233}
+  \item {set\+Text\+Color}
+    \subitem {Q\+C\+P\+Abstract\+Legend\+Item}, \hyperpage{27}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{282}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{335}
+  \item {set\+Text\+Flags}
+    \subitem {Q\+C\+P\+Text\+Element}, \hyperpage{336}
+  \item {set\+Tick\+Count}
+    \subitem {Q\+C\+P\+Axis\+Ticker}, \hyperpage{84}
+  \item {set\+Tick\+Label\+Color}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{63}
+  \item {set\+Tick\+Label\+Font}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{63}
+  \item {set\+Tick\+Label\+Padding}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{63}
+  \item {set\+Tick\+Label\+Rotation}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{64}
+  \item {set\+Tick\+Label\+Side}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{64}
+  \item {set\+Tick\+Labels}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{64}
+  \item {set\+Tick\+Length}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{64}
+  \item {set\+Tick\+Length\+In}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{64}
+  \item {set\+Tick\+Length\+Out}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{64}
+  \item {set\+Tick\+Origin}
+    \subitem {Q\+C\+P\+Axis\+Ticker}, \hyperpage{84}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Date\+Time}, \hyperpage{87}
+  \item {set\+Tick\+Pen}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{65}
+  \item {set\+Tick\+Step}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Fixed}, \hyperpage{89}
+  \item {set\+Tick\+Step\+Strategy}
+    \subitem {Q\+C\+P\+Axis\+Ticker}, \hyperpage{84}
+  \item {set\+Ticker}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{63}
+  \item {set\+Ticks}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{65}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{97}
+  \item {set\+Tight\+Boundary}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{126}
+  \item {set\+Time\+Format}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{100}
+  \item {set\+Two\+Colored}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{186}
+  \item {set\+Type}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{139}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{222}
+  \item {set\+TypeX}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{222}
+  \item {set\+TypeY}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{223}
+  \item {set\+Upper\+Ending}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{65}
+  \item {set\+Used\+Scatter\+Properties}
+    \subitem {Q\+C\+P\+Selection\+Decorator}, \hyperpage{313}
+  \item {set\+Value\+Axis}
+    \subitem {Q\+C\+P\+Abstract\+Plottable}, \hyperpage{41}
+  \item {set\+Value\+Range}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{133}
+  \item {set\+Value\+Size}
+    \subitem {Q\+C\+P\+Color\+Map\+Data}, \hyperpage{133}
+  \item {set\+Viewport}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{370}
+  \item {set\+Visible}
+    \subitem {Q\+C\+P\+Layer}, \hyperpage{242}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{248}
+  \item {set\+Whisker\+Antialiased}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{326}
+  \item {set\+Whisker\+Bar\+Pen}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{326}
+  \item {set\+Whisker\+Pen}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{326}
+  \item {set\+Whisker\+Width}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{176}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{327}
+  \item {set\+Width}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{108}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{186}
+    \subitem {Q\+C\+P\+Line\+Ending}, \hyperpage{284}
+    \subitem {Q\+C\+P\+Statistical\+Box}, \hyperpage{327}
+  \item {set\+Width\+Type}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{108}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{186}
+  \item {set\+Wrap}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{268}
+  \item {set\+Zero\+Line\+Pen}
+    \subitem {Q\+C\+P\+Grid}, \hyperpage{200}
+  \item {setup\+Full\+Axes\+Box}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{79}
+  \item {setX}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{340}
+  \item {setY}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{340}
+  \item {Sign\+Domain}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {simplify}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{166}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{251}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{268}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{273}
+  \item {size}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{80}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{114}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{157}
+    \subitem {Q\+C\+P\+Data\+Range}, \hyperpage{161}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{302}
+  \item {Size\+Constraint\+Rect}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+  \item {size\+Constraints\+Changed}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{251}
+  \item {sort}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{157}
+  \item {sort\+Key}
+    \subitem {Q\+C\+P\+Bars\+Data}, \hyperpage{110}
+    \subitem {Q\+C\+P\+Curve\+Data}, \hyperpage{149}
+    \subitem {Q\+C\+P\+Financial\+Data}, \hyperpage{188}
+    \subitem {Q\+C\+P\+Graph\+Data}, \hyperpage{198}
+    \subitem {Q\+C\+P\+Statistical\+Box\+Data}, \hyperpage{329}
+  \item {sort\+Key\+Is\+Main\+Key}
+    \subitem {Q\+C\+P\+Abstract\+Plottable1D}, \hyperpage{46}
+    \subitem {Q\+C\+P\+Bars\+Data}, \hyperpage{110}
+    \subitem {Q\+C\+P\+Curve\+Data}, \hyperpage{149}
+    \subitem {Q\+C\+P\+Error\+Bars}, \hyperpage{177}
+    \subitem {Q\+C\+P\+Financial\+Data}, \hyperpage{188}
+    \subitem {Q\+C\+P\+Graph\+Data}, \hyperpage{198}
+    \subitem {Q\+C\+P\+Plottable\+Interface1D}, \hyperpage{295}
+    \subitem {Q\+C\+P\+Statistical\+Box\+Data}, \hyperpage{329}
+  \item {sp\+All}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{306}
+  \item {sp\+Axis}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+  \item {sp\+Axis\+Label}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+  \item {sp\+Brush}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{306}
+  \item {sp\+Items}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{276}
+  \item {sp\+Legend\+Box}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{276}
+  \item {sp\+None}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+    \subitem {Q\+C\+P\+Legend}, \hyperpage{276}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{306}
+  \item {sp\+Pen}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{306}
+  \item {sp\+Shape}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{306}
+  \item {sp\+Size}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{306}
+  \item {sp\+Tick\+Labels}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+  \item {Spacing\+Type}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{112}
+  \item {span}
+    \subitem {Q\+C\+P\+Data\+Selection}, \hyperpage{166}
+  \item {squeeze}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{157}
+  \item {srm\+Custom}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {srm\+None}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {srm\+Select}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {srm\+Zoom}
+    \subitem {Q\+CP}, \hyperpage{12}
+  \item {ss\+Circle}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Cross}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Cross\+Circle}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Cross\+Square}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Custom}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Diamond}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Disc}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Dot}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Multiples}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Fixed}, \hyperpage{89}
+  \item {ss\+None}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Fixed}, \hyperpage{89}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Peace}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Pixmap}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Plus}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Plus\+Circle}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Plus\+Square}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Powers}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Fixed}, \hyperpage{89}
+  \item {ss\+Square}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Star}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Triangle}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {ss\+Triangle\+Inverted}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{307}
+  \item {st\+Absolute}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{112}
+  \item {st\+Axis\+Rect\+Ratio}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{112}
+  \item {st\+Data\+Range}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {st\+Linear}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+  \item {st\+Logarithmic}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{51}
+  \item {st\+Multiple\+Data\+Ranges}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {st\+None}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {st\+Plot\+Coords}
+    \subitem {Q\+C\+P\+Bars\+Group}, \hyperpage{112}
+  \item {st\+Single\+Data}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {st\+Whole}
+    \subitem {Q\+CP}, \hyperpage{13}
+  \item {start\+Painting}
+    \subitem {Q\+C\+P\+Abstract\+Paint\+Buffer}, \hyperpage{30}
+    \subitem {Q\+C\+P\+Paint\+Buffer\+Pixmap}, \hyperpage{288}
+  \item {started}
+    \subitem {Q\+C\+P\+Selection\+Rect}, \hyperpage{320}
+
+  \indexspace
+
+  \item {take}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{252}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{268}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{273}
+  \item {take\+At}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{252}
+    \subitem {Q\+C\+P\+Layout\+Grid}, \hyperpage{268}
+    \subitem {Q\+C\+P\+Layout\+Inset}, \hyperpage{273}
+  \item {Tick\+Step\+Strategy}
+    \subitem {Q\+C\+P\+Axis\+Ticker}, \hyperpage{83}
+  \item {ticker}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{65}
+  \item {ticks}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Text}, \hyperpage{97}
+  \item {time\+Series\+To\+Ohlc}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{186}
+  \item {Time\+Unit}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{99}
+  \item {to\+Painter}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{370}
+  \item {to\+Pixmap}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{370}
+  \item {to\+Point}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{340}
+  \item {to\+PointF}
+    \subitem {Q\+C\+P\+Vector2D}, \hyperpage{341}
+  \item {to\+Q\+C\+P\+Item\+Position}
+    \subitem {Q\+C\+P\+Item\+Anchor}, \hyperpage{202}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{223}
+  \item {top}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{80}
+  \item {top\+Left}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{80}
+  \item {top\+Right}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{80}
+  \item {Tracer\+Style}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{235}
+  \item {ts\+Circle}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{235}
+  \item {ts\+Crosshair}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{235}
+  \item {ts\+None}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{235}
+  \item {ts\+Plus}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{235}
+  \item {ts\+Square}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{235}
+  \item {tss\+Meet\+Tick\+Count}
+    \subitem {Q\+C\+P\+Axis\+Ticker}, \hyperpage{83}
+  \item {tss\+Readability}
+    \subitem {Q\+C\+P\+Axis\+Ticker}, \hyperpage{83}
+  \item {tu\+Days}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{99}
+  \item {tu\+Hours}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{99}
+  \item {tu\+Milliseconds}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{99}
+  \item {tu\+Minutes}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{99}
+  \item {tu\+Seconds}
+    \subitem {Q\+C\+P\+Axis\+Ticker\+Time}, \hyperpage{99}
+  \item {type}
+    \subitem {Q\+C\+P\+Item\+Position}, \hyperpage{223}
+
+  \indexspace
+
+  \item {undefine\+Pen}
+    \subitem {Q\+C\+P\+Scatter\+Style}, \hyperpage{310}
+  \item {up\+Layout}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+  \item {up\+Margins}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+  \item {up\+Preparation}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+  \item {update}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{80}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{139}
+    \subitem {Q\+C\+P\+Layout}, \hyperpage{252}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{259}
+  \item {update\+Legend\+Icon}
+    \subitem {Q\+C\+P\+Color\+Map}, \hyperpage{126}
+  \item {Update\+Phase}
+    \subitem {Q\+C\+P\+Layout\+Element}, \hyperpage{255}
+  \item {update\+Position}
+    \subitem {Q\+C\+P\+Item\+Tracer}, \hyperpage{238}
+
+  \indexspace
+
+  \item {valid\+Range}
+    \subitem {Q\+C\+P\+Range}, \hyperpage{302}
+  \item {value\+Range}
+    \subitem {Q\+C\+P\+Bars\+Data}, \hyperpage{110}
+    \subitem {Q\+C\+P\+Curve\+Data}, \hyperpage{149}
+    \subitem {Q\+C\+P\+Data\+Container}, \hyperpage{157}
+    \subitem {Q\+C\+P\+Financial\+Data}, \hyperpage{188}
+    \subitem {Q\+C\+P\+Graph\+Data}, \hyperpage{198}
+    \subitem {Q\+C\+P\+Statistical\+Box\+Data}, \hyperpage{330}
+
+  \indexspace
+
+  \item {wheel\+Event}
+    \subitem {Q\+C\+P\+Axis}, \hyperpage{65}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{80}
+    \subitem {Q\+C\+P\+Color\+Scale}, \hyperpage{139}
+    \subitem {Q\+C\+P\+Layerable}, \hyperpage{248}
+  \item {width}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{81}
+  \item {Width\+Type}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{103}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{181}
+  \item {wt\+Absolute}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{103}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{181}
+  \item {wt\+Axis\+Rect\+Ratio}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{103}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{181}
+  \item {wt\+Plot\+Coords}
+    \subitem {Q\+C\+P\+Bars}, \hyperpage{103}
+    \subitem {Q\+C\+P\+Financial}, \hyperpage{181}
+
+  \indexspace
+
+  \item {x\+Axis}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{371}
+  \item {x\+Axis2}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{371}
+
+  \indexspace
+
+  \item {y\+Axis}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{371}
+  \item {y\+Axis2}
+    \subitem {Q\+Custom\+Plot}, \hyperpage{372}
+
+  \indexspace
+
+  \item {zoom}
+    \subitem {Q\+C\+P\+Axis\+Rect}, \hyperpage{81}
+
+\end{theindex}
