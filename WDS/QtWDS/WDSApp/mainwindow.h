@@ -25,14 +25,12 @@ public:
     void set_LCD_Roll_2(const int &num);
     void set_LCD_Pitch(const int &num);
 
+    void closeEvent(QCloseEvent *event);
 
 private slots:
-//    void on_actionConnect_triggered();
-//    void on_actionDisconnect_triggered();
-
     void on_actionDisconnect_triggered();
-
     void on_actionConnect_triggered();
+
 signals:
     void Connect_clicked();
     void Disconnect_clicked();

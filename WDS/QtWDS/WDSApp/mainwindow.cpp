@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->LCD_Roll_2->display("---");
     connect(this,SIGNAL(Connect_clicked()),ui->Connection_Cond,SLOT(Connected()));
     connect(this,SIGNAL(Disconnect_clicked()),ui->Connection_Cond,SLOT(Disconnected()));
+    connect(ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));
 }
 
 MainWindow::~MainWindow()
@@ -44,6 +45,23 @@ void MainWindow::set_LCD_ASL(const int &num){
 ///
 void MainWindow::set_LCD_Pitch(const int &num){
     ui->LCD_Pitch->display(num);
+}
+
+///This overriden method asks user if he is sure he wants to exit applications. Method catches QCloseEvent end writes decision into it.
+/// \brief MainWindow::closeEvent Overriden method to show a window asking for confirmation.
+/// \param event QCloseEvent
+///
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    QMessageBox::StandardButton resBtn = QMessageBox::question( this, QObject::tr("Exiting"),
+                                                                 QObject::tr("Are you sure?\n"),
+                                                                 QMessageBox::No | QMessageBox::Yes,
+                                                                 QMessageBox::Yes);
+     if (resBtn != QMessageBox::Yes) {
+         event->ignore();
+     } else {
+         event->accept();
+     }
 }
 
 ///Function sets a value displayed as a roll angle.
@@ -86,3 +104,4 @@ void MainWindow::on_actionConnect_triggered()
     ui->Text_Condition->setText(QObject::tr("Connected"));
     QMessageBox::information(nullptr,QObject::tr("Succes!"),QObject::tr("Succesfully connected to device"));
 }
+

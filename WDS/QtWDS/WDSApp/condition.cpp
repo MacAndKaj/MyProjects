@@ -15,14 +15,23 @@ void Condition::paintEvent(QPaintEvent *event)
     QPainter painter;
     painter.begin(this);
     QPen pen;
+    pen.setWidth(3);
+    QBrush brush;
     if(this->_is_connected){
-        pen.setColor(Qt::green);
-        painter.drawEllipse(event->rect());
+        brush.setColor(Qt::green);
+        pen.setColor(Qt::black);
+        painter.drawEllipse(event->rect().center(),10,10);
     }
     else{
-        pen.setColor(Qt::red);
-        painter.drawEllipse(event->rect());
+        brush.setColor(Qt::red);
+        pen.setColor(Qt::black);
+        painter.drawEllipse(event->rect().center(),10,10);
     }
+    brush.setStyle(Qt::SolidPattern);
+    QPainterPath path;
+    path.addEllipse(event->rect().center(),10,10);
+
+    painter.fillPath(path,brush);
     QWidget::paintEvent(event);
     painter.end();
 }
