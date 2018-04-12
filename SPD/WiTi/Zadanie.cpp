@@ -4,12 +4,12 @@
 
 #include "Zadanie.h"
 
-Zadanie::Zadanie(unsigned int NumerZadania, TypDanych p, TypDanych w, TypDanych d) : NumerZadania(NumerZadania), p(p),
+Zadanie::Zadanie(int NumerZadania, TypDanych p, TypDanych w, TypDanych d) : NumerZadania(NumerZadania), p(p),
                                                                                      w(w), d(d) {}
 
 Zadanie::~Zadanie() = default;
 
-unsigned int Zadanie::getNumerZadania() const {
+int Zadanie::getNumerZadania() const {
     return NumerZadania;
 }
 

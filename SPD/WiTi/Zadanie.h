@@ -7,9 +7,10 @@
 
 typedef int TypDanych;
 
+
 class Zadanie {
 private:
-    unsigned int NumerZadania;
+    int NumerZadania;
     TypDanych p;
     TypDanych w;
     TypDanych d;
@@ -20,13 +21,13 @@ public:
     /// \param p Czas wykonania zadania
     /// \param w Wspolczynnik kary
     /// \param d zadany termin zakonczenia
-    Zadanie(unsigned int NumerZadania, TypDanych p, TypDanych w, TypDanych d);
+    Zadanie(int NumerZadania, TypDanych p, TypDanych w, TypDanych d);
 
-    ///Default destructor
+    ///Default destruktor
     virtual ~Zadanie();
 
     // ----------------------------- Operatory, gettery i settery ---------------------------
-    unsigned int getNumerZadania() const;
+    int getNumerZadania() const;
 
     TypDanych getP() const;
 

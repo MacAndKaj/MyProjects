@@ -11,13 +11,31 @@
 //Tutaj typ kontenera jakiego uzywamy do przechowywania zadan
 typedef std::vector<Zadanie> Kontener;
 
+
+
+
+//Zbior ->      [Zad1][Zad2]...[ZadN]
+//Kolejnosc ->  [nrZadA][nrZadB]...
+//Wektor C ->   [koniec1][koniec2]...[koniecN]
+
+
 class ZbiorZadan {
 private:
     ///Struktura przechowujaca zadania
     Kontener *Zbior;
 
     ///Wektor przechowujacy numery zadan, kolejnosc w wektorze oznacza kolejnosc wykonywania
+    ///
     std::vector<int> *KolejnoscZadan;
+
+    ///Wektor przechowujacy czas zakonczenia kazdego zadania
+    std::vector<TypDanych > *WektorKoncaZadan;
+
+    ///Wektor przechowujacy wielkosc spoznienia kazdego zadania
+    std::vector<TypDanych > *WektorSpoznienia;
+
+    void Wektor_C();
+    void Wektor_T();
 public:
     ZbiorZadan();
 
@@ -25,8 +43,13 @@ public:
 
     /// Funkcja przelczajaca kryterium optymalizacyjne jakim jest suma WiTi
     /// \return Zwraca sume WiTi lub -1 jesli brak zadan
-    TypDanych suma_WiTi() const;
+    TypDanych suma_WiTi();
 
+
+    void Dodaj_Zadanie(Zadanie*);
+    void WypiszPermutacje()const;
+
+    void A
 };
 
 
