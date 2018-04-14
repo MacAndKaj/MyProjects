@@ -17,6 +17,7 @@ public:
     ~Condition() = default;
 
     void paintEvent(QPaintEvent *event);
+    bool is_Connected();
 
 public slots:
     void Connected();

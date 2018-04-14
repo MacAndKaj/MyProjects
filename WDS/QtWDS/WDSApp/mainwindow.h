@@ -30,6 +30,7 @@ public:
 private slots:
     void on_actionDisconnect_triggered();
     void on_actionConnect_triggered();
+    void realtimeDataSlot();
 
 signals:
     void Connect_clicked();
@@ -38,7 +39,7 @@ signals:
 private:
     Ui::MainWindow *ui;
 //    QVector<float> *vector_plot;
-
+    QTimer *timer;
 
 };
 

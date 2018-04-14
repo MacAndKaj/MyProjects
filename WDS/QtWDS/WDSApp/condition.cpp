@@ -37,6 +37,15 @@ void Condition::paintEvent(QPaintEvent *event)
 }
 
 ///
+/// \brief Condition::is_Connected method used when you want to know if device is connected
+/// \return True when is connected, False otherwise
+///
+bool Condition::is_Connected()
+{
+    return this->_is_connected;
+}
+
+///
 /// \brief Connected slot used when connection event occurs.
 ///
 void Condition::Connected()

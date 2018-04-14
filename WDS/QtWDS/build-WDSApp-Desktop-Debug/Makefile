@@ -51,16 +51,20 @@ OBJECTS_DIR   = ./
 SOURCES       = ../WDSApp/main.cpp \
 		../WDSApp/mainwindow.cpp \
 		../WDSApp/qcustomplot.cpp \
-		../WDSApp/condition.cpp moc_mainwindow.cpp \
+		../WDSApp/condition.cpp \
+		../WDSApp/qbalancewidget.cpp moc_mainwindow.cpp \
 		moc_qcustomplot.cpp \
-		moc_condition.cpp
+		moc_condition.cpp \
+		moc_qbalancewidget.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		qcustomplot.o \
 		condition.o \
+		qbalancewidget.o \
 		moc_mainwindow.o \
 		moc_qcustomplot.o \
-		moc_condition.o
+		moc_condition.o \
+		moc_qbalancewidget.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -125,10 +129,12 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		../WDSApp/WDSApp.pro ../WDSApp/mainwindow.h \
 		../WDSApp/qcustomplot.h \
-		../WDSApp/condition.h ../WDSApp/main.cpp \
+		../WDSApp/condition.h \
+		../WDSApp/qbalancewidget.h ../WDSApp/main.cpp \
 		../WDSApp/mainwindow.cpp \
 		../WDSApp/qcustomplot.cpp \
-		../WDSApp/condition.cpp
+		../WDSApp/condition.cpp \
+		../WDSApp/qbalancewidget.cpp
 QMAKE_TARGET  = WDSApp
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = WDSApp
@@ -308,8 +314,8 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../WDSApp/mainwindow.h ../WDSApp/qcustomplot.h ../WDSApp/condition.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../WDSApp/main.cpp ../WDSApp/mainwindow.cpp ../WDSApp/qcustomplot.cpp ../WDSApp/condition.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../WDSApp/mainwindow.h ../WDSApp/qcustomplot.h ../WDSApp/condition.h ../WDSApp/qbalancewidget.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../WDSApp/main.cpp ../WDSApp/mainwindow.cpp ../WDSApp/qcustomplot.cpp ../WDSApp/condition.cpp ../WDSApp/qbalancewidget.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../WDSApp/mainwindow.ui $(DISTDIR)/
 
 
@@ -333,9 +339,9 @@ check: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_qcustomplot.cpp moc_condition.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_qcustomplot.cpp moc_condition.cpp moc_qbalancewidget.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_qcustomplot.cpp moc_condition.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_qcustomplot.cpp moc_condition.cpp moc_qbalancewidget.cpp
 moc_mainwindow.cpp: ../WDSApp/condition.h \
 		../WDSApp/mainwindow.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/mainwindow.h -o moc_mainwindow.cpp
@@ -346,13 +352,18 @@ moc_qcustomplot.cpp: ../WDSApp/qcustomplot.h
 moc_condition.cpp: ../WDSApp/condition.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/condition.h -o moc_condition.cpp
 
+moc_qbalancewidget.cpp: ../WDSApp/qbalancewidget.h
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/qbalancewidget.h -o moc_qbalancewidget.cpp
+
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
 compiler_uic_make_all: ui_mainwindow.h
 compiler_uic_clean:
 	-$(DEL_FILE) ui_mainwindow.h
 ui_mainwindow.h: ../WDSApp/mainwindow.ui \
-		../WDSApp/condition.h
+		../WDSApp/condition.h \
+		../WDSApp/qcustomplot.h \
+		../WDSApp/qbalancewidget.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/uic ../WDSApp/mainwindow.ui -o ui_mainwindow.h
 
 compiler_yacc_decl_make_all:
@@ -371,7 +382,8 @@ main.o: ../WDSApp/main.cpp ../WDSApp/mainwindow.h \
 
 mainwindow.o: ../WDSApp/mainwindow.cpp ../WDSApp/mainwindow.h \
 		../WDSApp/condition.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../WDSApp/qcustomplot.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../WDSApp/mainwindow.cpp
 
 qcustomplot.o: ../WDSApp/qcustomplot.cpp ../WDSApp/qcustomplot.h
@@ -379,6 +391,9 @@ qcustomplot.o: ../WDSApp/qcustomplot.cpp ../WDSApp/qcustomplot.h
 
 condition.o: ../WDSApp/condition.cpp ../WDSApp/condition.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o condition.o ../WDSApp/condition.cpp
+
+qbalancewidget.o: ../WDSApp/qbalancewidget.cpp ../WDSApp/qbalancewidget.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qbalancewidget.o ../WDSApp/qbalancewidget.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
@@ -388,6 +403,9 @@ moc_qcustomplot.o: moc_qcustomplot.cpp
 
 moc_condition.o: moc_condition.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_condition.o moc_condition.cpp
+
+moc_qbalancewidget.o: moc_qbalancewidget.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_qbalancewidget.o moc_qbalancewidget.cpp
 
 ####### Install
 

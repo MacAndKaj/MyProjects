@@ -15,10 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     qcustomplot.cpp \
-    condition.cpp
+    condition.cpp \
+    qbalancewidget.cpp
 
 HEADERS  += mainwindow.h \
     qcustomplot.h \
-    condition.h
+    condition.h \
+    qbalancewidget.h
 
 FORMS    += mainwindow.ui
