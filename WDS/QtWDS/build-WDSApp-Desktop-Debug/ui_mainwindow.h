@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLCDNumber>
@@ -42,8 +43,7 @@ public:
     QAction *actionConnect;
     QAction *actionDisconnect;
     QWidget *centralWidget;
-    QVBoxLayout *verticalLayout_3;
-    QSplitter *splitter_3;
+    QGridLayout *gridLayout;
     QSplitter *splitter;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
@@ -67,15 +67,15 @@ public:
     QBalanceWidget *Widget_RP;
     QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout;
+    QGridLayout *gridLayout_2;
     QSpacerItem *horizontalSpacer_2;
-    QHBoxLayout *Layout_RP;
+    QLabel *Text_Roll_2;
+    QLCDNumber *LCD_Pitch;
+    QSpacerItem *horizontalSpacer_3;
+    QLabel *Text_Pitch;
     QLabel *Text_Roll_1;
     QLCDNumber *LCD_Roll_1;
-    QLabel *Text_Pitch;
-    QLCDNumber *LCD_Pitch;
-    QLabel *Text_Roll_2;
     QLCDNumber *LCD_Roll_2;
-    QSpacerItem *horizontalSpacer_3;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuAbout;
@@ -86,7 +86,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(689, 399);
+        MainWindow->resize(719, 461);
         actionExit = new QAction(MainWindow);
         actionExit->setObjectName(QStringLiteral("actionExit"));
         actionAbout = new QAction(MainWindow);
@@ -101,14 +101,11 @@ public:
         actionDisconnect->setObjectName(QStringLiteral("actionDisconnect"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        verticalLayout_3 = new QVBoxLayout(centralWidget);
-        verticalLayout_3->setSpacing(6);
-        verticalLayout_3->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
-        splitter_3 = new QSplitter(centralWidget);
-        splitter_3->setObjectName(QStringLiteral("splitter_3"));
-        splitter_3->setOrientation(Qt::Horizontal);
-        splitter = new QSplitter(splitter_3);
+        gridLayout = new QGridLayout(centralWidget);
+        gridLayout->setSpacing(6);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        splitter = new QSplitter(centralWidget);
         splitter->setObjectName(QStringLiteral("splitter"));
         splitter->setOrientation(Qt::Vertical);
         layoutWidget = new QWidget(splitter);
@@ -325,18 +322,20 @@ public:
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         splitter->addWidget(Widget_AXL);
-        splitter_3->addWidget(splitter);
-        splitter_2 = new QSplitter(splitter_3);
+
+        gridLayout->addWidget(splitter, 0, 0, 1, 1);
+
+        splitter_2 = new QSplitter(centralWidget);
         splitter_2->setObjectName(QStringLiteral("splitter_2"));
         splitter_2->setOrientation(Qt::Vertical);
         Widget_RP = new QBalanceWidget(splitter_2);
         Widget_RP->setObjectName(QStringLiteral("Widget_RP"));
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        QSizePolicy sizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(Widget_RP->sizePolicy().hasHeightForWidth());
         Widget_RP->setSizePolicy(sizePolicy);
-        Widget_RP->setMinimumSize(QSize(100, 0));
+        Widget_RP->setMinimumSize(QSize(200, 200));
         splitter_2->addWidget(Widget_RP);
         layoutWidget1 = new QWidget(splitter_2);
         layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
@@ -345,27 +344,27 @@ public:
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        horizontalSpacer_2 = new QSpacerItem(28, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        gridLayout_2 = new QGridLayout();
+        gridLayout_2->setSpacing(6);
+        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
+        horizontalSpacer_2 = new QSpacerItem(28, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
-        horizontalLayout->addItem(horizontalSpacer_2);
+        gridLayout_2->addItem(horizontalSpacer_2, 1, 0, 1, 1);
 
-        Layout_RP = new QHBoxLayout();
-        Layout_RP->setSpacing(6);
-        Layout_RP->setObjectName(QStringLiteral("Layout_RP"));
-        Text_Roll_1 = new QLabel(layoutWidget1);
-        Text_Roll_1->setObjectName(QStringLiteral("Text_Roll_1"));
+        Text_Roll_2 = new QLabel(layoutWidget1);
+        Text_Roll_2->setObjectName(QStringLiteral("Text_Roll_2"));
         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(Text_Roll_1->sizePolicy().hasHeightForWidth());
-        Text_Roll_1->setSizePolicy(sizePolicy1);
-        Text_Roll_1->setMaximumSize(QSize(16777215, 25));
+        sizePolicy1.setHeightForWidth(Text_Roll_2->sizePolicy().hasHeightForWidth());
+        Text_Roll_2->setSizePolicy(sizePolicy1);
+        Text_Roll_2->setMaximumSize(QSize(16777215, 25));
 
-        Layout_RP->addWidget(Text_Roll_1);
+        gridLayout_2->addWidget(Text_Roll_2, 1, 5, 1, 1, Qt::AlignRight);
 
-        LCD_Roll_1 = new QLCDNumber(layoutWidget1);
-        LCD_Roll_1->setObjectName(QStringLiteral("LCD_Roll_1"));
-        LCD_Roll_1->setMaximumSize(QSize(16777215, 25));
+        LCD_Pitch = new QLCDNumber(layoutWidget1);
+        LCD_Pitch->setObjectName(QStringLiteral("LCD_Pitch"));
+        LCD_Pitch->setMaximumSize(QSize(16777215, 25));
         QPalette palette2;
         palette2.setBrush(QPalette::Active, QPalette::WindowText, brush);
         QBrush brush14(QColor(9, 255, 5, 255));
@@ -424,20 +423,32 @@ public:
         palette2.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush14);
         palette2.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush7);
         palette2.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        LCD_Roll_1->setPalette(palette2);
-        LCD_Roll_1->setDigitCount(4);
+        LCD_Pitch->setPalette(palette2);
+        LCD_Pitch->setDigitCount(4);
 
-        Layout_RP->addWidget(LCD_Roll_1);
+        gridLayout_2->addWidget(LCD_Pitch, 1, 4, 1, 1, Qt::AlignLeft);
+
+        horizontalSpacer_3 = new QSpacerItem(28, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer_3, 1, 7, 1, 1);
 
         Text_Pitch = new QLabel(layoutWidget1);
         Text_Pitch->setObjectName(QStringLiteral("Text_Pitch"));
         Text_Pitch->setMaximumSize(QSize(16777215, 25));
 
-        Layout_RP->addWidget(Text_Pitch);
+        gridLayout_2->addWidget(Text_Pitch, 1, 3, 1, 1, Qt::AlignRight);
 
-        LCD_Pitch = new QLCDNumber(layoutWidget1);
-        LCD_Pitch->setObjectName(QStringLiteral("LCD_Pitch"));
-        LCD_Pitch->setMaximumSize(QSize(16777215, 25));
+        Text_Roll_1 = new QLabel(layoutWidget1);
+        Text_Roll_1->setObjectName(QStringLiteral("Text_Roll_1"));
+        sizePolicy1.setHeightForWidth(Text_Roll_1->sizePolicy().hasHeightForWidth());
+        Text_Roll_1->setSizePolicy(sizePolicy1);
+        Text_Roll_1->setMaximumSize(QSize(16777215, 25));
+
+        gridLayout_2->addWidget(Text_Roll_1, 1, 1, 1, 1, Qt::AlignRight);
+
+        LCD_Roll_1 = new QLCDNumber(layoutWidget1);
+        LCD_Roll_1->setObjectName(QStringLiteral("LCD_Roll_1"));
+        LCD_Roll_1->setMaximumSize(QSize(16777215, 25));
         QPalette palette3;
         palette3.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette3.setBrush(QPalette::Active, QPalette::Button, brush14);
@@ -484,18 +495,10 @@ public:
         palette3.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush14);
         palette3.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush7);
         palette3.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        LCD_Pitch->setPalette(palette3);
-        LCD_Pitch->setDigitCount(4);
+        LCD_Roll_1->setPalette(palette3);
+        LCD_Roll_1->setDigitCount(4);
 
-        Layout_RP->addWidget(LCD_Pitch);
-
-        Text_Roll_2 = new QLabel(layoutWidget1);
-        Text_Roll_2->setObjectName(QStringLiteral("Text_Roll_2"));
-        sizePolicy1.setHeightForWidth(Text_Roll_2->sizePolicy().hasHeightForWidth());
-        Text_Roll_2->setSizePolicy(sizePolicy1);
-        Text_Roll_2->setMaximumSize(QSize(16777215, 25));
-
-        Layout_RP->addWidget(Text_Roll_2);
+        gridLayout_2->addWidget(LCD_Roll_1, 1, 2, 1, 1, Qt::AlignLeft);
 
         LCD_Roll_2 = new QLCDNumber(layoutWidget1);
         LCD_Roll_2->setObjectName(QStringLiteral("LCD_Roll_2"));
@@ -549,24 +552,19 @@ public:
         LCD_Roll_2->setPalette(palette4);
         LCD_Roll_2->setDigitCount(4);
 
-        Layout_RP->addWidget(LCD_Roll_2);
+        gridLayout_2->addWidget(LCD_Roll_2, 1, 6, 1, 1, Qt::AlignLeft);
 
 
-        horizontalLayout->addLayout(Layout_RP);
-
-        horizontalSpacer_3 = new QSpacerItem(28, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout->addItem(horizontalSpacer_3);
+        horizontalLayout->addLayout(gridLayout_2);
 
         splitter_2->addWidget(layoutWidget1);
-        splitter_3->addWidget(splitter_2);
 
-        verticalLayout_3->addWidget(splitter_3);
+        gridLayout->addWidget(splitter_2, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 689, 25));
+        menuBar->setGeometry(QRect(0, 0, 719, 25));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuAbout = new QMenu(menuBar);
@@ -605,9 +603,9 @@ public:
         Text_Condition->setText(QApplication::translate("MainWindow", "Con", 0));
         Text_ASL->setText(QApplication::translate("MainWindow", "Metres ASL:", 0));
         Text_AGL->setText(QApplication::translate("MainWindow", "Metres AGL:", 0));
-        Text_Roll_1->setText(QApplication::translate("MainWindow", "Roll:", 0));
-        Text_Pitch->setText(QApplication::translate("MainWindow", "Pitch:", 0));
         Text_Roll_2->setText(QApplication::translate("MainWindow", "Roll:", 0));
+        Text_Pitch->setText(QApplication::translate("MainWindow", "Pitch:", 0));
+        Text_Roll_1->setText(QApplication::translate("MainWindow", "Roll:", 0));
         menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));
         menuAbout->setTitle(QApplication::translate("MainWindow", "Help", 0));
     } // retranslateUi

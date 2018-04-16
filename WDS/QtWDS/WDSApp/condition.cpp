@@ -17,6 +17,9 @@ void Condition::paintEvent(QPaintEvent *event)
     QPen pen;
     pen.setWidth(3);
     QBrush brush;
+    painter.setBrush(brush);
+    painter.setPen(pen);
+
     if(this->_is_connected){
         brush.setColor(Qt::green);
         pen.setColor(Qt::black);

@@ -38,7 +38,6 @@ signals:
 
 private:
     Ui::MainWindow *ui;
-//    QVector<float> *vector_plot;
     QTimer *timer;
 
 };
