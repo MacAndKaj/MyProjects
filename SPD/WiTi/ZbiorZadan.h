@@ -27,6 +27,7 @@ private:
     ///Wektor przechowujacy numery zadan, kolejnosc w wektorze oznacza kolejnosc wykonywania
     ///
     std::vector<int> *KolejnoscZadan;
+    std::vector<int> *PermPD;
 
     ///Wektor przechowujacy czas zakonczenia kazdego zadania
     std::vector<TypDanych > *WektorKoncaZadan;
@@ -44,12 +45,23 @@ public:
     /// Funkcja przelczajaca kryterium optymalizacyjne jakim jest suma WiTi
     /// \return Zwraca sume WiTi lub -1 jesli brak zadan
     TypDanych suma_WiTi();
-
+    int getIlosc() const;
 
     void Dodaj_Zadanie(Zadanie*);
     void WypiszPermutacje()const;
+    void WypiszKolejnosc()const;
 
-    void A
+    void sortP();
+    void sortW();
+    void sortD();
+
+
+    int AlgProgDynamicznego();
+    void PD_WypiszPermutacje();
+    int PrzegladZupelny();
+
+    void PD_PodmienPermutacje();
+
 };
 
 

@@ -1,15 +1,29 @@
 #include <iostream>
 #include <fstream>
-
 #include "ZbiorZadan.h"
 #include "Funkcje.h"
 
 
 int main() {
-    ZbiorZadan zbior;
-    int ret = WczytajZbior("data10.txt",zbior);
-    zbior.WypiszPermutacje();
-    if(ret == 0)std::cout << zbior.suma_WiTi() << std::endl;
-    else std::cout << "zle wczytano" << std::endl;
+    auto WekNazw = WczytajNazwy("NazwyPlikow.txt");
+    for(auto &i : WekNazw){
+        std::cout << i << std::endl;
+    }
+
+    std::fstream PlikZwynikami;
+    PlikZwynikami.open("PlikZWynikami.txt",std::ios::app);
+    if(PlikZwynikami.good()) {
+        PlikZwynikami << "Format: Ilosc | WynikSortowania | CzasSortowania | WynikPZ | CzasPZ | WynikPD | CzasPD\n";
+        for (auto &i : WekNazw) {
+            ZbiorZadan zbior;
+            Dane wynik = Testy(zbior, i);
+            DoPliku(wynik, PlikZwynikami);
+        }
+
+    }
+    else{
+        std::cerr << "Nie ma pliku z wynikami :(" << std::endl;
+    }
+    PlikZwynikami.close();
     return 0;
 }

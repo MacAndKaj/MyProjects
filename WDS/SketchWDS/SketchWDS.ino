@@ -6,50 +6,103 @@ LPS331 PressureSensor;
 ADXL345 Accelerometer;
 
 struct Data{
-  Vector Acc_Raw;
   Vector Acc_Norm;
   float Pressure_hPa;
 }dataToSend;
+
+struct Frame{
+  byte X[4];
+  byte Y[4];
+  byte Z[4];
+  byte MetresASL[4];
+  byte MetresAGL[4];  
+};
+
+union FloatUnion
+{
+ float number;
+ byte bytes[4];
+};
+
 
 
 void setup()
 {
   Serial.begin(9600);
-  Serial.println("Initializing sensors\n");
   Wire.begin();        // join i2c bus (address optional for master)
 //initializing LPS331AP
   if(!PressureSensor.init()){
-    Serial.println("Cannot find LPS331AP!");
     while(1);
   }
   
   PressureSensor.enableDefault();
 //initializing ADXL345
   if(!Accelerometer.begin()){
-    Serial.println("Cannot find ADXL345!");
     while(1);
   }
   Accelerometer.setRange(ADXL345_RANGE_16G);
-  Serial.println("Connected succesfully!");
 }
+
+void sendFrame(struct Frame &fr){
+  for(int i=0;i<4;++i){
+    Serial.write(fr.X[i]);
+  }
+  for(int i=0;i<4;++i){
+    Serial.write(fr.Y[i]);
+  }
+  for(int i=0;i<4;++i){
+    Serial.write(fr.Z[i]);
+  }
+  for(int i=0;i<4;++i){
+    Serial.write(fr.MetresASL[i]);
+  }
+  for(int i=0;i<4;++i){
+    Serial.write(fr.MetresAGL[i]);
+  }  
+}
+
 
 void loop()
 {
-  //data from Accelerometer
-  dataToSend.Acc_Raw = Accelerometer.readRaw();  //Returns non-normalized vector of parameters
+  struct Frame frame;
+  union FloatUnion toChange;
+  float temp=0;
+  
   dataToSend.Acc_Norm = Accelerometer.readNormalize();    //Returns normalized vector of parameters
   dataToSend.Pressure_hPa = PressureSensor.readPressureMillibars();  //Returns a pressure reading from the sensor in units of millibars (mbar)/hectopascals (hPa).
+  //-----------------------------X--------------------------------------
+  temp=dataToSend.Acc_Norm.XAxis;
+  toChange.number = temp;
+  for(int i=0;i<4;++i){
+    frame.X[i]=toChange.bytes[i];
+  }  
+  //-----------------------------Y--------------------------------------
+  temp=dataToSend.Acc_Norm.YAxis;
+  toChange.number = temp;
+  for(int i=0;i<4;++i){
+    frame.Y[i]=toChange.bytes[i];
+  }  
+  //-----------------------------Z--------------------------------------
+  temp=dataToSend.Acc_Norm.ZAxis;
+  toChange.number = temp;
+  for(int i=0;i<4;++i){
+    frame.Z[i]=toChange.bytes[i];
+  }  
+  //-----------------------------ASL--------------------------------------
+  temp = PressureSensor.pressureToAltitudeMeters(dataToSend.Pressure_hPa);
+  toChange.number = temp;
+  for(int i=0;i<4;++i){
+    frame.MetresAGL[i]=toChange.bytes[i];
+  }
+  //-------------------------------------------------------------------
+  temp = PressureSensor.pressureToAltitudeMeters(dataToSend.Pressure_hPa,1027);
+  toChange.number = temp;
+  for(int i=0;i<4;++i){
+    frame.MetresASL[i]=toChange.bytes[i];
+  }
+  //-----------------------------ASL--------------------------------------
 
-  
-  
-  Serial.println("**********************************************");
-  Serial.println("Accelerometer data normalized:");
-  Serial.print("X-Axis: ");Serial.print(dataToSend.Acc_Norm.XAxis);
-  Serial.print("\nY-Axis: ");Serial.print(dataToSend.Acc_Norm.YAxis);
-  Serial.print("\nZ-Axis: ");Serial.print(dataToSend.Acc_Norm.ZAxis);
-  Serial.println("\nPressure sensor data:");
-  Serial.print("\nPressure: ");Serial.print(dataToSend.Pressure_hPa);Serial.print(" hPa\n");
-  Serial.println("**********************************************\n");
+  sendFrame(frame);
   delay(1000);
 
 }
