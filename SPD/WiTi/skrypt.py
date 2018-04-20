@@ -1,9 +1,6 @@
 from matplotlib import pyplot as wykres
-import numpy as NP
-from scipy import polyval, polyfit, optimize
 
 import os, subprocess, pathlib
-import tkinter
 
 # wymagania
 # python3 (sudo apt-get install python3)
@@ -12,36 +9,34 @@ import tkinter
 # cmake (sudo apt-get install cmake)
 
 
-# os.system("rm WiTi NazwyPlikow.txt PlikZWynikami.txt")
-#
-from scipy.stats import expon
+os.system("rm WiTi NazwyPlikow.txt PlikZWynikami.txt")
 
 nazwa = []
-# # najpierw trzeba przygotowac plik zeby program poszedl
-# mojplik = os.path.isfile("NazwyPlikow.txt")  # sprawdzamy czy jest juz plik
-# if not mojplik:
-#     os.system("find data* > NazwyPlikow.txt")
-#
-# uchwyt = open("NazwyPlikow.txt", "r+")
-#
-# licczba = len(uchwyt.readlines())
-#
-# if licczba == 0:
-#     os.system("find data* > NazwyPlikow.txt")
-#
-# cmake = subprocess.call(["cmake", '.'])
-#
-# make = subprocess.call("make")
-#
-# # teraz wykonamy program ktory da nam plik z potrzebnymi liczbami
-# programPath = os.getcwd()
-# programPath += "/WiTi"
-# print(programPath + "/WiTi")
-# prog = subprocess.Popen(programPath)
-# prog.wait()
-#
-# uchwyt.close()
-#
+# najpierw trzeba przygotowac plik zeby program poszedl
+mojplik = os.path.isfile("NazwyPlikow.txt")  # sprawdzamy czy jest juz plik
+if not mojplik:
+    os.system("find data* > NazwyPlikow.txt")
+
+uchwyt = open("NazwyPlikow.txt", "r+")
+
+licczba = len(uchwyt.readlines())
+
+if licczba == 0:
+    os.system("find data* > NazwyPlikow.txt")
+
+cmake = subprocess.call(["cmake", '.'])
+
+make = subprocess.call("make")
+
+# teraz wykonamy program ktory da nam plik z potrzebnymi liczbami
+programPath = os.getcwd()
+programPath += "/WiTi"
+print(programPath + "/WiTi")
+prog = subprocess.Popen(programPath)
+prog.wait()
+
+uchwyt.close()
+
 DoNazw = open("NazwyPlikow.txt", 'r').readlines()
 j = 0
 for x in DoNazw:
@@ -75,10 +70,17 @@ for line in uchwyt:
     temp.clear()
 
 index = 0
-for i in wynikPZ:
-    if i == 0:
-        break
-    index += 1
+while czasPZ[index]!=0:
+    index+=1
+
+
+czasPZ_krotki=[]
+ilosc_krotka=[]
+for it in range(0,index):
+    czasPZ_krotki.append(czasPZ[it])
+    ilosc_krotka.append(ilosc[it])
+
+print()
 
 algorytmy = ["SortW", "PZ ekstrapolowane", "P. Dynamiczne", "Przeglad zupelny"]
 
@@ -88,12 +90,12 @@ wykres.figure(1)
 wykres.plot(ilosc, czasSortW, kolory[0] + '-o', label=algorytmy[0])
 wykres.plot(ilosc, czasPD, kolory[1] + '-o', label=algorytmy[2])
 
-wykres.plot(ilosc[0:index], czasPZ[0:index], kolory[2] + '--o', label=algorytmy[3])
+wykres.plot(ilosc_krotka, czasPZ_krotki, kolory[2] + '--o', label=algorytmy[3])
 
 wykres.legend(loc="center left", bbox_to_anchor=(1.0, 0.5))
-wykres.title('Wykres sum WiTi')
+wykres.title('Wykres zaleznosci czasu od wielkosci instancji dla algorytmow')
 wykres.xlabel('Algorytm')
-wykres.ylabel('Wynik funkcji kryterialnej')
+wykres.ylabel('Wynik mierzenia czasu algorytmow')
 wykres.grid(True)
 wykres.semilogy()
 wykres.tight_layout()
