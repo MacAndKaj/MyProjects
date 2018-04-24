@@ -2535,6 +2535,9 @@
    <extends>QWidget</extends>
    <header>qbalancewidget.h</header>
    <container>1</container>
+   <slots>
+    <slot>click()</slot>
+   </slots>
   </customwidget>
  </customwidgets>
  <resources/>

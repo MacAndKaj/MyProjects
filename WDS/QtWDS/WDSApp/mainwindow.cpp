@@ -1,158 +1,161 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+
+///MainWindow constructor.
+/// \brief MainWindow::MainWindow MainWindow constructor.
+/// \param parent Parent QWidget.
+///
 MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
-{
-    ui->setupUi(this);
-    this->timer = new QTimer(this);
-    //---------------------------------- start values -------------------
-    ui->Text_Condition->setText(QObject::tr("Disconnected"));
-    ui->LCD_AGL->display("------");
-    ui->LCD_ASL->display("------");
-    ui->LCD_Pitch->display("---");
-    ui->LCD_Roll_1->display("---");
-    ui->LCD_Roll_2->display("---");
+	QMainWindow(parent),
+	ui(new Ui::MainWindow){
+	this->ui->setupUi(this);
+	this->timer = new QTimer(this);
+	//---------------------------------- start values -------------------
+	this->ui->Text_Condition->setText(QObject::tr("Disconnected"));
+	this->ui->LCD_AGL->display("------");
+	this->ui->LCD_ASL->display("------");
+	this->ui->LCD_Pitch->display("---");
+	this->ui->LCD_Roll_1->display("---");
+	this->ui->LCD_Roll_2->display("---");
 
-    //---------------setup plotting--------------------------------------
-    ui->Widget_AXL->addGraph();
-    ui->Widget_AXL->addGraph();
-    ui->Widget_AXL->graph(0)->setPen(QColor(Qt::blue));
-    ui->Widget_AXL->graph(1)->setPen(QColor(Qt::green));
-    QSharedPointer<QCPAxisTickerTime> timeTicker(new QCPAxisTickerTime);
-    timeTicker->setTimeFormat("%h:%m:%s");
+	//---------------setup plotting--------------------------------------
+	this->ui->Widget_AXL->addGraph();
+	this->ui->Widget_AXL->addGraph();
+	this->ui->Widget_AXL->graph(0)->setPen(QColor(Qt::blue));
+	this->ui->Widget_AXL->graph(1)->setPen(QColor(Qt::green));
+	QSharedPointer<QCPAxisTickerTime> timeTicker(new QCPAxisTickerTime);
+	timeTicker->setTimeFormat("%h:%m:%s");
 
-    ui->Widget_AXL->xAxis->setTicker(timeTicker);
-    ui->Widget_AXL->axisRect()->setupFullAxesBox();
-    ui->Widget_AXL->yAxis->setRange(0,300);
-    ui->Widget_AXL->adjustSize();
+	this->ui->Widget_AXL->xAxis->setTicker(timeTicker);
+	this->ui->Widget_AXL->axisRect()->setupFullAxesBox();
+	this->ui->Widget_AXL->yAxis->setRange(0,300);
+	this->ui->Widget_AXL->adjustSize();
 
 
-    connect(this,SIGNAL(Connect_clicked()),ui->Connection_Cond,SLOT(Connected()));          //click connect -> light green
-    connect(this,SIGNAL(Disconnect_clicked()),ui->Connection_Cond,SLOT(Disconnected()));    //click disconnect -> light red
-    connect(ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));                     //exit -> asking for sure
-    connect(ui->Widget_AXL->xAxis, SIGNAL(rangeChanged(QCPRange)), ui->Widget_AXL->xAxis2, SLOT(setRange(QCPRange)));
-    connect(ui->Widget_AXL->yAxis, SIGNAL(rangeChanged(QCPRange)), ui->Widget_AXL->yAxis2, SLOT(setRange(QCPRange)));
+	connect(this,SIGNAL(Connect_clicked()),this->ui->Connection_Cond,SLOT(Connected()));          //click connect -> light green
+	connect(this,SIGNAL(Disconnect_clicked()),this->ui->Connection_Cond,SLOT(Disconnected()));    //click disconnect -> light red
+	connect(this->ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));                     //exit -> asking for sure
+	connect(this->ui->Widget_AXL->xAxis, SIGNAL(rangeChanged(QCPRange)), this->ui->Widget_AXL->xAxis2, SLOT(setRange(QCPRange)));
+	connect(this->ui->Widget_AXL->yAxis, SIGNAL(rangeChanged(QCPRange)), this->ui->Widget_AXL->yAxis2, SLOT(setRange(QCPRange)));
 
-    connect(this->timer,SIGNAL(timeout()),this,SLOT(realtimeDataSlot()));
-    this->timer->start(0);
+	connect(this->ui->Widget_RP,SIGNAL(RollChanged(int&)),this,SLOT(RP_ChangeRoll(int&)));
+	connect(this->ui->Widget_RP,SIGNAL(PitchChanged(int&)),this,SLOT(RP_ChangePitch(int&)));
+
+	connect(this->timer,SIGNAL(timeout()),this,SLOT(realtimeDataSlot()));
+	this->timer->start(0);
 
 }
 
-MainWindow::~MainWindow()
-{
-    delete ui;
-    delete this->timer;
-}
-
-
-///Function sets a value displayed as a height above ground-level.
-/// \brief MainWindow::set_LCD_Height sets height AGL.
-/// \param num Numeric value if height as integer.
+///MainWindow destructor.
+/// \brief MainWindow::~MainWindow MainWindow destructor.
 ///
-void MainWindow::set_LCD_AGL(const int &num){
-  ui->LCD_AGL->display(num);
+MainWindow::~MainWindow(){
+	delete this->ui;
+	delete this->timer;
 }
 
-///Function sets a value displayed as a height above sea-level.
-/// \brief MainWindow::set_LCD_ASL sets height ASL.
-/// \param num Numeric value if height as integer.
-///
-void MainWindow::set_LCD_ASL(const int &num){
-  ui->LCD_ASL->display(num);
-}
-
-///Function sets a value displayed as a pitch angle.
-/// \brief MainWindow::set_LCD_Pitch
-/// \param num Numeric value of pitch angle as integer.
-///
-void MainWindow::set_LCD_Pitch(const int &num){
-    ui->LCD_Pitch->display(num);
-}
 
 ///This overriden method asks user if he is sure he wants to exit applications. Method catches QCloseEvent end writes decision into it.
 /// \brief MainWindow::closeEvent Overriden method to show a window asking for confirmation.
 /// \param event QCloseEvent
 ///
-void MainWindow::closeEvent(QCloseEvent *event)
-{
-    QMessageBox::StandardButton resBtn = QMessageBox::question( this, QObject::tr("Exiting"),
-                                                                 QObject::tr("Are you sure?\n"),
-                                                                 QMessageBox::No | QMessageBox::Yes,
-                                                                 QMessageBox::Yes);
-     if (resBtn != QMessageBox::Yes) {
-         event->ignore();
-     } else {
-         event->accept();
-     }
+void MainWindow::closeEvent(QCloseEvent *event){
+	QMessageBox::StandardButton resBtn = QMessageBox::question( this, QObject::tr("Exiting"),
+																QObject::tr("Are you sure?\n"),
+																QMessageBox::No | QMessageBox::Yes,
+																QMessageBox::Yes);
+	if (resBtn != QMessageBox::Yes) {
+		event->ignore();
+	} else {
+		event->accept();
+	}
 }
 
-///Function sets a value displayed as a roll angle.
-/// \brief MainWindow::set_LCD_Roll_1
-/// \param num Numeric value of roll angle as integer.
+
+///Slot sets a value of Roll angle in LCDs, connected with a signal emited by qbalancewidget.
+/// \brief MainWindow::_RP_ChangeRoll Sets a value of Roll angle
+///	\param ang New Roll angle.
 ///
-void MainWindow::set_LCD_Roll_1(const int &num){
-    ui->LCD_Roll_1->display(num);
+void MainWindow::RP_ChangeRoll(int& ang){
+	this->ui->LCD_Roll_1->display(-ang);
+	this->ui->LCD_Roll_2->display(ang);
 }
 
-///Function sets a value displayed as a roll angle.
-/// \brief MainWindow::set_LCD_Roll_2
-/// \param num Numeric value of roll angle as integer.
+///Slot sets a value of Pitch angle in LCD, connected with a signal emited by qbalancewidget.
+/// \brief MainWindow::RP_ChangePitch Sets a value of Pitch angle.
+/// \param ang New Pitch angle.
 ///
-void MainWindow::set_LCD_Roll_2(const int &num){
-    ui->LCD_Roll_2->display(num);
+void MainWindow::RP_ChangePitch(int &ang){
+	this->ui->LCD_Pitch->display(ang);
 }
 
-///
+///Slot used when device option Disconnect from menu File is clicked.
 /// \brief MainWindow::on_actionDisconnect_triggered
 ///
-void MainWindow::on_actionDisconnect_triggered()
-{
-    emit this->Disconnect_clicked();
-    ui->Text_Condition->setText(QObject::tr("Disconnected"));
-    ui->LCD_AGL->display("------");
-    ui->LCD_ASL->display("------");
-    ui->LCD_Pitch->display("---");
-    ui->LCD_Roll_1->display("---");
-    ui->LCD_Roll_2->display("---");
-    QMessageBox::warning(nullptr,QObject::tr("Error!"),QObject::tr("No connection!"));
+void MainWindow::on_actionDisconnect_triggered(){
+	emit this->Disconnect_clicked();
+	this->ui->Text_Condition->setText(QObject::tr("Disconnected"));
+	this->ui->LCD_AGL->display("------");
+	this->ui->LCD_ASL->display("------");
+	this->ui->LCD_Pitch->display("---");
+	this->ui->LCD_Roll_1->display("---");
+	this->ui->LCD_Roll_2->display("---");
+	QMessageBox::warning(nullptr,QObject::tr("Error!"),QObject::tr("No connection!"));
 }
 
-///
-/// \brief MainWindow::on_actionConnect_triggered
+///Slot used when option Connect from menu File is clicked.
+/// \brief MainWindow::on_actionConnect_triggered Slot connected with option Connect from menu File.
 ///
 void MainWindow::on_actionConnect_triggered()
 {
-    emit this->Connect_clicked();
-    ui->Text_Condition->setText(QObject::tr("Connected"));
-    QMessageBox::information(nullptr,QObject::tr("Succes!"),QObject::tr("Succesfully connected to device"));
+	emit this->Connect_clicked();
+	this->ui->Text_Condition->setText(QObject::tr("Connected"));
+	QMessageBox::information(nullptr,QObject::tr("Succes!"),QObject::tr("Succesfully connected to device"));
 
 }
 
+
+///Used to test with QTimer to generate random data and wisualising it on plot and balancewidget.
+/// \brief MainWindow::realtimeDataSlot Test method.
+///
 void MainWindow::realtimeDataSlot()
 {
-    if(ui->Connection_Cond->is_Connected()){
-        static QTime time(QTime::currentTime());
-        // calculate two new data points:
-        double key = time.elapsed()/1000.0; // time elapsed since start of demo, in seconds
-        static double lastPointKey = 0;
-        if (key-lastPointKey > 0.1)
-        {
-            // add data to lines:
-            ui->Widget_AXL->graph(0)->addData(key, 300*qSin(key)+qrand()/(double)RAND_MAX*1*qSin(key/0.3843));
-            ui->Widget_AXL->graph(1)->addData(key, 300*qCos(key)+qrand()/(double)RAND_MAX*0.5*qSin(key/0.4364));
-            // rescale value (vertical) axis to fit the current data:
-            ui->Widget_AXL->graph(0)->rescaleValueAxis();
-            ui->Widget_AXL->graph(1)->rescaleValueAxis(true);
-            lastPointKey = key;
-        }
-        // make key axis range scroll with the data (at a constant range size of 8):
-        ui->Widget_AXL->xAxis->setRange(key, 8, Qt::AlignRight);
-        ui->Widget_AXL->replot();
 
-        ui->Widget_RP->update();
+	if(this->ui->Connection_Cond->is_Connected()){
+		static QTime time(QTime::currentTime());
+		// calculate two new data points:
+		double key = time.elapsed()/1000.0; // time elapsed since start of demo, in seconds
+		double d1 = 300*qSin(key)+qrand()/(double)RAND_MAX*1*qSin(key/0.3843);
+		double d2 = 300*qCos(key)+qrand()/(double)RAND_MAX*0.5*qSin(key/0.4364);
 
-    }
+		int a1 = qSin(key)*90;
+		int a2 = qSin(key)*90;
+		static double lastPointKey = 0;
+		if (key-lastPointKey > 0.2)
+		{
+
+			this->ui->LCD_AGL->display(d1);
+			this->ui->LCD_ASL->display(d2);
+
+			// add data to lines:
+			this->ui->Widget_AXL->graph(0)->addData(key, d1);
+			this->ui->Widget_AXL->graph(1)->addData(key, d2);
+			// rescale value (vertical) axis to fit the current data:
+			this->ui->Widget_AXL->graph(0)->rescaleValueAxis();
+			this->ui->Widget_AXL->graph(1)->rescaleValueAxis(true);
+			this->ui->Widget_RP->ChangeRoll(a1);
+			this->ui->Widget_RP->ChangePitch(a2);
+			lastPointKey = key;
+		}
+		// make key axis range scroll with the data (at a constant range size of 8):
+		this->ui->Widget_AXL->xAxis->setRange(key, 8, Qt::AlignRight);
+		this->ui->Widget_AXL->replot();
+
+
+
+		this->ui->Widget_RP->update();
+
+	}
 }
 
