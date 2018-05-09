@@ -1,5 +1,9 @@
 #include "condition.h"
 
+///Condition widget constructor.
+/// \brief Condition::Condition Condition widget constructor
+/// \param parent Parent QWidget.
+///
 Condition::Condition(QWidget *parent) : QWidget(parent)
 {
     this->_is_connected = false;

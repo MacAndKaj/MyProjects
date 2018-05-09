@@ -20,7 +20,7 @@ struct Frame{
 
 union FloatUnion
 {
- float number;
+ int number;
  byte bytes[4];
 };
 
@@ -95,7 +95,7 @@ void loop()
     frame.MetresAGL[i]=toChange.bytes[i];
   }
   //-------------------------------------------------------------------
-  temp = PressureSensor.pressureToAltitudeMeters(dataToSend.Pressure_hPa,1027);
+  temp = PressureSensor.pressureToAltitudeMeters(dataToSend.Pressure_hPa,1000);
   toChange.number = temp;
   for(int i=0;i<4;++i){
     frame.MetresASL[i]=toChange.bytes[i];

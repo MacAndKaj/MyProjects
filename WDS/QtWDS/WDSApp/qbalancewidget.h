@@ -26,8 +26,8 @@ signals:
 	void PitchChanged(int& ang);
 
 public slots:
-	void ChangeRoll(int&);
-	void ChangePitch(int&);
+	void ChangeRoll(uint16_t&);
+	void ChangePitch(uint16_t&);
 
 private:
 	int _Roll;

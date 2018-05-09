@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[11];
-    char stringdata0[159];
+    QByteArrayData data[16];
+    char stringdata0[232];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,13 +39,20 @@ QT_MOC_LITERAL(6, 66, 3), // "ang"
 QT_MOC_LITERAL(7, 70, 14), // "RP_ChangePitch"
 QT_MOC_LITERAL(8, 85, 29), // "on_actionDisconnect_triggered"
 QT_MOC_LITERAL(9, 115, 26), // "on_actionConnect_triggered"
-QT_MOC_LITERAL(10, 142, 16) // "realtimeDataSlot"
+QT_MOC_LITERAL(10, 142, 16), // "realtimeDataSlot"
+QT_MOC_LITERAL(11, 159, 10), // "ip_changed"
+QT_MOC_LITERAL(12, 170, 2), // "ip"
+QT_MOC_LITERAL(13, 173, 7), // "newData"
+QT_MOC_LITERAL(14, 181, 24), // "on_actionAbout_triggered"
+QT_MOC_LITERAL(15, 206, 25) // "on_actionConfig_triggered"
 
     },
     "MainWindow\0Connect_clicked\0\0"
     "Disconnect_clicked\0RP_ChangeRoll\0int&\0"
     "ang\0RP_ChangePitch\0on_actionDisconnect_triggered\0"
-    "on_actionConnect_triggered\0realtimeDataSlot"
+    "on_actionConnect_triggered\0realtimeDataSlot\0"
+    "ip_changed\0ip\0newData\0on_actionAbout_triggered\0"
+    "on_actionConfig_triggered"
 };
 #undef QT_MOC_LITERAL
 
@@ -55,7 +62,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,15 +70,19 @@ static const uint qt_meta_data_MainWindow[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   49,    2, 0x06 /* Public */,
-       3,    0,   50,    2, 0x06 /* Public */,
+       1,    0,   69,    2, 0x06 /* Public */,
+       3,    0,   70,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    1,   51,    2, 0x0a /* Public */,
-       7,    1,   54,    2, 0x0a /* Public */,
-       8,    0,   57,    2, 0x0a /* Public */,
-       9,    0,   58,    2, 0x0a /* Public */,
-      10,    0,   59,    2, 0x0a /* Public */,
+       4,    1,   71,    2, 0x0a /* Public */,
+       7,    1,   74,    2, 0x0a /* Public */,
+       8,    0,   77,    2, 0x0a /* Public */,
+       9,    0,   78,    2, 0x0a /* Public */,
+      10,    0,   79,    2, 0x0a /* Public */,
+      11,    1,   80,    2, 0x0a /* Public */,
+      13,    0,   83,    2, 0x0a /* Public */,
+      14,    0,   84,    2, 0x08 /* Private */,
+      15,    0,   85,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -80,6 +91,10 @@ static const uint qt_meta_data_MainWindow[] = {
  // slots: parameters
     QMetaType::Void, 0x80000000 | 5,    6,
     QMetaType::Void, 0x80000000 | 5,    6,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   12,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -100,6 +115,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->on_actionDisconnect_triggered(); break;
         case 5: _t->on_actionConnect_triggered(); break;
         case 6: _t->realtimeDataSlot(); break;
+        case 7: _t->ip_changed((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 8: _t->newData(); break;
+        case 9: _t->on_actionAbout_triggered(); break;
+        case 10: _t->on_actionConfig_triggered(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -145,13 +164,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 11)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 7;
+        _id -= 11;
     }
     return _id;
 }

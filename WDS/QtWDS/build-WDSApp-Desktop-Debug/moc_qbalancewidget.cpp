@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_QBalanceWidget_t {
-    QByteArrayData data[8];
-    char stringdata0[73];
+    QByteArrayData data[9];
+    char stringdata0[83];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,11 +36,13 @@ QT_MOC_LITERAL(3, 28, 4), // "int&"
 QT_MOC_LITERAL(4, 33, 3), // "ang"
 QT_MOC_LITERAL(5, 37, 12), // "PitchChanged"
 QT_MOC_LITERAL(6, 50, 10), // "ChangeRoll"
-QT_MOC_LITERAL(7, 61, 11) // "ChangePitch"
+QT_MOC_LITERAL(7, 61, 9), // "uint16_t&"
+QT_MOC_LITERAL(8, 71, 11) // "ChangePitch"
 
     },
     "QBalanceWidget\0RollChanged\0\0int&\0ang\0"
-    "PitchChanged\0ChangeRoll\0ChangePitch"
+    "PitchChanged\0ChangeRoll\0uint16_t&\0"
+    "ChangePitch"
 };
 #undef QT_MOC_LITERAL
 
@@ -63,15 +65,15 @@ static const uint qt_meta_data_QBalanceWidget[] = {
 
  // slots: name, argc, parameters, tag, flags
        6,    1,   40,    2, 0x0a /* Public */,
-       7,    1,   43,    2, 0x0a /* Public */,
+       8,    1,   43,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
     QMetaType::Void, 0x80000000 | 3,    4,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 3,    2,
-    QMetaType::Void, 0x80000000 | 3,    2,
+    QMetaType::Void, 0x80000000 | 7,    2,
+    QMetaType::Void, 0x80000000 | 7,    2,
 
        0        // eod
 };
@@ -84,8 +86,8 @@ void QBalanceWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         switch (_id) {
         case 0: _t->RollChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 1: _t->PitchChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 2: _t->ChangeRoll((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 3: _t->ChangePitch((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: _t->ChangeRoll((*reinterpret_cast< uint16_t(*)>(_a[1]))); break;
+        case 3: _t->ChangePitch((*reinterpret_cast< uint16_t(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

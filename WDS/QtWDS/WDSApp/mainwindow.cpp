@@ -11,6 +11,11 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui(new Ui::MainWindow){
 	this->ui->setupUi(this);
 	this->timer = new QTimer(this);
+	this->ip = new Port();
+	this->ip->setWindowTitle("Device configuration");
+	this->ip_string = nullptr;
+	this->arduino = nullptr;
+	this->data = new QByteArray();
 	//---------------------------------- start values -------------------
 	this->ui->Text_Condition->setText(QObject::tr("Disconnected"));
 	this->ui->LCD_AGL->display("------");
@@ -38,11 +43,12 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(this->ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));                     //exit -> asking for sure
 	connect(this->ui->Widget_AXL->xAxis, SIGNAL(rangeChanged(QCPRange)), this->ui->Widget_AXL->xAxis2, SLOT(setRange(QCPRange)));
 	connect(this->ui->Widget_AXL->yAxis, SIGNAL(rangeChanged(QCPRange)), this->ui->Widget_AXL->yAxis2, SLOT(setRange(QCPRange)));
+\
+	connect(this->ip,SIGNAL(changed_ip(QString)),this,SLOT(ip_changed(QString)));
 
 	connect(this->ui->Widget_RP,SIGNAL(RollChanged(int&)),this,SLOT(RP_ChangeRoll(int&)));
 	connect(this->ui->Widget_RP,SIGNAL(PitchChanged(int&)),this,SLOT(RP_ChangePitch(int&)));
 
-	connect(this->timer,SIGNAL(timeout()),this,SLOT(realtimeDataSlot()));
 	this->timer->start(0);
 
 }
@@ -53,6 +59,12 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow(){
 	delete this->ui;
 	delete this->timer;
+	delete this->ip;
+	if(this->ip_string != nullptr)delete this->ip_string;
+	if(this->arduino != nullptr && this->arduino->isOpen()){
+		this->arduino->close();
+		delete this->arduino;
+	}
 }
 
 
@@ -94,6 +106,7 @@ void MainWindow::RP_ChangePitch(int &ang){
 /// \brief MainWindow::on_actionDisconnect_triggered
 ///
 void MainWindow::on_actionDisconnect_triggered(){
+	if(this->arduino != nullptr) this->arduino->close();
 	emit this->Disconnect_clicked();
 	this->ui->Text_Condition->setText(QObject::tr("Disconnected"));
 	this->ui->LCD_AGL->display("------");
@@ -109,9 +122,20 @@ void MainWindow::on_actionDisconnect_triggered(){
 ///
 void MainWindow::on_actionConnect_triggered()
 {
-	emit this->Connect_clicked();
-	this->ui->Text_Condition->setText(QObject::tr("Connected"));
-	QMessageBox::information(nullptr,QObject::tr("Succes!"),QObject::tr("Succesfully connected to device"));
+	if(this->arduino == nullptr) {
+		QMessageBox::warning(nullptr,QObject::tr("Error!"),QObject::tr("You have to choose a port!"));
+		return;
+	}
+	this->arduino->open(QSerialPort::ReadOnly);
+	if(this->arduino->isOpen()){
+		emit this->Connect_clicked();
+		this->ui->Text_Condition->setText(QObject::tr("Connected"));
+		QMessageBox::information(nullptr,QObject::tr("Succes!"),QObject::tr("Succesfully connected to device"));
+	}
+	else{
+		this->ui->Text_Condition->setText(QObject::tr("Disconnected"));
+		QMessageBox::warning(nullptr,QObject::tr("Error!"),QObject::tr("No connection!"));
+	}
 
 }
 
@@ -119,8 +143,7 @@ void MainWindow::on_actionConnect_triggered()
 ///Used to test with QTimer to generate random data and wisualising it on plot and balancewidget.
 /// \brief MainWindow::realtimeDataSlot Test method.
 ///
-void MainWindow::realtimeDataSlot()
-{
+void MainWindow::realtimeDataSlot(){
 
 	if(this->ui->Connection_Cond->is_Connected()){
 		static QTime time(QTime::currentTime());
@@ -129,8 +152,9 @@ void MainWindow::realtimeDataSlot()
 		double d1 = 300*qSin(key)+qrand()/(double)RAND_MAX*1*qSin(key/0.3843);
 		double d2 = 300*qCos(key)+qrand()/(double)RAND_MAX*0.5*qSin(key/0.4364);
 
-		int a1 = qSin(key)*90;
-		int a2 = qSin(key)*90;
+
+
+
 		static double lastPointKey = 0;
 		if (key-lastPointKey > 0.2)
 		{
@@ -144,18 +168,59 @@ void MainWindow::realtimeDataSlot()
 			// rescale value (vertical) axis to fit the current data:
 			this->ui->Widget_AXL->graph(0)->rescaleValueAxis();
 			this->ui->Widget_AXL->graph(1)->rescaleValueAxis(true);
-			this->ui->Widget_RP->ChangeRoll(a1);
-			this->ui->Widget_RP->ChangePitch(a2);
+			this->ui->Widget_RP->ChangeRoll(this->Roll);
+			this->ui->Widget_RP->ChangePitch(this->Pitch);
 			lastPointKey = key;
 		}
 		// make key axis range scroll with the data (at a constant range size of 8):
 		this->ui->Widget_AXL->xAxis->setRange(key, 8, Qt::AlignRight);
 		this->ui->Widget_AXL->replot();
-
-
-
 		this->ui->Widget_RP->update();
 
 	}
 }
 
+void MainWindow::ip_changed(QString arg){
+	this->show();
+	this->ip->hide();
+	this->arduino = new QSerialPort();
+	this->arduino->setPortName(arg);
+	this->arduino->setBaudRate(QSerialPort::Baud9600);
+	this->arduino->setDataBits(QSerialPort::Data8);
+	this->arduino->setParity(QSerialPort::NoParity);
+	this->arduino->setStopBits(QSerialPort::OneStop);
+	this->arduino->setFlowControl(QSerialPort::NoFlowControl);
+	connect(this->arduino,SIGNAL(readyRead()),this,SLOT(newData()));
+}
+
+///Slot used when new Data appears on a serial port
+/// \brief MainWindow::newData
+///
+void MainWindow::newData(){
+
+	this->data->append(this->arduino->readAll());
+
+	if(this->data->size() > 63){
+		qDebug() << this->data << endl;
+		this->realtimeDataSlot();
+
+	}
+}
+
+void MainWindow::on_actionAbout_triggered(){
+	auto msg1 = QObject::tr("Author Maciej Kajdak\n");
+	auto msg2 = QObject::tr("All rights reserved.\n\n");
+
+	auto msg3 = QObject::tr("Based on Qt 5.10.1 (GCC 5.3.1 20160406 (Red Hat 5.3.1-6), 64 bit)\n");
+	auto msg4 = QObject::tr("Version: 1.0");
+
+
+	QMessageBox::information(nullptr,QObject::tr("About"),msg1+msg2+msg3+msg4);
+
+}
+
+void MainWindow::on_actionConfig_triggered()
+{
+	this->ip->show();
+
+}

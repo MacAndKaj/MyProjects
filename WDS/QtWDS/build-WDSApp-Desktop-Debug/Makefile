@@ -12,10 +12,10 @@ MAKEFILE      = Makefile
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+DEFINES       = -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB
 CFLAGS        = -m64 -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -m64 -pipe -g -std=c++0x -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I../WDSApp -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64
+INCPATH       = -I../WDSApp -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64
 QMAKE         = /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -36,7 +36,7 @@ DISTNAME      = WDSApp1.0.0
 DISTDIR = /home/maciej/Documents/MyProjects/WDS/QtWDS/build-WDSApp-Desktop-Debug/.tmp/WDSApp1.0.0
 LINK          = g++
 LFLAGS        = -m64
-LIBS          = $(SUBLIBS) -L/usr/X11R6/lib64 -lQt5PrintSupport -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
+LIBS          = $(SUBLIBS) -L/usr/X11R6/lib64 -lQt5PrintSupport -lQt5Widgets -lQt5Gui -lQt5SerialPort -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -52,19 +52,25 @@ SOURCES       = ../WDSApp/main.cpp \
 		../WDSApp/mainwindow.cpp \
 		../WDSApp/qcustomplot.cpp \
 		../WDSApp/condition.cpp \
-		../WDSApp/qbalancewidget.cpp moc_mainwindow.cpp \
+		../WDSApp/qbalancewidget.cpp \
+		../WDSApp/port.cpp qrc_images.cpp \
+		moc_mainwindow.cpp \
 		moc_qcustomplot.cpp \
 		moc_condition.cpp \
-		moc_qbalancewidget.cpp
+		moc_qbalancewidget.cpp \
+		moc_port.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		qcustomplot.o \
 		condition.o \
 		qbalancewidget.o \
+		port.o \
+		qrc_images.o \
 		moc_mainwindow.o \
 		moc_qcustomplot.o \
 		moc_condition.o \
-		moc_qbalancewidget.o
+		moc_qbalancewidget.o \
+		moc_port.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -130,11 +136,13 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../WDSApp/WDSApp.pro ../WDSApp/mainwindow.h \
 		../WDSApp/qcustomplot.h \
 		../WDSApp/condition.h \
-		../WDSApp/qbalancewidget.h ../WDSApp/main.cpp \
+		../WDSApp/qbalancewidget.h \
+		../WDSApp/port.h ../WDSApp/main.cpp \
 		../WDSApp/mainwindow.cpp \
 		../WDSApp/qcustomplot.cpp \
 		../WDSApp/condition.cpp \
-		../WDSApp/qbalancewidget.cpp
+		../WDSApp/qbalancewidget.cpp \
+		../WDSApp/port.cpp
 QMAKE_TARGET  = WDSApp
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = WDSApp
@@ -162,7 +170,7 @@ first: all
 
 ####### Build rules
 
-$(TARGET): ui_mainwindow.h $(OBJECTS)  
+$(TARGET): ui_mainwindow.h ui_port.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: ../WDSApp/WDSApp.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64/qmake.conf /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
@@ -228,9 +236,11 @@ Makefile: ../WDSApp/WDSApp.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-6
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		../WDSApp/WDSApp.pro \
+		../WDSApp/images.qrc \
 		/usr/lib/x86_64-linux-gnu/libQt5PrintSupport.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Widgets.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Gui.prl \
+		/usr/lib/x86_64-linux-gnu/libQt5SerialPort.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Core.prl
 	$(QMAKE) -spec linux-g++-64 CONFIG+=debug -o Makefile ../WDSApp/WDSApp.pro
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf:
@@ -296,9 +306,11 @@ Makefile: ../WDSApp/WDSApp.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-6
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf:
 ../WDSApp/WDSApp.pro:
+../WDSApp/images.qrc:
 /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.prl:
 /usr/lib/x86_64-linux-gnu/libQt5Widgets.prl:
 /usr/lib/x86_64-linux-gnu/libQt5Gui.prl:
+/usr/lib/x86_64-linux-gnu/libQt5SerialPort.prl:
 /usr/lib/x86_64-linux-gnu/libQt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec linux-g++-64 CONFIG+=debug -o Makefile ../WDSApp/WDSApp.pro
@@ -314,9 +326,10 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../WDSApp/mainwindow.h ../WDSApp/qcustomplot.h ../WDSApp/condition.h ../WDSApp/qbalancewidget.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../WDSApp/main.cpp ../WDSApp/mainwindow.cpp ../WDSApp/qcustomplot.cpp ../WDSApp/condition.cpp ../WDSApp/qbalancewidget.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../WDSApp/mainwindow.ui $(DISTDIR)/
+	$(COPY_FILE) --parents ../WDSApp/images.qrc $(DISTDIR)/
+	$(COPY_FILE) --parents ../WDSApp/mainwindow.h ../WDSApp/qcustomplot.h ../WDSApp/condition.h ../WDSApp/qbalancewidget.h ../WDSApp/port.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../WDSApp/main.cpp ../WDSApp/mainwindow.cpp ../WDSApp/qcustomplot.cpp ../WDSApp/condition.cpp ../WDSApp/qbalancewidget.cpp ../WDSApp/port.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../WDSApp/mainwindow.ui ../WDSApp/port.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -337,34 +350,46 @@ mocables: compiler_moc_header_make_all compiler_moc_source_make_all
 
 check: first
 
-compiler_rcc_make_all:
+compiler_rcc_make_all: qrc_images.cpp
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_qcustomplot.cpp moc_condition.cpp moc_qbalancewidget.cpp
+	-$(DEL_FILE) qrc_images.cpp
+qrc_images.cpp: ../WDSApp/images.qrc \
+		../WDSApp/icon.png
+	/usr/lib/x86_64-linux-gnu/qt5/bin/rcc -name images ../WDSApp/images.qrc -o qrc_images.cpp
+
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_qcustomplot.cpp moc_condition.cpp moc_qbalancewidget.cpp moc_port.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_qcustomplot.cpp moc_condition.cpp moc_qbalancewidget.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_qcustomplot.cpp moc_condition.cpp moc_qbalancewidget.cpp moc_port.cpp
 moc_mainwindow.cpp: ../WDSApp/condition.h \
+		../WDSApp/port.h \
 		../WDSApp/mainwindow.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/mainwindow.h -o moc_mainwindow.cpp
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/mainwindow.h -o moc_mainwindow.cpp
 
 moc_qcustomplot.cpp: ../WDSApp/qcustomplot.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/qcustomplot.h -o moc_qcustomplot.cpp
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/qcustomplot.h -o moc_qcustomplot.cpp
 
 moc_condition.cpp: ../WDSApp/condition.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/condition.h -o moc_condition.cpp
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/condition.h -o moc_condition.cpp
 
 moc_qbalancewidget.cpp: ../WDSApp/qbalancewidget.h
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/qbalancewidget.h -o moc_qbalancewidget.cpp
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/qbalancewidget.h -o moc_qbalancewidget.cpp
+
+moc_port.cpp: ../WDSApp/port.h
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/maciej/Documents/MyProjects/WDS/QtWDS/WDSApp -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../WDSApp/port.h -o moc_port.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h
+compiler_uic_make_all: ui_mainwindow.h ui_port.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h
+	-$(DEL_FILE) ui_mainwindow.h ui_port.h
 ui_mainwindow.h: ../WDSApp/mainwindow.ui \
 		../WDSApp/condition.h \
 		../WDSApp/qcustomplot.h \
 		../WDSApp/qbalancewidget.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/uic ../WDSApp/mainwindow.ui -o ui_mainwindow.h
+
+ui_port.h: ../WDSApp/port.ui
+	/usr/lib/x86_64-linux-gnu/qt5/bin/uic ../WDSApp/port.ui -o ui_port.h
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -372,17 +397,20 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_header_clean compiler_uic_clean 
+compiler_clean: compiler_rcc_clean compiler_moc_header_clean compiler_uic_clean 
 
 ####### Compile
 
 main.o: ../WDSApp/main.cpp ../WDSApp/mainwindow.h \
-		../WDSApp/condition.h
+		../WDSApp/condition.h \
+		../WDSApp/port.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../WDSApp/main.cpp
 
 mainwindow.o: ../WDSApp/mainwindow.cpp ../WDSApp/mainwindow.h \
 		../WDSApp/condition.h \
+		../WDSApp/port.h \
 		ui_mainwindow.h \
+		../WDSApp/qbalancewidget.h \
 		../WDSApp/qcustomplot.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../WDSApp/mainwindow.cpp
 
@@ -395,6 +423,13 @@ condition.o: ../WDSApp/condition.cpp ../WDSApp/condition.h
 qbalancewidget.o: ../WDSApp/qbalancewidget.cpp ../WDSApp/qbalancewidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qbalancewidget.o ../WDSApp/qbalancewidget.cpp
 
+port.o: ../WDSApp/port.cpp ../WDSApp/port.h \
+		ui_port.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o port.o ../WDSApp/port.cpp
+
+qrc_images.o: qrc_images.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_images.o qrc_images.cpp
+
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
 
@@ -406,6 +441,9 @@ moc_condition.o: moc_condition.cpp
 
 moc_qbalancewidget.o: moc_qbalancewidget.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_qbalancewidget.o moc_qbalancewidget.cpp
+
+moc_port.o: moc_port.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_port.o moc_port.cpp
 
 ####### Install
 

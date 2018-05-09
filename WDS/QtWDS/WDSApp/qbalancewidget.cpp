@@ -152,7 +152,7 @@ int QBalanceWidget::get_Pitch()
 /// \brief QBalanceWidget::ChangeRoll Slot changing Roll angle.
 /// \param ang New value of Roll angle.
 ///
-void QBalanceWidget::ChangeRoll(int& ang){
+void QBalanceWidget::ChangeRoll(uint16_t& ang){
 	if(ang > 360) return;
 	else this->_Roll = ang;
 	this->update();
@@ -163,7 +163,7 @@ void QBalanceWidget::ChangeRoll(int& ang){
 /// \brief QBalanceWidget::ChangePitch Slot changing pitch angle.
 /// \param ang New value of Pitch angle.
 ///
-void QBalanceWidget::ChangePitch(int& ang){
+void QBalanceWidget::ChangePitch(uint16_t& ang){
 	if(ang > 360) return;
 	else this->_Pitch = ang;
 	this->update();

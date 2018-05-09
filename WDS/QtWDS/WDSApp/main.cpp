@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
 
-    QIcon icon("icon.png");
+	QIcon icon(":/icon.png");
     w.setWindowIcon(icon);
     w.setWindowTitle(QObject::tr("Flying object"));
     w.show();
