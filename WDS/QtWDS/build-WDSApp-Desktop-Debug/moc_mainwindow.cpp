@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[16];
-    char stringdata0[232];
+    char stringdata0[236];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,22 +34,23 @@ QT_MOC_LITERAL(1, 11, 15), // "Connect_clicked"
 QT_MOC_LITERAL(2, 27, 0), // ""
 QT_MOC_LITERAL(3, 28, 18), // "Disconnect_clicked"
 QT_MOC_LITERAL(4, 47, 13), // "RP_ChangeRoll"
-QT_MOC_LITERAL(5, 61, 4), // "int&"
-QT_MOC_LITERAL(6, 66, 3), // "ang"
-QT_MOC_LITERAL(7, 70, 14), // "RP_ChangePitch"
-QT_MOC_LITERAL(8, 85, 29), // "on_actionDisconnect_triggered"
-QT_MOC_LITERAL(9, 115, 26), // "on_actionConnect_triggered"
-QT_MOC_LITERAL(10, 142, 16), // "realtimeDataSlot"
-QT_MOC_LITERAL(11, 159, 10), // "ip_changed"
-QT_MOC_LITERAL(12, 170, 2), // "ip"
-QT_MOC_LITERAL(13, 173, 7), // "newData"
-QT_MOC_LITERAL(14, 181, 24), // "on_actionAbout_triggered"
-QT_MOC_LITERAL(15, 206, 25) // "on_actionConfig_triggered"
+QT_MOC_LITERAL(5, 61, 8), // "int16_t&"
+QT_MOC_LITERAL(6, 70, 3), // "ang"
+QT_MOC_LITERAL(7, 74, 14), // "RP_ChangePitch"
+QT_MOC_LITERAL(8, 89, 29), // "on_actionDisconnect_triggered"
+QT_MOC_LITERAL(9, 119, 26), // "on_actionConnect_triggered"
+QT_MOC_LITERAL(10, 146, 16), // "realtimeDataSlot"
+QT_MOC_LITERAL(11, 163, 10), // "ip_changed"
+QT_MOC_LITERAL(12, 174, 2), // "ip"
+QT_MOC_LITERAL(13, 177, 7), // "newData"
+QT_MOC_LITERAL(14, 185, 24), // "on_actionAbout_triggered"
+QT_MOC_LITERAL(15, 210, 25) // "on_actionConfig_triggered"
 
     },
     "MainWindow\0Connect_clicked\0\0"
-    "Disconnect_clicked\0RP_ChangeRoll\0int&\0"
-    "ang\0RP_ChangePitch\0on_actionDisconnect_triggered\0"
+    "Disconnect_clicked\0RP_ChangeRoll\0"
+    "int16_t&\0ang\0RP_ChangePitch\0"
+    "on_actionDisconnect_triggered\0"
     "on_actionConnect_triggered\0realtimeDataSlot\0"
     "ip_changed\0ip\0newData\0on_actionAbout_triggered\0"
     "on_actionConfig_triggered"
@@ -110,8 +111,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->Connect_clicked(); break;
         case 1: _t->Disconnect_clicked(); break;
-        case 2: _t->RP_ChangeRoll((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 3: _t->RP_ChangePitch((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: _t->RP_ChangeRoll((*reinterpret_cast< int16_t(*)>(_a[1]))); break;
+        case 3: _t->RP_ChangePitch((*reinterpret_cast< int16_t(*)>(_a[1]))); break;
         case 4: _t->on_actionDisconnect_triggered(); break;
         case 5: _t->on_actionConnect_triggered(); break;
         case 6: _t->realtimeDataSlot(); break;

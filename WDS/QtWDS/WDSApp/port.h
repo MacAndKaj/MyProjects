@@ -17,6 +17,7 @@ class Port : public QDialog
 public:
 	explicit Port(QWidget *parent = 0);
 	~Port();
+	void refresh();
 signals:
 	void changed_ip(QString ip);
 

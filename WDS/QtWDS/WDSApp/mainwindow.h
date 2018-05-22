@@ -26,8 +26,8 @@ public:
 
 
 public slots:
-	void RP_ChangeRoll(int &ang);
-	void RP_ChangePitch(int &ang);
+	void RP_ChangeRoll(int16_t &ang);
+	void RP_ChangePitch(int16_t &ang);
 	void on_actionDisconnect_triggered();
 	void on_actionConnect_triggered();
 	void realtimeDataSlot();
@@ -44,13 +44,13 @@ private slots:
 	void on_actionConfig_triggered();
 
 private:
-	uint16_t Roll,Pitch,Pressure1,Pressure2;
+	int16_t _Roll,_Pitch,_HAGL,_HASL;
 	Ui::MainWindow *ui;
 	Port *ip;
 	QTimer *timer;
 	QString *ip_string;
 	QSerialPort *arduino;
-	QByteArray *data;
+	char *data;
 };
 
 #endif // MAINWINDOW_H

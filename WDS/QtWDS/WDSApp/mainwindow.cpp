@@ -15,7 +15,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	this->ip->setWindowTitle("Device configuration");
 	this->ip_string = nullptr;
 	this->arduino = nullptr;
-	this->data = new QByteArray();
+	this->data = new char[6];
+
 	//---------------------------------- start values -------------------
 	this->ui->Text_Condition->setText(QObject::tr("Disconnected"));
 	this->ui->LCD_AGL->display("------");
@@ -43,11 +44,11 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(this->ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));                     //exit -> asking for sure
 	connect(this->ui->Widget_AXL->xAxis, SIGNAL(rangeChanged(QCPRange)), this->ui->Widget_AXL->xAxis2, SLOT(setRange(QCPRange)));
 	connect(this->ui->Widget_AXL->yAxis, SIGNAL(rangeChanged(QCPRange)), this->ui->Widget_AXL->yAxis2, SLOT(setRange(QCPRange)));
-\
+	\
 	connect(this->ip,SIGNAL(changed_ip(QString)),this,SLOT(ip_changed(QString)));
 
-	connect(this->ui->Widget_RP,SIGNAL(RollChanged(int&)),this,SLOT(RP_ChangeRoll(int&)));
-	connect(this->ui->Widget_RP,SIGNAL(PitchChanged(int&)),this,SLOT(RP_ChangePitch(int&)));
+	connect(this->ui->Widget_RP,SIGNAL(RollChanged(int16_t&)),this,SLOT(RP_ChangeRoll(int16_t&)));
+	connect(this->ui->Widget_RP,SIGNAL(PitchChanged(int16_t&)),this,SLOT(RP_ChangePitch(int16_t&)));
 
 	this->timer->start(0);
 
@@ -89,7 +90,7 @@ void MainWindow::closeEvent(QCloseEvent *event){
 /// \brief MainWindow::_RP_ChangeRoll Sets a value of Roll angle
 ///	\param ang New Roll angle.
 ///
-void MainWindow::RP_ChangeRoll(int& ang){
+void MainWindow::RP_ChangeRoll(int16_t& ang){
 	this->ui->LCD_Roll_1->display(-ang);
 	this->ui->LCD_Roll_2->display(ang);
 }
@@ -98,7 +99,7 @@ void MainWindow::RP_ChangeRoll(int& ang){
 /// \brief MainWindow::RP_ChangePitch Sets a value of Pitch angle.
 /// \param ang New Pitch angle.
 ///
-void MainWindow::RP_ChangePitch(int &ang){
+void MainWindow::RP_ChangePitch(int16_t &ang){
 	this->ui->LCD_Pitch->display(ang);
 }
 
@@ -137,6 +138,7 @@ void MainWindow::on_actionConnect_triggered()
 		QMessageBox::warning(nullptr,QObject::tr("Error!"),QObject::tr("No connection!"));
 	}
 
+	this->arduino->clear();
 }
 
 
@@ -149,27 +151,22 @@ void MainWindow::realtimeDataSlot(){
 		static QTime time(QTime::currentTime());
 		// calculate two new data points:
 		double key = time.elapsed()/1000.0; // time elapsed since start of demo, in seconds
-		double d1 = 300*qSin(key)+qrand()/(double)RAND_MAX*1*qSin(key/0.3843);
-		double d2 = 300*qCos(key)+qrand()/(double)RAND_MAX*0.5*qSin(key/0.4364);
-
-
 
 
 		static double lastPointKey = 0;
 		if (key-lastPointKey > 0.2)
 		{
-
-			this->ui->LCD_AGL->display(d1);
-			this->ui->LCD_ASL->display(d2);
+			this->ui->LCD_AGL->display(this->_HAGL);
+			this->ui->LCD_ASL->display(this->_HASL);
 
 			// add data to lines:
-			this->ui->Widget_AXL->graph(0)->addData(key, d1);
-			this->ui->Widget_AXL->graph(1)->addData(key, d2);
+			this->ui->Widget_AXL->graph(0)->addData(key, this->_HASL);
+			this->ui->Widget_AXL->graph(1)->addData(key, this->_HAGL);
 			// rescale value (vertical) axis to fit the current data:
-			this->ui->Widget_AXL->graph(0)->rescaleValueAxis();
-			this->ui->Widget_AXL->graph(1)->rescaleValueAxis(true);
-			this->ui->Widget_RP->ChangeRoll(this->Roll);
-			this->ui->Widget_RP->ChangePitch(this->Pitch);
+			this->ui->Widget_AXL->graph(0)->rescaleAxes(true);
+			this->ui->Widget_AXL->graph(1)->rescaleAxes(true);
+			this->ui->Widget_RP->ChangeRoll(this->_Roll);
+			this->ui->Widget_RP->ChangePitch(this->_Pitch);
 			lastPointKey = key;
 		}
 		// make key axis range scroll with the data (at a constant range size of 8):
@@ -180,6 +177,10 @@ void MainWindow::realtimeDataSlot(){
 	}
 }
 
+///Function used when communication parameters are being changed.
+/// \brief MainWindow::ip_changed
+/// \param arg Qstring with changed parameter.
+///
 void MainWindow::ip_changed(QString arg){
 	this->show();
 	this->ip->hide();
@@ -197,16 +198,24 @@ void MainWindow::ip_changed(QString arg){
 /// \brief MainWindow::newData
 ///
 void MainWindow::newData(){
-
-	this->data->append(this->arduino->readAll());
-
-	if(this->data->size() > 63){
-		qDebug() << this->data << endl;
-		this->realtimeDataSlot();
-
+	int16_t roll,pitch,hASL,hAGL;
+	if(this->arduino->bytesAvailable() > 5){
+		this->arduino->read(this->data,6);
+		pitch = (int8_t)this->data[0];
+		roll = (int8_t)this->data[1];
+		hASL = (this->data[2] << 8) | this->data[3];
+		hAGL = (this->data[4] << 8) | this->data[5];
+		this->_Roll = -roll;
+		this->_Pitch = pitch;
+		this->_HASL = (hASL>1000 || hASL < 0 ? 0 : hASL);
+		this->_HAGL = (hAGL>1000 || hAGL < 0 ? 0 : hAGL);
 	}
+	this->realtimeDataSlot();
 }
 
+///Function used when About button from menu is triggered.
+/// \brief MainWindow::on_actionAbout_triggered
+///
 void MainWindow::on_actionAbout_triggered(){
 	auto msg1 = QObject::tr("Author Maciej Kajdak\n");
 	auto msg2 = QObject::tr("All rights reserved.\n\n");
@@ -219,8 +228,12 @@ void MainWindow::on_actionAbout_triggered(){
 
 }
 
+///Function used when Config button from menu is triggered.
+/// \brief MainWindow::on_actionConfig_triggered
+///
 void MainWindow::on_actionConfig_triggered()
 {
+	this->ip->refresh();
 	this->ip->show();
 
 }

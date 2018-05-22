@@ -26,8 +26,8 @@ void QBalanceWidget::paintEvent(QPaintEvent *event){
 	int myRy = this->height()/2-penWidth;
 	int radius = (myRx < myRy ? myRx : myRy);
 
-	float angle_Roll = qDegreesToRadians(static_cast<float>(this->_Roll));
-	float angle_Roll90 = qDegreesToRadians(static_cast<float>(this->_Roll+90));
+	float angle_Roll_Left = qDegreesToRadians(static_cast<float>(this->_Roll));
+	float angle_Roll_Right = qDegreesToRadians(static_cast<float>(this->_Roll+90));
 	float angle_Pitch = qDegreesToRadians(static_cast<float>(this->_Pitch));
 	float shortDistance = 0.2*radius, longDistance = 0.8*radius;
 
@@ -98,17 +98,17 @@ void QBalanceWidget::paintEvent(QPaintEvent *event){
 	pen.setColor(Qt::black);
 	painter.setPen(pen);
 	//left line
-	painter.drawLine(QPoint(center.rx() - longDistance*qCos(angle_Roll),center.ry() + longDistance*qSin(angle_Roll)),
-					 QPoint(center.rx() - shortDistance*qCos(angle_Roll),center.ry() + shortDistance*qSin(angle_Roll)));
+	painter.drawLine(QPoint(center.rx() - longDistance*qCos(angle_Roll_Left),center.ry() + longDistance*qSin(angle_Roll_Left)),
+					 QPoint(center.rx() - shortDistance*qCos(angle_Roll_Left),center.ry() + shortDistance*qSin(angle_Roll_Left)));
 	//left rising line
-	painter.drawLine(QPoint(center.rx() - shortDistance*qCos(angle_Roll),center.ry() + shortDistance*qSin(angle_Roll)),
-					 QPoint(center.rx() + shortDistance*qCos(angle_Roll90),center.ry() - shortDistance*qSin(angle_Roll90)));
+	painter.drawLine(QPoint(center.rx() - shortDistance*qCos(angle_Roll_Left),center.ry() + shortDistance*qSin(angle_Roll_Left)),
+					 QPoint(center.rx() + shortDistance*qCos(angle_Roll_Right),center.ry() - shortDistance*qSin(angle_Roll_Right)));
 	//right falling line
-	painter.drawLine(QPoint(center.rx() + shortDistance*qCos(angle_Roll90),center.ry() - shortDistance*qSin(angle_Roll90)),
-					 QPoint(center.rx() + shortDistance*qCos(angle_Roll),center.ry() - shortDistance*qSin(angle_Roll)));
+	painter.drawLine(QPoint(center.rx() + shortDistance*qCos(angle_Roll_Right),center.ry() - shortDistance*qSin(angle_Roll_Right)),
+					 QPoint(center.rx() + shortDistance*qCos(angle_Roll_Left),center.ry() - shortDistance*qSin(angle_Roll_Left)));
 	//    //right line
-	painter.drawLine(QPoint(center.rx() + shortDistance*qCos(angle_Roll),center.ry() - shortDistance*qSin(angle_Roll)),
-					 QPoint(center.rx() + longDistance*qCos(angle_Roll),center.ry() - longDistance*qSin(angle_Roll)));
+	painter.drawLine(QPoint(center.rx() + shortDistance*qCos(angle_Roll_Left),center.ry() - shortDistance*qSin(angle_Roll_Left)),
+					 QPoint(center.rx() + longDistance*qCos(angle_Roll_Left),center.ry() - longDistance*qSin(angle_Roll_Left)));
 	//-------------------------------balance------------------------------------
 
 	QWidget::paintEvent(event);
@@ -132,7 +132,7 @@ void QBalanceWidget::resizeEvent(QResizeEvent *event){
 /// \brief QBalanceWidget::get_Roll Getter.
 /// \return Returns value of Roll angle.
 ///
-int QBalanceWidget::get_Roll()
+int16_t QBalanceWidget::get_Roll()
 {
 	return this->_Roll;
 }
@@ -142,7 +142,7 @@ int QBalanceWidget::get_Roll()
 /// \brief QBalanceWidget::get_Pitch Getter.
 /// \return Returns value of Pitch angle.
 ///
-int QBalanceWidget::get_Pitch()
+int16_t QBalanceWidget::get_Pitch()
 {
 	return this->_Pitch;
 }
@@ -152,7 +152,7 @@ int QBalanceWidget::get_Pitch()
 /// \brief QBalanceWidget::ChangeRoll Slot changing Roll angle.
 /// \param ang New value of Roll angle.
 ///
-void QBalanceWidget::ChangeRoll(uint16_t& ang){
+void QBalanceWidget::ChangeRoll(int16_t& ang){
 	if(ang > 360) return;
 	else this->_Roll = ang;
 	this->update();
@@ -163,7 +163,7 @@ void QBalanceWidget::ChangeRoll(uint16_t& ang){
 /// \brief QBalanceWidget::ChangePitch Slot changing pitch angle.
 /// \param ang New value of Pitch angle.
 ///
-void QBalanceWidget::ChangePitch(uint16_t& ang){
+void QBalanceWidget::ChangePitch(int16_t& ang){
 	if(ang > 360) return;
 	else this->_Pitch = ang;
 	this->update();

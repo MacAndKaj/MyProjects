@@ -18,20 +18,20 @@ public:
 	~QBalanceWidget();
 	void paintEvent(QPaintEvent *event);
     void resizeEvent(QResizeEvent *event);
-	int get_Roll();
-	int get_Pitch();
+	int16_t get_Roll();
+	int16_t get_Pitch();
 
 signals:
-	void RollChanged(int& ang);
-	void PitchChanged(int& ang);
+	void RollChanged(int16_t& ang);
+	void PitchChanged(int16_t& ang);
 
 public slots:
-	void ChangeRoll(uint16_t&);
-	void ChangePitch(uint16_t&);
+	void ChangeRoll(int16_t&);
+	void ChangePitch(int16_t&);
 
 private:
-	int _Roll;
-	int _Pitch;
+	int16_t _Roll;
+	int16_t _Pitch;
 };
 
 #endif // QBALANCEWIDGET_H

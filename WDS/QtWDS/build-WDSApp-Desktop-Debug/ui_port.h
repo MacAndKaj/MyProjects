@@ -17,9 +17,7 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QSplitter>
 #include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -30,9 +28,6 @@ public:
     QVBoxLayout *verticalLayout;
     QSpacerItem *verticalSpacer_2;
     QComboBox *comboBox;
-    QSplitter *splitter;
-    QLineEdit *input_ip;
-    QLineEdit *input_port;
     QSpacerItem *verticalSpacer;
     QDialogButtonBox *buttonBox;
 
@@ -40,7 +35,7 @@ public:
     {
         if (Port->objectName().isEmpty())
             Port->setObjectName(QStringLiteral("Port"));
-        Port->resize(240, 320);
+        Port->resize(240, 116);
         verticalLayout = new QVBoxLayout(Port);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalSpacer_2 = new QSpacerItem(20, 93, QSizePolicy::Minimum, QSizePolicy::Expanding);
@@ -51,25 +46,6 @@ public:
         comboBox->setObjectName(QStringLiteral("comboBox"));
 
         verticalLayout->addWidget(comboBox);
-
-        splitter = new QSplitter(Port);
-        splitter->setObjectName(QStringLiteral("splitter"));
-        splitter->setOrientation(Qt::Vertical);
-        input_ip = new QLineEdit(splitter);
-        input_ip->setObjectName(QStringLiteral("input_ip"));
-        input_ip->setMaximumSize(QSize(16777215, 30));
-        splitter->addWidget(input_ip);
-        input_port = new QLineEdit(splitter);
-        input_port->setObjectName(QStringLiteral("input_port"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(input_port->sizePolicy().hasHeightForWidth());
-        input_port->setSizePolicy(sizePolicy);
-        input_port->setMaximumSize(QSize(16777215, 30));
-        splitter->addWidget(input_port);
-
-        verticalLayout->addWidget(splitter);
 
         verticalSpacer = new QSpacerItem(20, 92, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
