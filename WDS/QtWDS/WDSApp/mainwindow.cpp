@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui(new Ui::MainWindow){
 	this->ui->setupUi(this);
 	this->timer = new QTimer(this);
-	this->ip = new Port();
+	this->ip = new QPortDialog();
 	this->ip->setWindowTitle("Device configuration");
 	this->ip_string = nullptr;
 	this->arduino = nullptr;
@@ -235,5 +235,19 @@ void MainWindow::on_actionConfig_triggered()
 {
 	this->ip->refresh();
 	this->ip->show();
+
+
+}
+
+void MainWindow::on_actionHelp_triggered()
+{
+	auto msg1 = QObject::tr("1. Connect device to computer.\n");
+	auto msg2 = QObject::tr("2. Open port choosing window (click Config in menu File) \n");
+	auto msg3 = QObject::tr("3. Choose a right port. Click OK. \n");
+	auto msg4 = QObject::tr("4. Connect to device (Click Connect in menu File).\n");
+	auto msg5 = QObject::tr("5. If you want to disconnect click Disconnect in menu File.\n");
+
+
+	QMessageBox::information(nullptr,QObject::tr("About"),msg1+msg2+msg3+msg4+msg5);
 
 }

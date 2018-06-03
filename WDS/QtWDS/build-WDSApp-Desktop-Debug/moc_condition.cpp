@@ -18,28 +18,28 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_Condition_t {
+struct qt_meta_stringdata_QConditionWidget_t {
     QByteArrayData data[4];
-    char stringdata0[34];
+    char stringdata0[41];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Condition_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_QConditionWidget_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_Condition_t qt_meta_stringdata_Condition = {
+static const qt_meta_stringdata_QConditionWidget_t qt_meta_stringdata_QConditionWidget = {
     {
-QT_MOC_LITERAL(0, 0, 9), // "Condition"
-QT_MOC_LITERAL(1, 10, 9), // "Connected"
-QT_MOC_LITERAL(2, 20, 0), // ""
-QT_MOC_LITERAL(3, 21, 12) // "Disconnected"
+QT_MOC_LITERAL(0, 0, 16), // "QConditionWidget"
+QT_MOC_LITERAL(1, 17, 9), // "Connected"
+QT_MOC_LITERAL(2, 27, 0), // ""
+QT_MOC_LITERAL(3, 28, 12) // "Disconnected"
 
     },
-    "Condition\0Connected\0\0Disconnected"
+    "QConditionWidget\0Connected\0\0Disconnected"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Condition[] = {
+static const uint qt_meta_data_QConditionWidget[] = {
 
  // content:
        7,       // revision
@@ -63,10 +63,10 @@ static const uint qt_meta_data_Condition[] = {
        0        // eod
 };
 
-void Condition::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void QConditionWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        Condition *_t = static_cast<Condition *>(_o);
+        QConditionWidget *_t = static_cast<QConditionWidget *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->Connected(); break;
@@ -77,26 +77,26 @@ void Condition::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     Q_UNUSED(_a);
 }
 
-const QMetaObject Condition::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_Condition.data,
-      qt_meta_data_Condition,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject QConditionWidget::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_QConditionWidget.data,
+      qt_meta_data_QConditionWidget,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *Condition::metaObject() const
+const QMetaObject *QConditionWidget::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Condition::qt_metacast(const char *_clname)
+void *QConditionWidget::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_Condition.stringdata0))
-        return static_cast<void*>(const_cast< Condition*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_QConditionWidget.stringdata0))
+        return static_cast<void*>(const_cast< QConditionWidget*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
-int Condition::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int QConditionWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)

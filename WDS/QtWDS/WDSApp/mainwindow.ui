@@ -59,7 +59,7 @@
              </widget>
             </item>
             <item>
-             <widget class="Condition" name="Connection_Cond" native="true">
+             <widget class="QConditionWidget" name="Connection_Cond" native="true">
               <property name="minimumSize">
                <size>
                 <width>30</width>
@@ -2454,7 +2454,7 @@
      <x>0</x>
      <y>0</y>
      <width>719</width>
-     <height>25</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -2475,14 +2475,6 @@
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuAbout"/>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionExit">
@@ -2519,12 +2511,6 @@
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>Condition</class>
-   <extends>QWidget</extends>
-   <header>condition.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>QCustomPlot</class>
    <extends>QWidget</extends>
    <header>qcustomplot.h</header>
@@ -2538,6 +2524,12 @@
    <slots>
     <slot>click()</slot>
    </slots>
+  </customwidget>
+  <customwidget>
+   <class>QConditionWidget</class>
+   <extends>QWidget</extends>
+   <header>condition.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

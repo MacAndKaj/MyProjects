@@ -24,7 +24,6 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSplitter>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include "condition.h"
@@ -51,7 +50,7 @@ public:
     QSpacerItem *horizontalSpacer_4;
     QHBoxLayout *Layout_connection;
     QLabel *Text_Condition;
-    Condition *Connection_Cond;
+    QConditionWidget *Connection_Cond;
     QSpacerItem *horizontalSpacer_5;
     QHBoxLayout *horizontalLayout_3;
     QSpacerItem *horizontalSpacer_6;
@@ -79,7 +78,6 @@ public:
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuAbout;
-    QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -131,7 +129,7 @@ public:
 
         Layout_connection->addWidget(Text_Condition);
 
-        Connection_Cond = new Condition(layoutWidget);
+        Connection_Cond = new QConditionWidget(layoutWidget);
         Connection_Cond->setObjectName(QStringLiteral("Connection_Cond"));
         Connection_Cond->setMinimumSize(QSize(30, 30));
         Connection_Cond->setMaximumSize(QSize(30, 30));
@@ -564,15 +562,12 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 719, 25));
+        menuBar->setGeometry(QRect(0, 0, 719, 19));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuAbout = new QMenu(menuBar);
         menuAbout->setObjectName(QStringLiteral("menuAbout"));
         MainWindow->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);

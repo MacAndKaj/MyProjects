@@ -4,17 +4,17 @@
 /// \brief Condition::Condition Condition widget constructor
 /// \param parent Parent QWidget.
 ///
-Condition::Condition(QWidget *parent) : QWidget(parent)
+QConditionWidget::QConditionWidget(QWidget *parent) : QWidget(parent)
 {
     this->_is_connected = false;
 
 }
 
-/// paint Event is used to draw a circle with color dependable of condition of connection.
-/// /brief paintEvent overriden QWidget method
-/// /param event QPaintEvent
+///paint Event is used to draw a circle with color dependable of condition of connection.
+/// \brief Condition::paintEvent
+/// \param event
 ///
-void Condition::paintEvent(QPaintEvent *event)
+void QConditionWidget::paintEvent(QPaintEvent *event)
 {
     QPainter painter;
     painter.begin(this);
@@ -47,7 +47,7 @@ void Condition::paintEvent(QPaintEvent *event)
 /// \brief Condition::is_Connected method used when you want to know if device is connected
 /// \return True when is connected, False otherwise
 ///
-bool Condition::is_Connected()
+bool QConditionWidget::is_Connected()
 {
     return this->_is_connected;
 }
@@ -55,7 +55,7 @@ bool Condition::is_Connected()
 ///
 /// \brief Connected slot used when connection event occurs.
 ///
-void Condition::Connected()
+void QConditionWidget::Connected()
 {
     this->_is_connected=true;
     this->update();
@@ -64,7 +64,7 @@ void Condition::Connected()
 ///
 /// \brief Disconnected slot used when disconnection event occurs.
 ///
-void Condition::Disconnected()
+void QConditionWidget::Disconnected()
 {
     this->_is_connected=false;
     this->update();

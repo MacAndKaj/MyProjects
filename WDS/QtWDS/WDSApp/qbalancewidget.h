@@ -1,5 +1,12 @@
 #ifndef QBALANCEWIDGET_H
 #define QBALANCEWIDGET_H
+/*!
+  * \file
+  *	\brief File contains a class QBalanceWidget
+  *
+  *
+  *
+  */
 
 #include <QObject>
 #include <QPushButton>
@@ -11,6 +18,13 @@
 #include <iostream>
 
 
+
+///
+/// \brief The QBalanceWidget class visualises angles Roll & Pitch of device.
+///
+/// QBalanceWidget is used to visualise Roll & Pitch angles in main window.
+/// It inherits from QWidget and defines own methods paintEvent and resizeEvent
+///
 class QBalanceWidget: public QWidget{
     Q_OBJECT
 public:

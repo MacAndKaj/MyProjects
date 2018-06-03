@@ -18,29 +18,30 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_Port_t {
+struct qt_meta_stringdata_QPortDialog_t {
     QByteArrayData data[5];
-    char stringdata0[42];
+    char stringdata0[49];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Port_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_QPortDialog_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_Port_t qt_meta_stringdata_Port = {
+static const qt_meta_stringdata_QPortDialog_t qt_meta_stringdata_QPortDialog = {
     {
-QT_MOC_LITERAL(0, 0, 4), // "Port"
-QT_MOC_LITERAL(1, 5, 10), // "changed_ip"
-QT_MOC_LITERAL(2, 16, 0), // ""
-QT_MOC_LITERAL(3, 17, 2), // "ip"
-QT_MOC_LITERAL(4, 20, 21) // "on_buttonBox_accepted"
+QT_MOC_LITERAL(0, 0, 11), // "QPortDialog"
+QT_MOC_LITERAL(1, 12, 10), // "changed_ip"
+QT_MOC_LITERAL(2, 23, 0), // ""
+QT_MOC_LITERAL(3, 24, 2), // "ip"
+QT_MOC_LITERAL(4, 27, 21) // "on_buttonBox_accepted"
 
     },
-    "Port\0changed_ip\0\0ip\0on_buttonBox_accepted"
+    "QPortDialog\0changed_ip\0\0ip\0"
+    "on_buttonBox_accepted"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Port[] = {
+static const uint qt_meta_data_QPortDialog[] = {
 
  // content:
        7,       // revision
@@ -68,10 +69,10 @@ static const uint qt_meta_data_Port[] = {
        0        // eod
 };
 
-void Port::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void QPortDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        Port *_t = static_cast<Port *>(_o);
+        QPortDialog *_t = static_cast<QPortDialog *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->changed_ip((*reinterpret_cast< QString(*)>(_a[1]))); break;
@@ -82,34 +83,34 @@ void Port::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         int *result = reinterpret_cast<int *>(_a[0]);
         void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (Port::*_t)(QString );
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Port::changed_ip)) {
+            typedef void (QPortDialog::*_t)(QString );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QPortDialog::changed_ip)) {
                 *result = 0;
             }
         }
     }
 }
 
-const QMetaObject Port::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_Port.data,
-      qt_meta_data_Port,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject QPortDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_QPortDialog.data,
+      qt_meta_data_QPortDialog,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *Port::metaObject() const
+const QMetaObject *QPortDialog::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Port::qt_metacast(const char *_clname)
+void *QPortDialog::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_Port.stringdata0))
-        return static_cast<void*>(const_cast< Port*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_QPortDialog.stringdata0))
+        return static_cast<void*>(const_cast< QPortDialog*>(this));
     return QDialog::qt_metacast(_clname);
 }
 
-int Port::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int QPortDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
@@ -127,7 +128,7 @@ int Port::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Port::changed_ip(QString _t1)
+void QPortDialog::changed_ip(QString _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
