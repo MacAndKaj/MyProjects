@@ -1,24 +1,23 @@
 #include "qbalancewidget.h"
 
-///QBalanceWidget constructor
-/// \brief QBalanceWidget::QBalanceWidget
-/// \param parent parent QWidget
+///Constructs a widget which is a child of parent.
+/// \brief QBalanceWidget::QBalanceWidget Constructor.
+/// \param[in] parent - parent QWidget.
 ///
 QBalanceWidget::QBalanceWidget(QWidget *parent) : QWidget(parent){
 	this->_Pitch = 0;
 	this->_Roll = 0;
 }
 
-///QBalanceWidget destructor
-/// \brief QBalanceWidget::~QBalanceWidget
+///Destroys the widget.
+/// \brief QBalanceWidget::~QBalanceWidget Destructor.
 ///
 QBalanceWidget::~QBalanceWidget(){}
 
-
-///This is overloaded method used when event occurs. This function prints things inside the widget.
+/// This is overloaded method used when event occurs. This function prints things inside the widget.
 /// It uses values of _Roll and _Pitch to rotating a balance thing.
 /// \brief QBalanceWidget::paintEvent Overloaded method of QWidget
-/// \param event QPaintEvent
+/// \param[in] event - a paint event is a request to repaint all or part of a widget.
 ///
 void QBalanceWidget::paintEvent(QPaintEvent *event){
 	int penWidth=8;
@@ -116,9 +115,9 @@ void QBalanceWidget::paintEvent(QPaintEvent *event){
 }
 
 
-///This is overloaded method resizeEvent from QWidget.
+/// When resizeEvent() is called, the widget already has its new geometry.
 /// \brief QBalanceWidget::resizeEvent
-/// \param event forcing resize
+/// \param[in] event - Resize event are sent to widget when have been resized.
 ///
 void QBalanceWidget::resizeEvent(QResizeEvent *event){
 	if(this->width() != this->height()){
@@ -130,7 +129,7 @@ void QBalanceWidget::resizeEvent(QResizeEvent *event){
 
 ///Getter.
 /// \brief QBalanceWidget::get_Roll Getter.
-/// \return Returns value of Roll angle.
+/// \return Returns value of Roll angle (degrees).
 ///
 int16_t QBalanceWidget::get_Roll()
 {
@@ -140,7 +139,7 @@ int16_t QBalanceWidget::get_Roll()
 
 ///Getter.
 /// \brief QBalanceWidget::get_Pitch Getter.
-/// \return Returns value of Pitch angle.
+/// \return Returns value of Pitch angle (degrees).
 ///
 int16_t QBalanceWidget::get_Pitch()
 {
@@ -150,7 +149,7 @@ int16_t QBalanceWidget::get_Pitch()
 
 ///Slot changing a value of Roll angle. Is used when new data appears.
 /// \brief QBalanceWidget::ChangeRoll Slot changing Roll angle.
-/// \param ang New value of Roll angle.
+/// \param[in] ang - a new Pitch angle (degrees).
 ///
 void QBalanceWidget::ChangeRoll(int16_t& ang){
 	if(ang > 360) return;
@@ -161,7 +160,7 @@ void QBalanceWidget::ChangeRoll(int16_t& ang){
 
 ///Slot changing a value of Pitch angle. Is used when new data appears.
 /// \brief QBalanceWidget::ChangePitch Slot changing pitch angle.
-/// \param ang New value of Pitch angle.
+/// \param[in] ang - a new Pitch angle (degrees).
 ///
 void QBalanceWidget::ChangePitch(int16_t& ang){
 	if(ang > 360) return;

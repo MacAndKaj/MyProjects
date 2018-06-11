@@ -1,9 +1,9 @@
 #include "port.h"
 #include "ui_port.h"
 
-///Constructor
+///Constructs a widget which is a child of parent.
 /// \brief Port::Port Constructor
-/// \param parent Parent QWidget
+/// \param[in] parent - parent QWidget.
 ///
 QPortDialog::QPortDialog(QWidget *parent) :
 	QDialog(parent),
@@ -16,7 +16,7 @@ QPortDialog::QPortDialog(QWidget *parent) :
 
 }
 
-///Destructor.
+///Destroys the widget.
 /// \brief Port::~Port Constructor
 ///
 QPortDialog::~QPortDialog()

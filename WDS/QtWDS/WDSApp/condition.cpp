@@ -2,7 +2,7 @@
 
 ///Condition widget constructor.
 /// \brief Condition::Condition Condition widget constructor
-/// \param parent Parent QWidget.
+/// \param[in] parent Parent QWidget.
 ///
 QConditionWidget::QConditionWidget(QWidget *parent) : QWidget(parent)
 {
@@ -10,9 +10,9 @@ QConditionWidget::QConditionWidget(QWidget *parent) : QWidget(parent)
 
 }
 
-///paint Event is used to draw a circle with color dependable of condition of connection.
+/// Paint Event is used to draw a circle with color dependable of condition of connection.
 /// \brief Condition::paintEvent
-/// \param event
+/// \param[in] event - a request to repaint all or part of a widget.
 ///
 void QConditionWidget::paintEvent(QPaintEvent *event)
 {

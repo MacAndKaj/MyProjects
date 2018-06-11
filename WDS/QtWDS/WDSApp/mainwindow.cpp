@@ -2,9 +2,9 @@
 #include "ui_mainwindow.h"
 
 
-///MainWindow constructor.
+///Constructs a MainWindow with the given parent
 /// \brief MainWindow::MainWindow MainWindow constructor.
-/// \param parent Parent QWidget.
+/// \param[in] parent - Parent QWidget.
 ///
 MainWindow::MainWindow(QWidget *parent) :
 	QMainWindow(parent),
@@ -54,7 +54,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 }
 
-///MainWindow destructor.
+///Destroys the main window.
 /// \brief MainWindow::~MainWindow MainWindow destructor.
 ///
 MainWindow::~MainWindow(){
@@ -69,9 +69,10 @@ MainWindow::~MainWindow(){
 }
 
 
-///This overriden method asks user if he is sure he wants to exit applications. Method catches QCloseEvent end writes decision into it.
+/// This event handler is called with the given event when Qt receives a window close request from the window system.
+/// This overriden method asks user if he is sure he wants to exit applications. Method catches QCloseEvent end writes decision into it.
 /// \brief MainWindow::closeEvent Overriden method to show a window asking for confirmation.
-/// \param event QCloseEvent
+/// \param[in] event - a window close request.
 ///
 void MainWindow::closeEvent(QCloseEvent *event){
 	QMessageBox::StandardButton resBtn = QMessageBox::question( this, QObject::tr("Exiting"),
@@ -88,7 +89,7 @@ void MainWindow::closeEvent(QCloseEvent *event){
 
 ///Slot sets a value of Roll angle in LCDs, connected with a signal emited by qbalancewidget.
 /// \brief MainWindow::_RP_ChangeRoll Sets a value of Roll angle
-///	\param ang New Roll angle.
+///	\param[in] ang- a new Pitch angle (degrees).
 ///
 void MainWindow::RP_ChangeRoll(int16_t& ang){
 	this->ui->LCD_Roll_1->display(-ang);
@@ -97,7 +98,7 @@ void MainWindow::RP_ChangeRoll(int16_t& ang){
 
 ///Slot sets a value of Pitch angle in LCD, connected with a signal emited by qbalancewidget.
 /// \brief MainWindow::RP_ChangePitch Sets a value of Pitch angle.
-/// \param ang New Pitch angle.
+/// \param[in] ang - a new Pitch angle (degrees).
 ///
 void MainWindow::RP_ChangePitch(int16_t &ang){
 	this->ui->LCD_Pitch->display(ang);
@@ -209,6 +210,7 @@ void MainWindow::newData(){
 		this->_Pitch = pitch;
 		this->_HASL = (hASL>1000 || hASL < 0 ? 0 : hASL);
 		this->_HAGL = (hAGL>1000 || hAGL < 0 ? 0 : hAGL);
+		qDebug() << this->_HASL << " " << this->_HAGL << endl;
 	}
 	this->realtimeDataSlot();
 }
