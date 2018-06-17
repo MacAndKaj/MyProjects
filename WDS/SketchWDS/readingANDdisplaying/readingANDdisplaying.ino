@@ -8,8 +8,9 @@ LPS331 PressureSensor;
 ADXL345 Accelerometer;
 float Static_Pressure;
 
-byte array[6];
-
+uint8_t Start = 0x0A;
+byte array[8];
+uint8_t CRC=0;
 
 void setup()
 {
@@ -47,24 +48,22 @@ void loop()
   if (HASL > 1000) HASL = 0;
   if (HAGL > 1000) HAGL = 0;
 
-  array[0] = Roll;
-  array[1] = Pitch;
-  array[2] = HASL >> 8;
-  array[3] = HASL;
-  array[4] = HAGL >> 8;
-  array[5] = HAGL;
+  
 
-    Serial.write(array, 6);
-//    Serial.println("\n\n------------------");
-//    Serial.println(Roll);
-//    Serial.println(Pitch);
-//    Serial.println(HASL);
-//    Serial.println(HAGL);
-//  for (int i = 0; i < 6; ++i) {
-//    Serial.println(array[i], BIN);
-//  }
-
-
+  array[0] = Start;
+  array[1] = Roll;
+  array[2] = Pitch;
+  array[3] = HASL >> 8;
+  array[4] = HASL;
+  array[5] = HAGL >> 8;
+  array[6] = HAGL;
+  for(int i=0;i<7;++i){
+    CRC+=array[i];
+  } 
+  array[7] = CRC;
+    Serial.write(array, 8);
+//  Serial.println(CRC,HEX);
+  CRC=0;
   delay(50);
 
 }

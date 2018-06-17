@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	this->ip->setWindowTitle("Device configuration");
 	this->ip_string = nullptr;
 	this->arduino = nullptr;
-	this->data = new char[6];
+	this->data = new char[8];
 
 	//---------------------------------- start values -------------------
 	this->ui->Text_Condition->setText(QObject::tr("Disconnected"));
@@ -200,17 +200,25 @@ void MainWindow::ip_changed(QString arg){
 ///
 void MainWindow::newData(){
 	int16_t roll,pitch,hASL,hAGL;
-	if(this->arduino->bytesAvailable() > 5){
-		this->arduino->read(this->data,6);
-		pitch = (int8_t)this->data[0];
-		roll = (int8_t)this->data[1];
-		hASL = (this->data[2] << 8) | this->data[3];
-		hAGL = (this->data[4] << 8) | this->data[5];
-		this->_Roll = -roll;
-		this->_Pitch = pitch;
-		this->_HASL = (hASL>1000 || hASL < 0 ? 0 : hASL);
-		this->_HAGL = (hAGL>1000 || hAGL < 0 ? 0 : hAGL);
-		qDebug() << this->_HASL << " " << this->_HAGL << endl;
+	uint8_t CRC=0;
+	if(this->arduino->bytesAvailable() > 7){
+		this->arduino->read(this->data,8);
+
+		if(this->data[0] == 0x0A){
+			for(int i=0;i<7;++i){
+				CRC += this->data[i];
+			}
+			if(CRC == (uint8_t)this->data[7]){
+				pitch = (int8_t)this->data[1];
+				roll = (int8_t)this->data[2];
+				hASL = (this->data[3] << 8) | this->data[4];
+				hAGL = (this->data[5] << 8) | this->data[6];
+				this->_Roll = -roll;
+				this->_Pitch = pitch;
+				this->_HASL = (hASL>1000 || hASL < 0 ? 0 : hASL);
+				this->_HAGL = (hAGL>1000 || hAGL < 0 ? 0 : hAGL);
+			}
+		}
 	}
 	this->realtimeDataSlot();
 }
