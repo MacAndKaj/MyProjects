@@ -180,7 +180,7 @@ void MainWindow::realtimeDataSlot(){
 
 ///Function used when communication parameters are being changed.
 /// \brief MainWindow::ip_changed
-/// \param arg Qstring with changed parameter.
+/// \param[in] arg - Qstring with changed parameter.
 ///
 void MainWindow::ip_changed(QString arg){
 	this->show();
