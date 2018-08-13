@@ -3,28 +3,32 @@
 //
 
 #include <iostream>
-#include "../inc/Button.h"
-#include "../inc/Exceptions.h"
+#include "Button.h"
+#include "Exceptions.h"
 
-//------------------------  Public methods  ----------------------------------
+//------------------   Constructors and destructors ---------------------
+
 /// Constructs Button.
 /// \param _height[in]
 /// \param _width[in]
 /// \param _left[in]
 /// \param _top[in]
 /// \param _text[in]
-Button::Button(unsigned int _height, unsigned int _centerX, unsigned int _centerY, const std::string &_text) :
+Button::Button(unsigned int _height, unsigned int _centerX, unsigned int _centerY, const std::string &_text,
+               std::function Callback) :
         _height(_height),
         _centerX(_centerX),
         _centerY(_centerY),
-        _text(_text) {
+        _text(_text),
+        _functionality(functionaluty),
+        _Object(_Object), Callback(Callback) {
     sf::Vector2f tmp(_centerX,_centerY);
     this->_colorNormal = sf::Color::Black;
     this->_colorFocused = sf::Color::Red;
     this->_colorClicked = sf::Color::Blue;
     this->_focused = false;
     //----------------------Text---------------------
-    if (!this->_font.loadFromFile("/home/maciej/Documents/MyProjects/Checkers/Pacific Again.ttf")){
+    if (!this->_font.loadFromFile("Pacific_Again.ttf")){
         throw ButtonExcept; // NOLINT
     }
     this->_buttonText.setFont(this->_font);
@@ -34,7 +38,11 @@ Button::Button(unsigned int _height, unsigned int _centerX, unsigned int _center
 
     this->_buttonText.setPosition(tmp);
     this->_buttonText.setFillColor(this->_colorNormal);
+
 }
+
+
+//------------------------  Public methods  ----------------------------------
 
 /// Changes color of Button when clicked.
 void Button::click() {
@@ -69,6 +77,9 @@ bool Button::isFocused() const {
 /// Changes color of Button when unclicked.
 void Button::unclick() {
     this->_buttonText.setFillColor(this->_colorNormal);
+    if(this->_functionality != nullptr){
+        this->_functionality(this->_Object);
+    }
 }
 
 /// Changes color of Button when unfocused.
@@ -84,7 +95,12 @@ void Button::unfocus() {
 /// \param[in] states - RenderStates used when object is drawn.
 void Button::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     target.draw(this->_buttonText,states);
+}
 
+/// Sets a function used by Button.
+/// \param func[in] - Pointer to function called by Button.
+void Button::setFunctionality(void (*func)( Callable*)) {
+    this->_functionality=func;
 }
 
 

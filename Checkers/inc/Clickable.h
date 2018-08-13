@@ -6,6 +6,8 @@
 #define CHECKERS_CLICKABLE_H
 
 #include <SFML/Graphics/Drawable.hpp>
+#include "Callable.h"
+
 
 class Clickable : public sf::Drawable{
 public:
@@ -16,6 +18,7 @@ public:
     virtual void unfocus() = 0;
     virtual sf::Vector2i getLocalPosition() const = 0;
     virtual sf::Vector2f getSize() const = 0;
+    virtual void setFunctionality(void (*func)( Callable*)) = 0;
 };
 
 
