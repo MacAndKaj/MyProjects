@@ -1,32 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
 project(PARANOID)
-
+option(test "Build all tests." OFF) # Makes boolean 'test' available.
 set(CMAKE_CXX_STANDARD 14)
 set(EXECUTABLE_NAME "PARANOID")
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
-
 add_subdirectory(src)
-add_executable(${EXECUTABLE_NAME} src/main.cpp)
-target_link_libraries(${EXECUTABLE_NAME} MyLib)
 
-find_package(SFML 2.5 REQUIRED network audio graphics window system)
-if(SFML_FOUND)
-    include_directories(${SFML_INCLUDE_DIR})
-    target_link_libraries(${EXECUTABLE_NAME} ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
-endif()
-
-
-
-find_package(GTest REQUIRED)
-if(GTEST_FOUND)
-    include_directories(${GTEST_INCLUDE_DIRS})
-    target_link_libraries(${EXECUTABLE_NAME} ${GTEST_BOTH_LIBRARIES})
-endif()
-
-if (test)
-    enable_testing()
-    add_subdirectory(tests)
-endif ()
+add_subdirectory(tests)

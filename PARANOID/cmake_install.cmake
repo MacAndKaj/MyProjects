@@ -1,4 +1,4 @@
-# Install script for directory: /home/maciej/Documents/MyProjects/PARANOID
+# Install script for directory: /home/mkajdak/Dokumenty/Private/PARANOID
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/maciej/Documents/MyProjects/PARANOID/src/cmake_install.cmake")
+  include("/home/mkajdak/Dokumenty/Private/PARANOID/src/cmake_install.cmake")
+  include("/home/mkajdak/Dokumenty/Private/PARANOID/tests/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/maciej/Documents/MyProjects/PARANOID/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mkajdak/Dokumenty/Private/PARANOID/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

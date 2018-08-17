@@ -1,9 +1,15 @@
-file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/tests/*.cpp)
+file(GLOB SRCS *.cpp)
+find_package(Threads REQUIRED)
 
-foreach(_test_file ${TEST_SRC_FILES})
-    get_filename_component(_test_name ${_test_file} NAME_WE)
-    add_executable(${_test_name} ${_test_file})
-    target_link_libraries(${_test_name} gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
-    add_test(${_test_name} ${_test_name})
-    set_tests_properties(${_test_name} PROPERTIES TIMEOUT 5)
-endforeach()
+add_executable(tests ${SRCS})
+include_directories("${source_dir}/googletest/include"
+        "${source_dir}/googlemock/include")
+################################
+find_package(GTest REQUIRED)
+if (GTEST_FOUND)
+    include_directories(${GTEST_INCLUDE_DIRS})
+endif ()
+enable_testing()
+target_link_libraries(tests gtest gtest_main MyLib pthread)
+
+install(TARGETS tests DESTINATION build)

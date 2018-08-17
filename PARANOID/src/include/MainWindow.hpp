@@ -11,6 +11,7 @@
 class MainWindow
 {
 public:
+    MainWindow();
     MainWindow (unsigned int _windowHeight, unsigned int _windowWidth, const std::string &_windowTitle);
     virtual ~MainWindow ();
 
