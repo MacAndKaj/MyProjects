@@ -7,6 +7,7 @@
 
 #include <Interface/IClickable.hpp>
 #include <SFML/Graphics/Drawable.hpp>
+
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Graphics/Text.hpp>
 #include <functional>
@@ -15,6 +16,7 @@ class LetterButton : public IClickable,
                      public sf::Drawable
 {
 public:
+    LetterButton ();
     explicit LetterButton (int positionY_, int positionX_, int length_, int height_,const std::string& txt);
     ~LetterButton () override;
 

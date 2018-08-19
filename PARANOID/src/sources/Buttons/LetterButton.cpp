@@ -4,6 +4,8 @@
 
 #include <Buttons/LetterButton.hpp>
 
+LetterButton::LetterButton () { }
+
 LetterButton::LetterButton (int positionY_,
                             int positionX_,
                             int length_,
