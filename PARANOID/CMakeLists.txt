@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 project(PARANOID)
-option(test "Build all tests." OFF) # Makes boolean 'test' available.
 set(CMAKE_CXX_STANDARD 14)
 set(EXECUTABLE_NAME "PARANOID")
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)

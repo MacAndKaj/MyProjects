@@ -2,10 +2,11 @@
 // Created by mkajdak on 17.08.18.
 //
 #include <gtest/gtest.h>
-#include <mocks>
 #include <cmath>
+#include <mocks/MockSfColor.cpp>
 #include <Buttons/LetterButton.hpp>
-#include <SFML/Graphics/Color.hpp>
+#include <mocks/MockSfFont.cpp>
+
 
 class LetterButtonTests : public ::testing::Test
 {
