@@ -153,7 +153,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/mkajdak/Dokumenty/Private/PARANOID/src/include"/>
-					<Add directory="/home/mkajdak/Dokumenty/Private/PARANOID/tests"/>
 					<Add directory="/googletest/include"/>
 					<Add directory="/googlemock/include"/>
 					<Add directory="/usr/local/include"/>
@@ -173,7 +172,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/mkajdak/Dokumenty/Private/PARANOID/src/include"/>
-					<Add directory="/home/mkajdak/Dokumenty/Private/PARANOID/tests"/>
 					<Add directory="/googletest/include"/>
 					<Add directory="/googlemock/include"/>
 					<Add directory="/usr/local/include"/>
@@ -199,12 +197,6 @@
 			<Option target="MyLib"/>
 		</Unit>
 		<Unit filename="/home/mkajdak/Dokumenty/Private/PARANOID/tests/UT/LetterButtonTests.cpp">
-			<Option target="tests"/>
-		</Unit>
-		<Unit filename="/home/mkajdak/Dokumenty/Private/PARANOID/tests/mocks/MockSfColor.cpp">
-			<Option target="tests"/>
-		</Unit>
-		<Unit filename="/home/mkajdak/Dokumenty/Private/PARANOID/tests/mocks/MockSfFont.cpp">
 			<Option target="tests"/>
 		</Unit>
 		<Unit filename="/home/mkajdak/Dokumenty/Private/PARANOID/CMakeLists.txt">

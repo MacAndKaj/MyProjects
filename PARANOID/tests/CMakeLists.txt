@@ -1,7 +1,6 @@
-file(GLOB SRCS UT/*.cpp mocks/*.cpp)
+file(GLOB SRCS UT/*.cpp)
 find_package(Threads REQUIRED)
-include_directories ("${PROJECT_SOURCE_DIR}/src/include"
-        "${PROJECT_SOURCE_DIR}/tests")
+include_directories ("${PROJECT_SOURCE_DIR}/src/include")
 
 add_executable(tests ${SRCS})
 include_directories("${source_dir}/googletest/include"
@@ -9,16 +8,17 @@ include_directories("${source_dir}/googletest/include"
         )
 
 ################################
+find_package(SFML 2.5 REQUIRED network audio graphics window system)
+if(SFML_FOUND)
+    include_directories(${SFML_INCLUDE_DIR})
+endif()
+
 find_package(GTest REQUIRED)
+
 if (GTEST_FOUND)
     include_directories(${GTEST_INCLUDE_DIRS} ${GMOCK_INCLUDE_DIRS})
 endif ()
 enable_testing()
-find_package(SFML 2.5 REQUIRED network audio graphics window system)
-if(SFML_FOUND)
-    include_directories(${SFML_INCLUDE_DIR})
-    target_link_libraries(tests ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
-endif()
-target_link_libraries(tests gtest gmock gtest_main MyLib pthread)
+target_link_libraries(tests gtest gmock gtest_main MyLib pthread ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
 
 install(TARGETS tests DESTINATION build)

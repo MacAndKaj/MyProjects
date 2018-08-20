@@ -7,7 +7,7 @@
 
 #include <Interface/IClickable.hpp>
 #include <SFML/Graphics/Drawable.hpp>
-
+#include <SFML/Graphics/Color.hpp>
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Graphics/Text.hpp>
 #include <functional>
@@ -24,6 +24,8 @@ public:
     void click () override;
     void unclick () override;
     bool isClicked () override;
+    void focus() override;
+    void unfocus() override;
 
     //sf::Drawable
     void draw (sf::RenderTarget &target, sf::RenderStates states) const override;
@@ -34,6 +36,7 @@ public:
     void setOnClickColor (const sf::Color &onClickColor);
 private:
     bool _clicked;
+    bool _focused;
     int _height;
     int _length;
     int _positionCentralY;

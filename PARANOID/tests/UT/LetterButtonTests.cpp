@@ -3,9 +3,8 @@
 //
 #include <gtest/gtest.h>
 #include <cmath>
-#include <mocks/MockSfColor.cpp>
 #include <Buttons/LetterButton.hpp>
-#include <mocks/MockSfFont.cpp>
+
 
 
 class LetterButtonTests : public ::testing::Test
@@ -13,15 +12,15 @@ class LetterButtonTests : public ::testing::Test
 
 protected:
 
-    virtual void SetUp ()
+    void SetUp () override
     {
-        this->_sut.reset(new LetterButton());
+        this->_sut = std::make_unique<LetterButton>();
     }
 
 public:
     LetterButtonTests ()
     {
-        this->_sut = std::make_unique<LetterButton>(LetterButton());
+        this->_sut = std::make_unique<LetterButton>();
     }
 
 
@@ -29,11 +28,21 @@ public:
 
 };
 
-TEST_F(LetterButtonTests, ShouldDoSomething) // NOLINT
+
+TEST_F(LetterButtonTests, LetterButtonTests_ShouldChangeState_Test)
 {
+    _sut->focus();
     _sut->click();
     ASSERT_TRUE(_sut->isClicked());
     _sut->unclick();
     ASSERT_FALSE(_sut->isClicked());
 }
 
+TEST_F(LetterButtonTests, LetterButtonTests_ShouldHandleFunctionality_Test)
+{
+
+    _sut->setFunctionality([](){});
+    _sut->focus();
+    _sut->click();
+    _sut->unclick();
+}

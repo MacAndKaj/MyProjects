@@ -11,6 +11,8 @@ public:
     virtual void click() = 0;
     virtual void unclick() = 0;
     virtual bool isClicked() = 0;
+    virtual void focus() = 0;
+    virtual void unfocus() = 0;
 };
 
 
