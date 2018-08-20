@@ -7,23 +7,28 @@
 
 #include <fstream>
 #include <memory>
+const unsigned int maxBufferSize = 1024;
 
+struct Debug
+{
+    std::string _buffer;
+
+}DEBUG;
 
 class Logger
 {
 public:
     Logger () = delete;
-    Logger (const std::string &_nameOfLoggerOwner);
+    explicit Logger (const std::string &_nameOfLoggerOwner);
     virtual ~Logger ();
 private:
+
     std::string _nameOfLoggerOwner;
-    std::string _buffer;
     static std::unique_ptr<std::ofstream> _logFile;
     static void initLogFile();
-    friend Logger& operator << (Logger &log, const char *strm);
-    friend Logger& operator <<(Logger& log, Logger& strm);
-
+    friend Logger& operator << (Logger &log, Debug& dbgStream);
 };
+
 
 
 

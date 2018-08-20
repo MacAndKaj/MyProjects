@@ -25,6 +25,7 @@ void Logger::initLogFile ()
     fileName += to_string(timeNow->tm_mday);
     fileName += to_string(timeNow->tm_hour);
     fileName += to_string(timeNow->tm_min);
+    fileName += ".log";
     Logger::_logFile = make_unique<ofstream>(fileName);
 }
 
@@ -36,17 +37,20 @@ Logger::~Logger ()
 }
 
 
-Logger &operator<< (Logger &log, const char *strm)
+Logger &operator<< (Logger &log, Debug& dbgStrm)
 {
-    log._buffer += strm;
+    if ( log._logFile->is_open() and dbgStrm._buffer.size() > 0 )
+        *log._logFile << dbgStrm._buffer;
+    dbgStrm._buffer.clear();
+    return log;
 }
 
-Logger &operator<< (Logger &log, Logger &strm)
+Debug &operator<< (Debug &dbg, const char* strm)
 {
-    if (&strm == &log)
+    std::string tmp{strm};
+    tmp += ' ';
+    if (tmp.size()>0)
     {
-        *(Logger::_logFile) << '[' << log._nameOfLoggerOwner << ']';
-        *(Logger::_logFile) << log._buffer << '\n';
-        log._buffer.clear();
+        dbg._buffer.append(tmp);
     }
 }

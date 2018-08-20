@@ -19,6 +19,6 @@ int main()
 //    }
 
     Logger log("mojlog");
-    log << "Tutaj cos napisze" << "tutaj tez" << "I tutaj";
+    log << DEBUG << "Tutaj cos napisze" << "tutaj tez" << "I tutaj";
     return 0;
 }
