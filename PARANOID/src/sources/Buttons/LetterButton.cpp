@@ -7,21 +7,22 @@
 LetterButton::LetterButton()
 {}
 
-LetterButton::LetterButton(int positionY,
-                           int positionX,
-                           int length,
-                           int height,
-                           const std::string &txt) :
-        _positionCentralY(positionY),
-        _positionCentralX(positionX),
-        _length(length),
-        _height(height)
+LetterButton::LetterButton(int positionY, int positionX, int length, int height, const std::string &txt)
+        : _positionCentralY(positionY)
+        , _positionCentralX(positionX)
+        , _length(length)
+        , _height(height)
+        , _clicked(false)
+        , _focused(false)
 {
     sf::Vector2f tmp(positionX, positionY);
     _basicColor = sf::Color::Black;
     _onClickColor = sf::Color::Blue;
     _onFocusColor = sf::Color::Red;
     _buttonText.setString(txt);
+    if(!_font.loadFromFile("Pacific_Again.ttf")){
+
+    }
 
 }
 
