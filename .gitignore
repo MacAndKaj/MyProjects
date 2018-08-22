@@ -1,0 +1,19 @@
+cmake-build-debug/
+CMakeFiles/
+.idea/
+
+.idea/
+*.zip
+*.rar
+*.jpg
+
+*.pdf
+*.cbp
+
+#WDS files and folders
+Arduino-ADXL345-master/
+lps331-arduino-master/
+html/
+latex/
+googletest/
+SFML/
