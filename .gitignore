@@ -1,6 +1,7 @@
 cmake-build-debug/
 CMakeFiles/
 .idea/
+logs/
 
 .idea/
 *.zip
