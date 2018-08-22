@@ -37,20 +37,13 @@ Logger::~Logger ()
 }
 
 
-Logger &operator<< (Logger &log, Debug& dbgStrm)
-{
-    if ( log._logFile->is_open() and dbgStrm._buffer.size() > 0 )
-        *log._logFile << dbgStrm._buffer;
-    dbgStrm._buffer.clear();
-    return log;
-}
-
-Debug &operator<< (Debug &dbg, const char* strm)
+const char* operator<< (Logger &log, const char* strm)
 {
     std::string tmp{strm};
     tmp += ' ';
     if (tmp.size()>0)
     {
-        dbg._buffer.append(tmp);
+        log._buffer.append(tmp);
     }
+    return strm;
 }

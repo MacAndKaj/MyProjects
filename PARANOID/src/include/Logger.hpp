@@ -9,12 +9,6 @@
 #include <memory>
 const unsigned int maxBufferSize = 1024;
 
-struct Debug
-{
-    std::string _buffer;
-
-}DEBUG;
-
 class Logger
 {
 public:
@@ -22,11 +16,11 @@ public:
     explicit Logger (const std::string &_nameOfLoggerOwner);
     virtual ~Logger ();
 private:
-
+    std::string _buffer;
     std::string _nameOfLoggerOwner;
     static std::unique_ptr<std::ofstream> _logFile;
     static void initLogFile();
-    friend Logger& operator << (Logger &log, Debug& dbgStream);
+    friend const char* operator << (Logger &log, const char* strm);
 };
 
 
