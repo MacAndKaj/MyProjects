@@ -4,9 +4,6 @@
 
 #include <Buttons/LetterButton.hpp>
 
-LetterButton::LetterButton()
-{}
-
 LetterButton::LetterButton(int positionY, int positionX, int length, int height, const std::string &txt)
         : _positionCentralY(positionY)
         , _positionCentralX(positionX)
@@ -14,6 +11,7 @@ LetterButton::LetterButton(int positionY, int positionX, int length, int height,
         , _height(height)
         , _clicked(false)
         , _focused(false)
+        , _log("LetterButton("+txt+')')
 {
     sf::Vector2f tmp(positionX, positionY);
     _basicColor = sf::Color::Black;
@@ -44,8 +42,8 @@ void LetterButton::unclick()
 {
     if (_clicked)
     {
-        if(_functionality)
-            _functionality();
+        if(_callback)
+            _callback();
         _clicked = false;
     }
 }
@@ -57,7 +55,7 @@ bool LetterButton::isClicked()
 
 void LetterButton::setFunctionality(const std::function<void()> &functionality)
 {
-    _functionality = functionality;
+    _callback = functionality;
 }
 
 void LetterButton::draw(sf::RenderTarget &target, sf::RenderStates states) const
@@ -94,6 +92,12 @@ void LetterButton::unfocus()
     {
         _focused = false;
     }
+}
+
+void LetterButton::setButtonText (const std::string &buttonText)
+{
+    _buttonText.setString(buttonText);
+    _log.setNameOfLoggerOwner("LetterButton("+buttonText+')');
 }
 
 
