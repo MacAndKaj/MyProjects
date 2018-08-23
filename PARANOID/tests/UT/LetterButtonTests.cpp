@@ -12,10 +12,6 @@ class LetterButtonTests : public ::testing::Test
 
 protected:
 
-    void SetUp () override
-    {
-        this->_sut = std::make_unique<LetterButton>();
-    }
 
 public:
     LetterButtonTests ()

@@ -29,10 +29,8 @@ private:
     static void initLogFile();
     void clearBuffer();
     friend Logger& operator << (Logger &log, const char* strm);
-    friend Logger& operator << (Logger &log, logging&& strm);
+    friend Logger& operator << (Logger &log, logging strm);
 };
-
-
 
 
 

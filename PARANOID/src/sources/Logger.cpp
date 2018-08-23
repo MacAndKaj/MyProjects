@@ -46,6 +46,12 @@ void Logger::clearBuffer ()
     _buffer.clear();
 }
 
+
+void Logger::setNameOfLoggerOwner (const string &nameOfLoggerOwner)
+{
+    _nameOfLoggerOwner = nameOfLoggerOwner;
+}
+
 Logger &operator<< (Logger &log, const char *strm)
 {
     std::string tmp{strm};
@@ -57,7 +63,7 @@ Logger &operator<< (Logger &log, const char *strm)
     return log;
 }
 
-Logger &operator<< (Logger &log, logging &&strm)
+Logger &operator<< (Logger &log, logging strm)
 {
     if (strm == logging::logEnd)
     {
@@ -65,9 +71,4 @@ Logger &operator<< (Logger &log, logging &&strm)
     }
 
     return log;
-}
-
-void Logger::setNameOfLoggerOwner (const string &nameOfLoggerOwner)
-{
-    _nameOfLoggerOwner = nameOfLoggerOwner;
 }

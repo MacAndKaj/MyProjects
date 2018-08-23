@@ -17,7 +17,7 @@ class LetterButton
         : public IClickable, public sf::Drawable
 {
 public:
-    LetterButton () : _log("LetterButton"){};
+    LetterButton ();
     explicit LetterButton (int positionY_, int positionX_, int length_, int height_, const std::string &txt);
     ~LetterButton () override;
 
@@ -45,9 +45,11 @@ private:
     int _positionCentralY;
     int _positionCentralX;
 
-    sf::Text _buttonText;
     sf::Font _font;
-    sf::Color _basicColor, _onFocusColor, _onClickColor;
+    sf::Text _buttonText;
+    sf::Color _basicColor;
+    sf::Color _onFocusColor;
+    sf::Color _onClickColor;
     std::function<void ()> _callback;
 };
 

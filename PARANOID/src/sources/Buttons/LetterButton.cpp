@@ -3,6 +3,16 @@
 //
 
 #include <Buttons/LetterButton.hpp>
+#include <iostream>
+
+LetterButton::LetterButton ()
+        : _log("LetterButton")
+{
+    if(!_font.loadFromFile("Pacifizxcc_Again.ttf")){
+        _log << "Error while loading font!" << logging::logEnd;
+        std::cout << "saddaasdas" << std::endl;
+    }
+}
 
 LetterButton::LetterButton(int positionY, int positionX, int length, int height, const std::string &txt)
         : _positionCentralY(positionY)
@@ -19,7 +29,8 @@ LetterButton::LetterButton(int positionY, int positionX, int length, int height,
     _onFocusColor = sf::Color::Red;
     _buttonText.setString(txt);
     if(!_font.loadFromFile("Pacific_Again.ttf")){
-
+        _log << "Error while loading font!" << logging::logEnd;
+        std::cout << "saddaasdas" << std::endl;
     }
 
 }

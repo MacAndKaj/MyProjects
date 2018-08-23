@@ -1,5 +1,3 @@
-#include <iostream>
-#include <Logger.hpp>
 
 int main()
 {
@@ -17,8 +15,5 @@ int main()
 //        }
 //
 //    }
-
-    Logger log("mojlog");
-    log << "Tutaj cos napisze" << "tutaj tez" << "I tutaj" << logging::logEnd;
     return 0;
 }
