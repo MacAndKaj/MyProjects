@@ -8,17 +8,15 @@
 LetterButton::LetterButton ()
         : _log("LetterButton")
 {
-    if(!_font.loadFromFile("Pacifizxcc_Again.ttf")){
+    if(!_font.loadFromFile("Pacific_Again.ttf")){
         _log << "Error while loading font!" << logging::logEnd;
-        std::cout << "saddaasdas" << std::endl;
     }
 }
 
-LetterButton::LetterButton(int positionY, int positionX, int length, int height, const std::string &txt)
+LetterButton::LetterButton(int positionY, int positionX, unsigned int size, const std::string &txt)
         : _positionCentralY(positionY)
         , _positionCentralX(positionX)
-        , _length(length)
-        , _height(height)
+        , _fontSize(size)
         , _clicked(false)
         , _focused(false)
         , _log("LetterButton("+txt+')')
@@ -30,8 +28,11 @@ LetterButton::LetterButton(int positionY, int positionX, int length, int height,
     _buttonText.setString(txt);
     if(!_font.loadFromFile("Pacific_Again.ttf")){
         _log << "Error while loading font!" << logging::logEnd;
-        std::cout << "saddaasdas" << std::endl;
     }
+    _buttonText.setFont(_font);
+    _buttonText.setFillColor(_basicColor);
+    _buttonText.setPosition(tmp);
+    _buttonText.setCharacterSize(_fontSize);
 
 }
 
@@ -44,6 +45,7 @@ void LetterButton::click()
 {
     if (_focused)
     {
+        _buttonText.setFillColor(_onClickColor);
         _clicked = true;
     }
 
@@ -55,6 +57,7 @@ void LetterButton::unclick()
     {
         if(_callback)
             _callback();
+        _buttonText.setFillColor(_onFocusColor);
         _clicked = false;
     }
 }
@@ -64,14 +67,14 @@ bool LetterButton::isClicked()
     return _clicked;
 }
 
-void LetterButton::setFunctionality(const std::function<void()> &functionality)
+void LetterButton::setFunctionality (std::function<void()> functionality)
 {
     _callback = functionality;
 }
 
 void LetterButton::draw(sf::RenderTarget &target, sf::RenderStates states) const
 {
-
+    target.draw(_buttonText, states);
 }
 
 void LetterButton::setBasicColor(const sf::Color &basicColor)
@@ -93,6 +96,7 @@ void LetterButton::focus()
 {
     if (not _focused)
     {
+        _buttonText.setFillColor(_onFocusColor);
         _focused = true;
     }
 }
@@ -101,6 +105,7 @@ void LetterButton::unfocus()
 {
     if (_focused)
     {
+        _buttonText.setFillColor(_basicColor);
         _focused = false;
     }
 }

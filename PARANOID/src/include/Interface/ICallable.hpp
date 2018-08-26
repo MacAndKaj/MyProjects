@@ -7,7 +7,8 @@
 
 
 class ICallable {
-
+public:
+    virtual void callback() = 0;
 };
 
 

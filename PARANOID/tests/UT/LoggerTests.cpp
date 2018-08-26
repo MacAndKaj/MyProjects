@@ -2,9 +2,6 @@
 // Created by maciej on 20.08.18.
 //
 
-#ifndef LOGGERTESTS_CPP_
-#define LOGGERTESTS_CPP_
-
 #include <gtest/gtest.h>
 #include <Logger.hpp>
 
@@ -22,4 +19,3 @@ protected:
     std::unique_ptr<Logger> _sut;
 };
 
-#endif

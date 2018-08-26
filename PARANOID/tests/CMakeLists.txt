@@ -7,6 +7,8 @@ include_directories("${source_dir}/googletest/include"
         "${source_dir}/googlemock/include"
         )
 
+# files are only copied if a target depends on them
+#add_custom_target(tests ALL DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/Pacific_Again.ttf")
 ################################
 find_package(SFML 2.5 REQUIRED network audio graphics window system)
 if(SFML_FOUND)
