@@ -5,22 +5,31 @@
 #ifndef PARANOID_WINDOW_HPP
 #define PARANOID_WINDOW_HPP
 
-
-#include <SFML/Window.hpp>
+#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics/Drawable.hpp>
+#include <Detectors/EventDetector.hpp>
+#include "Workers/CollisionDetector.hpp"
 
 class MainWindow
 {
 public:
-    MainWindow();
+    MainWindow() = delete;
     MainWindow (unsigned int _windowHeight, unsigned int _windowWidth, const std::string &_windowTitle);
     virtual ~MainWindow ();
 
+    int run();
+    void addItemToDraw(sf::Drawable&);
+
 private:
+    void drawAllItems();
+
     unsigned int _windowHeight,_windowWidth;
+    sf::Color _defaultWindowColor;
+    sf::RenderWindow _handlerWindow;
+    EventDetector _eventDetector;
+    CollisionDetector _collisionDetector;
     std::string _windowTitle;
-    std::unique_ptr<sf::Window> _handlerWindow;
-    std::unique_ptr<sf::ContextSettings> _handlerSettinngsWindow;
-    std::unique_ptr<sf::VideoMode> _handlerVideoModeWindow;
+    std::vector<sf::Drawable> _allDrawableItems;
 };
 
 

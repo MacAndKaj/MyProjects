@@ -20,7 +20,7 @@ class LetterButton
 {
 public:
     LetterButton ();
-    explicit LetterButton (int positionY_, int positionX_, unsigned int size, const std::string &txt);
+    LetterButton (int positionY_, int positionX_, unsigned int size, const std::string &txt);
     ~LetterButton () override;
 
     //IClickable
@@ -52,7 +52,6 @@ private:
     sf::Color _onFocusColor;
     sf::Color _onClickColor;
     std::function<void ()> _callback;
-
 };
 
 #endif //PARANOID_LETTERBUTTON_HPP

@@ -2,7 +2,7 @@ include_directories(include)
 file(GLOB src_files
         sources/Buttons/*.cpp
         sources/Scenario/*.cpp
-        sources/Workers/*.cpp
+        sources/Detectors/*.cpp
         sources/*.cpp)
 add_library(MyLib ${src_files})
 

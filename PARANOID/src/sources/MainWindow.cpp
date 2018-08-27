@@ -2,24 +2,43 @@
 // Created by maciej on 16.08.18.
 //
 
+#include <SFML/Window/Event.hpp>
 #include "MainWindow.hpp"
 
-MainWindow::MainWindow()
+MainWindow::MainWindow (unsigned int _windowHeight, unsigned int _windowWidth
+                        , const std::string &_windowTitle)
+        : _windowHeight(_windowHeight)
+        , _windowWidth(_windowWidth)
+        , _windowTitle(_windowTitle)
+        , _handlerWindow(sf::VideoMode(_windowWidth,_windowHeight),_windowTitle)
+        , _defaultWindowColor(sf::Color::White)
+{}
+
+MainWindow::~MainWindow ()
 {
-    this->_handlerSettinngsWindow = std::make_unique<sf::ContextSettings>();
-    this->_handlerVideoModeWindow = std::make_unique<sf::VideoMode>(sf::VideoMode::getDesktopMode());
-    this->_handlerWindow = std::make_unique<sf::Window>();
+
 }
 
+int MainWindow::run ()
+{
+    while (_handlerWindow.isOpen())
+    {
 
-MainWindow::MainWindow(unsigned int _windowHeight, unsigned int _windowWidth,
-                       const std::string &_windowTitle) : _windowHeight(_windowHeight), _windowWidth(_windowWidth),
-                                                          _windowTitle(_windowTitle)
+    }
+
+    return EXIT_SUCCESS;
+}
+
+void MainWindow::addItemToDraw (sf::Drawable& item)
 {
 
 }
 
-MainWindow::~MainWindow()
+void MainWindow::drawAllItems ()
 {
-
+    _handlerWindow.clear();
+    for (auto &&drawableItem : _allDrawableItems)
+    {
+        _handlerWindow.draw(drawableItem);
+    }
 }
