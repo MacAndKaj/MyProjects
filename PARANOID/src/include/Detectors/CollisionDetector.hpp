@@ -7,9 +7,13 @@
 
 #include <Interface/IDetector.hpp>
 #include <Logger.hpp>
-//TODO implement
 
-class DetectorsFactory;
+namespace eng
+{
+class DetectorsModule;
+
+namespace det
+{
 
 class CollisionDetector : public IDetector
 {
@@ -20,7 +24,10 @@ public:
 private:
     CollisionDetector();
     Logger _log;
-    friend class DetectorsFactory;
+    friend class DetectorsModule;
 };
+
+} //det
+} //eng
 
 #endif //PARANOID_COLLISIONDETECTOR_HPP

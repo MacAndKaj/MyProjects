@@ -33,7 +33,7 @@ public:
     //sf::Drawable
     void draw (sf::RenderTarget &target, sf::RenderStates states) const override;
 
-    void setFunctionality(std::function<void()> func);
+    void setFunctionality(std::function<void()> &func);
     void setBasicColor (const sf::Color &basicColor);
     void setOnFocusColor (const sf::Color &onFocusColor);
     void setOnClickColor (const sf::Color &onClickColor);

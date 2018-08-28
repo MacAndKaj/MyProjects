@@ -7,16 +7,20 @@
 #include <Logger.hpp>
 #include <ctime>
 
+#ifdef DEBUG
+#include <iostream>
+#endif
+
 using namespace std;
 
 unique_ptr<ofstream> Logger::_logFile = unique_ptr<ofstream>(nullptr);
 
-Logger::Logger (const string &_nameOfLoggerOwner) : _nameOfLoggerOwner(_nameOfLoggerOwner)
+Logger::Logger(const string &_nameOfLoggerOwner) : _nameOfLoggerOwner(_nameOfLoggerOwner)
 {
     if (not Logger::_logFile) initLogFile();
 }
 
-void Logger::initLogFile ()
+void Logger::initLogFile()
 {
     auto now = time(nullptr);
     auto timeNow = localtime(&now);
@@ -30,7 +34,7 @@ void Logger::initLogFile ()
     Logger::_logFile = make_unique<ofstream>(fileName);
 }
 
-Logger::~Logger ()
+Logger::~Logger()
 {
     if (_logFile)
     {
@@ -39,20 +43,23 @@ Logger::~Logger ()
     }
 }
 
-void Logger::clearBuffer ()
+void Logger::clearBuffer()
 {
     if (_buffer.empty()) return;
     *_logFile << '[' << _nameOfLoggerOwner << "] " << _buffer << '\n';
+#ifdef DEBUG
+    std::cerr << '[' << _nameOfLoggerOwner << "] " << _buffer << std::endl;
+#endif
     _buffer.clear();
 }
 
 
-void Logger::setNameOfLoggerOwner (const string &nameOfLoggerOwner)
+void Logger::setNameOfLoggerOwner(const string &nameOfLoggerOwner)
 {
     _nameOfLoggerOwner = nameOfLoggerOwner;
 }
 
-Logger &operator<< (Logger &log, const char *strm)
+Logger &operator<<(Logger &log, const char *strm)
 {
     std::string tmp{strm};
     tmp += ' ';
@@ -63,7 +70,7 @@ Logger &operator<< (Logger &log, const char *strm)
     return log;
 }
 
-Logger &operator<< (Logger &log, logging strm)
+Logger &operator<<(Logger &log, logging strm)
 {
     if (strm == logging::logEnd)
     {

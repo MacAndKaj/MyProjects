@@ -4,8 +4,13 @@
 
 #include <Detectors/EventDetector.hpp>
 
+namespace eng
+{
+namespace det
+{
+
 EventDetector::EventDetector()
-        :_log("EventDetector")
+        : _log("EventDetector")
 {
 
 }
@@ -24,3 +29,6 @@ void EventDetector::stopMonitoring()
 {
 
 }
+
+} //det
+} //eng

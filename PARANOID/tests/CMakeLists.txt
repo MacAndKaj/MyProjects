@@ -1,7 +1,6 @@
 file(GLOB SRCS UT/*.cpp)
 find_package(Threads REQUIRED)
 include_directories ("${PROJECT_SOURCE_DIR}/src/include")
-
 add_executable(tests ${SRCS})
 include_directories("${source_dir}/googletest/include"
         "${source_dir}/googlemock/include"
@@ -22,5 +21,4 @@ if (GTEST_FOUND)
 endif ()
 enable_testing()
 target_link_libraries(tests gtest gmock gtest_main MyLib pthread ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
-
 install(TARGETS tests DESTINATION build)

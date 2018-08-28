@@ -9,11 +9,14 @@
 #include <SFML/Graphics/Drawable.hpp>
 #include <Detectors/EventDetector.hpp>
 #include <Detectors/CollisionDetector.hpp>
+#include <Engine.hpp>
+
+using namespace eng;
 
 class MainWindow
 {
 public:
-    MainWindow ();
+    explicit MainWindow(Engine &engine);
     virtual ~MainWindow ();
 
     int run();
@@ -25,8 +28,8 @@ private:
     unsigned int _windowHeight,_windowWidth;
     sf::Color _defaultWindowColor;
     std::unique_ptr<sf::RenderWindow> _handlerWindow;
-    //EventDetector& _eventDetector;
-    //CollisionDetector& _collisionDetector;
+    det::EventDetector& _eventDetector;
+    det::CollisionDetector& _collisionDetector;
     std::string _windowTitle;
     std::vector<sf::Drawable> _allDrawableItems;
     Logger _log;

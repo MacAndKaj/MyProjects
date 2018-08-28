@@ -6,9 +6,10 @@ set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
-add_subdirectory(src)
 
+add_subdirectory(src)
 add_subdirectory(tests)
+
 
 FILE(COPY Resoures/Pacific_Again.ttf DESTINATION "${CMAKE_BINARY_DIR}")
 FILE(COPY Resoures/icon.png DESTINATION "${CMAKE_BINARY_DIR}")

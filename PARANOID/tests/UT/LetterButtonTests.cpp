@@ -8,7 +8,7 @@
 #include <Interface/ICallable.hpp>
 
 
-class LetterButtonTests : public ::testing::Test, public ICallable
+class LetterButtonTests : public ::testing::Test
 {
 
 public:
@@ -17,7 +17,7 @@ public:
         this->_sut = std::make_unique<LetterButton>();
     }
 
-    void callback() override
+    void callback()
     {
         _change = true;
     }
@@ -47,7 +47,7 @@ TEST_F(LetterButtonTests, LetterButtonTests_ShouldHandleFunctionality_Test)
 {
     startService();
     _change = false;
-    std::function<void(void)> func = std::bind(&LetterButtonTests::callback,this);
+    std::function<void(void)> func = std::bind(&LetterButtonTests::callback, this);
     _sut->setFunctionality(func);
     _sut->focus();
     _sut->click();
@@ -59,9 +59,10 @@ TEST_F(LetterButtonTests, LetterButtonTests_ShouldNotHandleFunctionality_Test)
 {
     startService();
     _change = false;
-    std::function<void(void)> func = std::bind(&LetterButtonTests::callback,this);
+    std::function<void(void)> func = std::bind(&LetterButtonTests::callback, this);
     _sut->setFunctionality(func);
     _sut->click();
+    ASSERT_FALSE(_change);
     _sut->unclick();
     ASSERT_FALSE(_change);
 }

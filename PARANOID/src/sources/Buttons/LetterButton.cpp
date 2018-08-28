@@ -56,7 +56,10 @@ void LetterButton::unclick()
     if (_clicked)
     {
         if(_callback)
+        {
+            _log << __FUNCTION__ << "callback applied." << logging::logEnd;
             _callback();
+        }
         _buttonText.setFillColor(_onFocusColor);
         _clicked = false;
     }
@@ -67,7 +70,7 @@ bool LetterButton::isClicked()
     return _clicked;
 }
 
-void LetterButton::setFunctionality (std::function<void()> functionality)
+void LetterButton::setFunctionality (std::function<void()> &functionality)
 {
     _callback = functionality;
 }

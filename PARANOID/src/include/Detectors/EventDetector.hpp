@@ -4,11 +4,16 @@
 
 #ifndef PARANOID_EVENTDETECTOR_HPP
 #define PARANOID_EVENTDETECTOR_HPP
+
 #include <Interface/IDetector.hpp>
 #include <Logger.hpp>
 
-//TODO implement
+namespace eng
+{
+class DetectorsModule;
 
+namespace det
+{
 
 class EventDetector : public IDetector
 {
@@ -19,7 +24,9 @@ public:
 private:
     EventDetector();
     Logger _log;
-    friend class DetectorsFactory;
+    friend class DetectorsModule;
 };
 
+} // det
+} // eng
 #endif //PARANOID_EVENTDETECTOR_HPP

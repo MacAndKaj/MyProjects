@@ -5,6 +5,12 @@
 #ifndef PARANOID_IDETECTOR_HPP
 #define PARANOID_IDETECTOR_HPP
 
+namespace eng
+{
+
+namespace det
+{
+
 class IDetector
 {
 public:
@@ -12,4 +18,6 @@ public:
     virtual void stopMonitoring() = 0;
 };
 
+} //det
+} //det
 #endif //PARANOID_IDETECTOR_HPP

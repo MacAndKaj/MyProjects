@@ -4,6 +4,11 @@
 
 #include <Detectors/CollisionDetector.hpp>
 
+namespace eng
+{
+namespace det
+{
+
 CollisionDetector::CollisionDetector()
         : _log("CollisionDetector")
 {
@@ -25,3 +30,5 @@ void CollisionDetector::stopMonitoring()
 
 }
 
+} //det
+} //eng

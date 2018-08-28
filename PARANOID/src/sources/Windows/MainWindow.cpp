@@ -5,9 +5,11 @@
 #include <SFML/Window/Event.hpp>
 #include <Windows/MainWindow.hpp>
 
-MainWindow::MainWindow ()
+MainWindow::MainWindow(eng::Engine &engine)
         : _log("MainWindow")
         , _defaultWindowColor (sf::Color::Black)
+        , _eventDetector(engine.getDetectorsFactory().getEventDetector())
+        , _collisionDetector(engine.getDetectorsFactory().getCollisionDetector())
 {
 
 
