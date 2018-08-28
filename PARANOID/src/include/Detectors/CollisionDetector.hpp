@@ -5,7 +5,11 @@
 #ifndef PARANOID_COLLISIONDETECTOR_HPP
 #define PARANOID_COLLISIONDETECTOR_HPP
 
-class CollisionDetector
+#include <Interface/IDetector.hpp>
+//TODO implement
+
+
+class CollisionDetector : public IDetector
 {
 
 };

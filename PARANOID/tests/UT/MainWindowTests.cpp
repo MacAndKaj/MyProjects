@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include <MainWindow.hpp>
+#include <Windows/MainWindow.hpp>
 
 class MainWindowTests
         : public ::testing::Test

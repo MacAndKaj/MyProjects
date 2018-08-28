@@ -4,6 +4,7 @@
 
 #ifndef PARANOID_NORMALBUTTON_HPP
 #define PARANOID_NORMALBUTTON_HPP
+//TODO implement
 
 
 class NormalButton {

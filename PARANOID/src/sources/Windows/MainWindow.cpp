@@ -3,7 +3,7 @@
 //
 
 #include <SFML/Window/Event.hpp>
-#include "MainWindow.hpp"
+#include <Windows/MainWindow.hpp>
 
 MainWindow::MainWindow (unsigned int _windowHeight, unsigned int _windowWidth
                         , const std::string &_windowTitle)

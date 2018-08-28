@@ -12,8 +12,6 @@ class LetterButtonTests : public ::testing::Test, public ICallable
 {
 
 public:
-
-protected:
     void startService()
     {
         this->_sut = std::make_unique<LetterButton>();

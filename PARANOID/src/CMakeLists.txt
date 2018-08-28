@@ -3,10 +3,12 @@ file(GLOB src_files
         sources/Buttons/*.cpp
         sources/Scenario/*.cpp
         sources/Detectors/*.cpp
+        sources/Factories/*.cpp
+        sources/Animations/*.cpp
         sources/*.cpp)
 add_library(MyLib ${src_files})
 
-add_executable(${EXECUTABLE_NAME} main.cpp)
+add_executable(${EXECUTABLE_NAME} MainWrapper.cpp)
 target_link_libraries(${EXECUTABLE_NAME} MyLib)
 find_package(SFML 2.5 REQUIRED network audio graphics window system)
 if (SFML_FOUND)

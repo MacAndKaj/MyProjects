@@ -4,8 +4,12 @@
 
 #ifndef PARANOID_EVENTDETECTOR_HPP
 #define PARANOID_EVENTDETECTOR_HPP
+#include <Interface/IDetector.hpp>
 
-class EventDetector
+//TODO implement
+
+
+class EventDetector : public IDetector
 {
 
 };
