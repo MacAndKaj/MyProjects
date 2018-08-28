@@ -13,8 +13,7 @@
 class MainWindow
 {
 public:
-    MainWindow() = delete;
-    MainWindow (unsigned int _windowHeight, unsigned int _windowWidth, const std::string &_windowTitle);
+    MainWindow ();
     virtual ~MainWindow ();
 
     int run();
@@ -25,11 +24,12 @@ private:
 
     unsigned int _windowHeight,_windowWidth;
     sf::Color _defaultWindowColor;
-    sf::RenderWindow _handlerWindow;
-    EventDetector& _eventDetector;
-    CollisionDetector& _collisionDetector;
+    std::unique_ptr<sf::RenderWindow> _handlerWindow;
+    //EventDetector& _eventDetector;
+    //CollisionDetector& _collisionDetector;
     std::string _windowTitle;
     std::vector<sf::Drawable> _allDrawableItems;
+    Logger _log;
 };
 
 

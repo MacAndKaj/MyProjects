@@ -8,12 +8,13 @@
 #include <Factories/DetectorsFactory.hpp>
 
 
-class BasicModule
+class EngineModule
 {
 
-
+    
 
 };
+
 
 
 #endif //PARANOID_BASICMODULE_HPP

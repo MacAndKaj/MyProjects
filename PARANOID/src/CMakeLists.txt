@@ -5,6 +5,7 @@ file(GLOB src_files
         sources/Detectors/*.cpp
         sources/Factories/*.cpp
         sources/Animations/*.cpp
+        sources/Windows/*.cpp
         sources/*.cpp)
 add_library(MyLib ${src_files})
 

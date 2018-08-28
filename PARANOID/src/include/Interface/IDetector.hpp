@@ -8,8 +8,8 @@
 class IDetector
 {
 public:
-    void startMonitoring() = 0;
-    void stopMonitoring() = 0;
+    virtual void startMonitoring() = 0;
+    virtual void stopMonitoring() = 0;
 };
 
 #endif //PARANOID_IDETECTOR_HPP

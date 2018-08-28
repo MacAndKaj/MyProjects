@@ -3,3 +3,24 @@
 //
 
 #include <Detectors/EventDetector.hpp>
+
+EventDetector::EventDetector()
+        :_log("EventDetector")
+{
+
+}
+
+EventDetector::~EventDetector()
+{
+
+}
+
+void EventDetector::startMonitoring()
+{
+
+}
+
+void EventDetector::stopMonitoring()
+{
+
+}
